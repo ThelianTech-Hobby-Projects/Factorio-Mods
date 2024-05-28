@@ -1,0 +1,16 @@
+{
+  "name": "thelian-industries",
+  "version": "0.0.1",
+  "factorio_version": "1.1",
+  "title": "Thelian Industries",
+  "author": "ThelianTech",
+  "contact": "",
+  "homepage":"",
+  "description": "",
+  "dependencies": [
+    "base",
+    "thelian-lib >= 0.0.1",
+    "thelian-worldgen >= 0.0.1",
+
+  ]
+}
