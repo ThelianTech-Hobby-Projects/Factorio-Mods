@@ -1,0 +1,14 @@
+{
+    "name": "thelian-lib",
+    "version": "0.0.1",
+    "factorio_version": "1.1",
+    "title": "Thelian's Library",
+    "author": "ThelianTech",
+    "contact": "not.a.valid.email.address@example.com",
+    "homepage": "https://github.com/ThelianTech/Factorio-Mods",
+    "description": "A Library of functions for ThelianTech Mods",
+    "dependencies": [
+      "base >= 1.1.100",
+      "! Water_Ores"
+    ]
+  }
