@@ -1,7 +1,10 @@
-ThelianIndustries Factorio Mod\s Software by [ThelianTech](https://github.com/ThelianTech) and code is licensed under [![GNU GPLv3][gnu-shield]][gnu]
+# **ThelianIndustries Factorio Mod/s**
+by [*ThelianTech*](https://github.com/ThelianTech) and code is licensed under [![GNU GPLv3][gnu-shield]][gnu]
 
-ThelianIndustires Factorio Mod Graphics and Assets are Licensed under multiple creative commons licenses due to using assets obatained from other artists and parties. All respective works will fall under the respective Owners licenses and terms.
-Some Graphical Icons and Mipmaps from [Malcom Riley](https://github.com/malcolmriley) [![CC BY 4.0][cc-by-shield]][cc-by]
+## ThelianIndustires Factorio Mod Graphics and Assets 
+  Licensed under different creative commons licenses due to using assets obatianed from other artists and parties. 
+  All respective works will fall under the respective Owners licenses and terms.
+- Some Graphical Icons and Mipmaps from [**Malcom Riley**](https://github.com/malcolmriley) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 
 
