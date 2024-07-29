@@ -1,1 +1,1 @@
-require("data-final-fixes.water-ores")
+require("data-final-fixes/water-ores")
