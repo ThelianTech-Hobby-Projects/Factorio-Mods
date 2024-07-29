@@ -9,6 +9,7 @@
   "description": "",
   "dependencies": [
     "base",
-    "thelian-lib >= 0.0.1"
+    "thelian-lib >= 0.0.1",
+    "thelian-graphics >= 0.0.1"
   ]
 }
