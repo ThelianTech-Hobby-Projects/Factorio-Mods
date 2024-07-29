@@ -1,1 +1,0 @@
-All Rights Reserved Until Release of Alpha 1 of Thelian Industries.
