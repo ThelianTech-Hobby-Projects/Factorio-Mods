@@ -14,7 +14,7 @@ by [**ThelianTech**](https://github.com/ThelianTech) and code is licensed under 
 
 ### **Implemented Features**
 
-- Overhauled Electricity System: Poles, Substations, Power Generation...
+- Overhauled Electricity System: Poles, Substations, Power Generation... 50% complete
 - Ore Deposits In the Ocean
 - Swimming in the water. 
 
