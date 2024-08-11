@@ -2,4 +2,5 @@
 .vs
 /sources
 /libraries
-/plans
+//plans
+/plans/drawio
