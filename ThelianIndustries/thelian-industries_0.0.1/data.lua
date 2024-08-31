@@ -1,11 +1,13 @@
 if not timods then
     timods = {}
 end
-if not timods.main then
-    timods.main = {}
+if not timods.timod then
+    timods.timod = {}
 end
 --Item
     --Basic Items/Parts/Components/Metalurgy
+require("prototypes.item.intermediates.ti-ores")
+require("prototypes.item.intermediates.ti-ingots")
     
     --Electrical Systems
 require("prototypes.item.power.ti-pole-item")

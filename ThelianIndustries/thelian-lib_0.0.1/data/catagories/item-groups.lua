@@ -65,15 +65,15 @@ data:extend({
     }, 
     {
         type = "item-subgroup",
-        name = "ti-",
+        name = "ti-mining",
         group = "ti-ore-processing",
-        order = "b"
+        order = "d"
     },
     {
         type = "item-subgroup",
-        name = "ti-crafting-parts",
+        name = "ti-smelting",
         group = "ti-ore-processing",
-        order = "c"
+        order = "b"
     },
     --------------Manufacturing & Assembly-------------------
     {
@@ -118,7 +118,7 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "ti-crafting-parts",
+        name = "ti-parts",
         group = "ti-intermediates",
         order = "b"
     },
@@ -136,15 +136,21 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "ti-rocks",
+        name = "ti-chemical-parts",
         group = "ti-intermediates",
         order = "e"
     },
     {
         type = "item-subgroup",
-        name = "ti-ores-ingots",
+        name = "ti-rocks",
         group = "ti-intermediates",
         order = "f"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-ingots",
+        group = "ti-intermediates",
+        order = "g"
     },
     --------------------Fluids & Barrels-------------------
     {
