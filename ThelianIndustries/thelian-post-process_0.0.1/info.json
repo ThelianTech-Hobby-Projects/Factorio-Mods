@@ -1,14 +1,14 @@
 {
     "name": "thelian-post-process",
     "version": "0.0.1",
-    "factorio_version": "1.1",
+    "factorio_version": "2.0",
     "title": "Thelian Industries Post Processing",
     "author": "ThelianTech",
     "contact": "not.a.valid.email.address@example.com",
     "homepage": "https://github.com/ThelianTech/Factorio-Mods",
     "description": "Extras needed For Thelian Industries to work",
     "dependencies": [
-      "base >= 1.1.100",
+      "base >= 2.0.0",
       "thelian-lib >= 0.0.1"
     ]
   }
