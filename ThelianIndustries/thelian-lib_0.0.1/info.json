@@ -1,14 +1,14 @@
 {
     "name": "thelian-lib",
     "version": "0.0.1",
-    "factorio_version": "1.1",
+    "factorio_version": "2.0",
     "title": "Thelian Industries Core Mod",
     "author": "ThelianTech",
     "contact": "not.a.valid.email.address@example.com",
     "homepage": "https://github.com/ThelianTech/Factorio-Mods",
     "description": "A Core Library for Thelian Industries Mods",
     "dependencies": [
-      "base >= 1.1.100",
+      "base >= 2.0.0",
       "! Water_Ores"
     ]
   }
