@@ -42,5 +42,5 @@ data:extend({
         order = "b[ti-steam-power]-d[he-turbine]",
         place_result = "he-turbine",
         stack_size = 10,
-      } 
+      },
 })

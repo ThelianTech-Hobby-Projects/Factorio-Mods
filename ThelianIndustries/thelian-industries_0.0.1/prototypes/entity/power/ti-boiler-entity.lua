@@ -1,4 +1,4 @@
---[[ Steam Boilers/Generators Data Table
+--[[ 2.0v Steam Boilers/Generators Data Table
 Legend: T = Temp, PC = Power Consumed, FR = Flow Rate
     Tier 1: T = 215C, PC = 2.4MW, FR = 60/s
     Tier 2: T = 415C, PC = 4.8MW, FR = 60/s
@@ -26,13 +26,14 @@ data:extend({
             --localised_description = { "entity-description.le-boiler" },
             minable = { mining_time = 0.5, result = "le-boiler" },
             next_upgrade = "me-boiler",
-            max_health = 200,
+            max_health = 250,
             target_temperature = 215,
             energy_consumption = "2.4MW",
             fast_replaceable_group = "boiler",
             energy_source = {
             --fuel_category = "combustible-solid-fuels",
-            emissions_per_minute = 20,
+            --emissions_per_minute = { "pollution", 20},
+            emissions_per_minute = { pollution = 20},
             },
         },
     }),
@@ -44,13 +45,13 @@ data:extend({
             icon_size = 64,
             minable = { mining_time = 0.5, result = "me-boiler" },
             next_upgrade = "he-boiler",
-            max_health = 200,
+            max_health = 500,
             target_temperature = 415,
             energy_consumption = "4.8MW",
             fast_replaceable_group = "boiler",
             energy_source = {
             --fuel_category = "combustible-solid-fuels",
-            emissions_per_minute = 20,
+            emissions_per_minute = { pollution = 20},
             },
         },
     }),
@@ -62,13 +63,13 @@ data:extend({
             icon_size = 64,
             minable = { mining_time = 0.5, result = "he-boiler" },
             next_upgrade = "se-boiler",
-            max_health = 200,
+            max_health = 750,
             target_temperature = 615,
             energy_consumption = "7.2MW",
             fast_replaceable_group = "boiler",
             energy_source = {
             --fuel_category = "combustible-solid-fuels",
-            emissions_per_minute = 20,
+            emissions_per_minute = { pollution = 20},
             },
         },
     }),
@@ -79,13 +80,13 @@ data:extend({
             icon = "__base__/graphics/icons/boiler.png",
             icon_size = 64,
             minable = { mining_time = 0.5, result = "se-boiler" },
-            max_health = 200,
+            max_health = 1000,
             target_temperature = 815,
             energy_consumption = "9.6MW",
             fast_replaceable_group = "boiler",
             energy_source = {
             --fuel_category = "combustible-solid-fuels",
-            emissions_per_minute = 20,
+            emissions_per_minute = { pollution = 20},
             },
         },
     }),
@@ -97,7 +98,7 @@ data:extend({
             icon = "__base__/graphics/icons/boiler.png",
             icon_size = 64,
             minable = { mining_time = 0.5, result = "s-gas-boiler" },
-            max_health = 300,
+            max_health = 500,
             target_temperature = 440,
             energy_consumption = "5.1MW",
             next_upgrade = "he-gas-boiler",
@@ -110,7 +111,7 @@ data:extend({
             icon = "__base__/graphics/icons/boiler.png",
             icon_size = 64,
             minable = { mining_time = 0.5, result = "he-gas-boiler" },
-            max_health = 300,
+            max_health = 500,
             target_temperature = 440,
             energy_consumption = "10.2MW",
         }
@@ -118,17 +119,16 @@ data:extend({
 })
 data.raw.boiler["s-gas-boiler"].energy_source = {
     type = "fluid",
-    emissions_per_minute = 30,
+    emissions_per_minute = { pollution = 20},
     fluid_box = {
-        base_area = 1,
-        height = 2,
-        base_level = -1,
-        pipe_connections = {
-            {type = "input", position = { 0, 1.5}},
-        },
+        volume = 200,
         pipe_covers = pipecoverspictures(),
-        pipe_picture = assembler2pipepictures(),
+        pipe_connections =
+        {
+            {flow_direction = "input", direction = defines.direction.south, position = {0,0.5}}
+        },
         production_type = "input",
+        filter = "crude-oil",
     },
     --fuel_category = "combustible-liquid-fuels",
     burns_fluid = true,
@@ -148,23 +148,22 @@ data.raw.boiler["s-gas-boiler"].energy_source = {
 }
 data.raw.boiler["he-gas-boiler"].energy_source = {
     type = "fluid",
-    emissions_per_minute = 30,
+    emissions_per_minute = { pollution = 20},
     fluid_box = {
-        base_area = 1,
-        height = 2,
-        base_level = -1,
-        pipe_connections = {
-            {type = "input", position = { 0, 1.5}},
-        },
+        volume = 200,
         pipe_covers = pipecoverspictures(),
-        pipe_picture = assembler2pipepictures(),
+        pipe_connections =
+        {
+            {flow_direction = "input", direction = defines.direction.south, position = {0,0.5}}
+        },
         production_type = "input",
+        filter = "crude-oil",
     },
     --fuel_category = "combustible-liquid-fuels",
     burns_fluid = true,
     scale_fluid_usage = true,
     smoke = {
-        {
+            {
             name = "smoke",
             north_position = util.by_pixel(-38, -47.5),
             south_position = util.by_pixel(38.5, -32),
@@ -176,3 +175,4 @@ data.raw.boiler["he-gas-boiler"].energy_source = {
         }
     },
 }
+
