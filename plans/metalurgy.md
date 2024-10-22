@@ -19,7 +19,7 @@
 - Carnallite Ore: Main source of Magnesium/Potassium, Primarily used for Agricultural and Scientific research.
 - Phosphorite Ore: Main source of Phosphorous, Primarily used for Agricultural and Scientific research.
 - Petalite Ore: Main source of Lithium, Used in Advanced Eletrconics and Power Storage.
-- Wolframite Ore: Main source of Tugsten,
+- Wolframite Ore: Main source of Tungsten,
 - Sperrylite Ore: main Source of Platinum, Primarly used in Advanced Electionics and Advanced Components.
 - Zircon Ore: main source of Zirconium, Used in Nuclear Technology, Specifically Fuel Rods.
 - Monazite Ore: Main source of Holmium, Used in Nuclear Technology, Specifically Control Rods.
@@ -41,7 +41,7 @@
 - Manganese Ingot:
 - Silicon Ingot:
 - Lithium Ingot:
-- Tugsten Ingot:
+- Tungsten Ingot:
 - Bronze Ingot:
 - Brass Ingot:
 - Duralumin Ingot:
@@ -68,7 +68,7 @@
 
 # Mining, Ore Processing, Smelting Machinery
 - Surface Miner for surface ore patches (Depletable)
-- Crust Extractors for Underground Ore Deposits (Similar to Core Miners from SE mod Still Depleteable but Lasts longer)
+- Crust Extractors for Underground Ore Deposits (Similar to Core Miners from SE mod Still Depletable but Lasts longer)
 - Ocean Floor Dredger (Very slow infinite ore extraction)
 - Primitive Smeltery
 - Ore Crusher, Ore Sorter, Ore Wash Plant, Froth Floatation Cell

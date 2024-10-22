@@ -2,14 +2,14 @@
 ---
 - Look into creating a surface with entrance and exit, on new ship for use of starting new game phase.
 - Starting ship surface, look into if there can be permissive property for allowing placement of specific entities while forbidding the rest.
-- New modules and names: Overclocking, Efficiency, and have Productivity Intergrated into machine tiers or quailiy tiers. (Mostly Post Space Age)
+- New modules and names: Overclocking, Efficiency, and have Productivity Integrated into machine tiers or quality tiers. (Mostly Post Space Age)
 - Overhauling names to be more realistic. 
 - Look into the creation of multi outputs and additional progress bars for said outputs.
 - Look into selecting certain recipes crafting by hand to not count towards the Lazy Bastard Achievement
-- All basic and advanced electric Crafting and Smelting machinery can be crafted from a new set of universal contruction materials for compact inventory usage
-- Early game burner and steam phase crafing is scalable to mid game by use of steam temperature. 
+- All basic and advanced electric Crafting and Smelting machinery can be crafted from a new set of universal construction materials for compact inventory usage
+- Early game burner and steam phase crafting is scalable to mid game by use of steam temperature. 
 - Early game water pump using burner power. can also use same idea for creating early game saltwater to water extraction using boiling technology. 
-- Overhaul Belt logistics. To have 2 types of belts. Loose material belt sand Regular Coveyor belts. Each have restrictions on what type of items can be moved on them
+- Overhaul Belt logistics. To have 2 types of belts. Loose material belt sand Regular Conveyor belts. Each have restrictions on what type of items can be moved on them
 - Add new loaders to be used for inline belt loading of machines. And remove inserter entities. 
 - new Loaders will have circuit network capabilities.
 - 
