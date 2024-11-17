@@ -1,24 +1,13 @@
 # Game Mechanics and Design Plan
 
-#### You have been contracted by The Thelian Mining & Extraction Corporation to travel to nearby star systems in search for new sources of resources. You land on Navuis, a small habital exoplanet, located in the star system X-42, about 69 lightyears away from Sol-Earth. Navuis a planet scanned to be Full of rich resources, but also has signs of unknown potentially hostile fauna. Your job is to setup a new industrial complex for producing and sending packages of vital resources back to Earth by sending cargo rockets to your autonomous Space-Tug 9000.
+#### You have been contracted by The Thelian Mining & Extraction Corporation to travel to nearby star systems in search for new sources of resources. You land on Navuis, a small habitual exoplanet, located in the star system X-42, about 69 lightyears away from Sol-Earth. Navuis a planet scanned to be Full of rich resources, but also has signs of unknown potentially hostile fauna. Your job is to setup a new industrial complex and planetary outposts to support a supply line for sending vital resources back to Earth by sending cargo rockets to your autonomous Space-Tug 9000.
 ---
 ## Start of a New Game
-- New Landed Ship with internal surface for pre-starter base phase and primitive technology phase
-				
-		This will include starting items and a starting vehicle
-		Will Include built in small crafting stations and starter furnaces for progression.
-		Will Include built in early storage chests and a starter Laboratory.
-		Internal Ship Surface will be powered by a fixed power supply RTG Reactor and a special substation for power coverage.
-		Internal Ship Surface will not allow for entity placement or removal.
-		Outside of the ship will be an initial perimeter fence and starter gun turrets.
-		Placement for a starter emergency portable diesel generator and Small starter Radar. 
+- Start with your Space Tug 9000 in Orbit, It has been thoroughly damaged from all the asteroids that this star system is littered with. You must repair it so you can finish setting up a supply line back to earth.
 - All early game minable deposits will be in starting area to simulate landing in a spot of easy accessible surface deposits.
-- Starting ship machines are advanced enough to craft advanced components and machines through an advanced 3d printing technology but crafts very very very slowly,
-- Starting ship lab is enough to get basic research going but has an extremely slow research speed. 
-- Stating ship can be damaged and destroyed by enemy biters but it has a very high amount of health and slowly repairs itself over time, like extremely slowly.
-- Prepare for Early Game Automation and Science Production. 
+-  
 ---
-## Burner to Early Electric Phase
+## Early Game Automation and Science Projects
 - Initial mining and starter base and mall.
 - Setup primitive ore processing and smelting.
 - Early burner and steam phase crafting and power generation. 
@@ -31,9 +20,12 @@
 - Underground Ore deposits and extraction, processing and smelting.
 - More Efficient Crafting Recipes, Start Of Petroleum & Oil Chain.
 - Early To Late Game Liquid Fuels for Crafting and Power Generation.
+- Start of Early Rocketry Technology, Planet Exploration
+---
+## System Exploration & Outpost Automation
 - 
 ---
 ## Final Preparation for Sending Packages.
--
+- 
 ---
 ## Post Op Space Age DLC (Future Integration)
