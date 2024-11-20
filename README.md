@@ -16,6 +16,8 @@
   All respective works will fall under the respective owners licenses and terms.
   All graphics specified with their specific licenses are listed in LICENSE.md under the Thelian Graphics Mod directory
 - Some Graphical Assets from [**Malcom Riley**](https://github.com/malcolmriley) [![CC BY 4.0][cc-by-shield]][cc-by]
+---
+# Thelian Industries Mod/pack
 
 ### **Implemented Features**
 
