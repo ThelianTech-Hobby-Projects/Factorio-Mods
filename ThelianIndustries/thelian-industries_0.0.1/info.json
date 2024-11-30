@@ -1,15 +1,16 @@
 {
-  "name": "thelian-industries",
-  "version": "0.0.1",
-  "factorio_version": "2.0",
-  "title": "Thelian Industries",
-  "author": "ThelianTech",
-  "contact": "",
-  "homepage":"",
-  "description": "",
-  "dependencies": [
-    "base >= 2.0.0",
-    "thelian-lib >= 0.0.1",
-    "thelian-graphics >= 0.0.1"
-  ]
+    "name": "thelian-industries",
+    "version": "0.0.1",
+    "factorio_version": "2.0",
+    "title": "Thelian Industries",
+    "author": "ThelianTech Studios, ThelianTech",
+    "contact": "",
+    "homepage": "",
+    "description": "",
+    "dependencies": [
+        "base >= 2.0.0",
+        "? space-age",
+        "thelian-lib >= 0.0.1",
+        "thelian-graphics >= 0.0.1"
+    ]
 }
