@@ -2,11 +2,12 @@
 
 ##### Each of ThelianTech's ThelianIndustries mods' directories uses its own license if provided, otherwise defaults to the next root directory license
 
-- [**ThelianLib**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-lib)
-- [**ThelianIndustries**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-industries)
+- [**ThelianLib**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-lib) [![Code License][thelian-code-shield]][thelian-code-license]
+- [**ThelianIndustries**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-industries) [![Code License][thelian-code-shield]][thelian-code-license]
+- [**Thelian Industries Graphical & Sound Assets Mod**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-graphics) [![Custom License][thelian-graphics-shield]][thelian-graphics-license]
 
-- [![Code License][thelian-code-shield]][thelian-code-license]
 ---
+
 ## ThelianIndustries Graphics and Assets Mod
 
 - All visual and audio Content are licensed under different creative commons licenses from using assets obtained from other artists and parties. 
