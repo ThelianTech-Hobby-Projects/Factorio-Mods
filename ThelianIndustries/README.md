@@ -2,8 +2,8 @@
 
 ##### Each of ThelianTech's ThelianIndustries mods' directories uses its own license if provided, otherwise defaults to the next root directory license
 
-- [**ThelianLib**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-lib_0.0.1)
-- [**ThelianIndustries**](https://github.com/ThelianTech/Factorio-Mods/tree/main/ThelianIndustries/thelian-industries_0.0.1)
+- [**ThelianLib**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-lib)
+- [**ThelianIndustries**](https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/tree/main/ThelianIndustries/thelian-industries)
 
 - [![Code License][thelian-code-shield]][thelian-code-license]
 ---
