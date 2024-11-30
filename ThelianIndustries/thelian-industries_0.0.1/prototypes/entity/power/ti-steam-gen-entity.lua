@@ -7,7 +7,7 @@
 
 ]]--
 
-
+if settings.startup["ti-full-power-overhaul"].value == true then
 data:extend({
     util.merge({
       data.raw.generator["steam-engine"],
@@ -78,3 +78,4 @@ data:extend({
         },
       }),
 })
+end

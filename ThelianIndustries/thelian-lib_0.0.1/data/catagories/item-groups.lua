@@ -1,5 +1,5 @@
 data:extend({
-    --Item Group Catagories and Sub Catagories.
+    --Item Group Categories and Sub Categories.
     --------------------Electrical Systems-------------------
     {
         type = "item-group",
@@ -54,7 +54,43 @@ data:extend({
         icon_size = 128,
         icon_mipmaps = 2
     },
-        --------------------Mining, Metalurgy & Smelting-------------------
+    {
+        type = "item-subgroup",
+        name = "ti-belt",
+        group = "ti-logistics",
+        order = "a"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-train",
+        group = "ti-logistics",
+        order = "b"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-robot",
+        group = "ti-logistics",
+        order = "c"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-vehicle",
+        group = "ti-logistics",
+        order = "d"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-storage",
+        group = "ti-logistics",
+        order = "e"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-logistic-misc",
+        group = "ti-logistics",
+        order = "f"
+    },
+        --------------------Mining, Metallurgy & Smelting-------------------
     {
         type = "item-group",
         name = "ti-ore-processing",
@@ -98,39 +134,52 @@ data:extend({
         type = "item-group",
         name = "ti-science",
         order = "f",
-        icon = "__base__/graphics/item-group/production.png",
+        icon = "__base__/graphics/achievement/research-with-space.png",
         icon_size = 128,
-        icon_mipmaps = 2
+        icon_mipmaps = 1
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-science-packs",
+        group = "ti-science",
+        order = "a"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-science-parts",
+        group = "ti-science",
+        order = "b"
     },
     --------------------Components, Parts, & Intermediates-------------------
     {
         type = "item-group",
         name = "ti-intermediates",
         order = "g",
-        icon = "__base__/graphics/item-group/production.png",
+        icon = "__base__/graphics/item-group/intermediate-products.png",
         icon_size = 128,
         icon_mipmaps = 2
-    },    {
+    },
+    {
         type = "item-subgroup",
-        name = "ti-contruction-parts",
+        name = "ti-construction-parts",
         group = "ti-intermediates",
         order = "a"
     },
     {
         type = "item-subgroup",
-        name = "ti-parts",
+        name = "ti-components",
         group = "ti-intermediates",
         order = "b"
     },
     {
         type = "item-subgroup",
-        name = "ti-components",
+        name = "ti-electronic-components",
         group = "ti-intermediates",
         order = "c"
     },
     {
         type = "item-subgroup",
-        name = "ti-electronic-components",
+        name = "ti-parts",
         group = "ti-intermediates",
         order = "d"
     },
@@ -142,33 +191,57 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "ti-rocks",
+        name = "ti-ingots",
         group = "ti-intermediates",
         order = "f"
     },
     {
         type = "item-subgroup",
-        name = "ti-ingots",
+        name = "ti-rocks",
         group = "ti-intermediates",
         order = "g"
-    },
-    --------------------Fluids & Barrels-------------------
-    {
-        type = "item-group",
-        name = "ti-fluid",
-        order = "h",
-        icon = "__base__/graphics/item-group/production.png",
-        icon_size = 128,
-        icon_mipmaps = 2
     },
     --------------------Waste Management Systems-------------------
     {
         type = "item-group",
         name = "ti-waste",
-        order = "i",
+        order = "h",
         icon = "__base__/graphics/item-group/production.png",
         icon_size = 128,
         icon_mipmaps = 2
+    },
+    --------------------Fluids & Barrels-------------------
+    {
+        type = "item-group",
+        name = "ti-fluid",
+        order = "i",
+        icon = "__thelian-graphics__/graphics/item-groups/fluids.png",
+        icon_size = 64,
+        icon_mipmaps = 1
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-fluids",
+        group = "ti-fluid",
+        order = "a"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-gases",
+        group = "ti-fluid",
+        order = "b"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-molten",
+        group = "ti-fluid",
+        order = "c"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-barrels",
+        group = "ti-fluid",
+        order = "d"
     },
      --------------------Combat & Defensive Systems-------------------
     {

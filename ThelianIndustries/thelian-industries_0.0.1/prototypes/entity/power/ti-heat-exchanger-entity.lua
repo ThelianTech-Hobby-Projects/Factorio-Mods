@@ -5,7 +5,7 @@
     Tier 4: E = 1.0, T = 815C, PC = 20MW 120/s
 ]]--
 
-
+if settings.startup["ti-full-power-overhaul"].value == true then
 data.raw.boiler["heat-exchanger"].fast_replaceable_group = "boiler"
 data:extend({
     util.merge({
@@ -56,3 +56,4 @@ data:extend({
         },
       }),
 })
+end

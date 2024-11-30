@@ -1,3 +1,4 @@
+if settings.startup["ti-full-power-overhaul"].value == true then
 if settings.startup["ti-transmission-overhaul"].value == true then
     data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole"
     data:extend({
@@ -85,4 +86,5 @@ if settings.startup["ti-transmission-overhaul"].value == true then
             },
         }),
     })
+end
 end

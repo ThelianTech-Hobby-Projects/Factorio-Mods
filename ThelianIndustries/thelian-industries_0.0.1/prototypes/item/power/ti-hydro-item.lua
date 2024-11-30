@@ -1,3 +1,4 @@
+if settings.startup["ti-full-power-overhaul"].value == true then
 if settings.startup["ti-hydropower-overhaul"].value == true then
 data:extend({
     {
@@ -23,4 +24,5 @@ data:extend({
         stack_size = 10,
       }
 })
+end
 end

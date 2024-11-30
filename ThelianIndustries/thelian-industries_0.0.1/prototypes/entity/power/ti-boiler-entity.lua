@@ -14,7 +14,7 @@ Legend: T = Temp, PC = Power Consumed, FR = Flow Rate
     require("__thelian-lib__/data/catagories/fuel-cat")
 
 ]]--1
-
+if settings.startup["ti-full-power-overhaul"].value == true then
 data.raw.boiler.boiler.fast_replaceable_group = "boiler"
 data:extend({
     util.merge({
@@ -175,4 +175,4 @@ data.raw.boiler["he-gas-boiler"].energy_source = {
         }
     },
 }
-
+end

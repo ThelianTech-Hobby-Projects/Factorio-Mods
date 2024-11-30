@@ -15,7 +15,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[steel-ingot]",
+    order = "a[ti-ingots]-b[steel-ingot]",
     stack_size = 100
   },
   {
@@ -24,7 +24,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-b[copper-ingot]",
+    order = "a[ti-ingots]-c[copper-ingot]",
     stack_size = 100
   },
   {
@@ -33,7 +33,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[tin-ingot]",
+    order = "a[ti-ingots]-d[tin-ingot]",
     stack_size = 100
   },
   {
@@ -42,7 +42,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[lead-ingot]",
+    order = "a[ti-ingots]-e[lead-ingot]",
     stack_size = 100
   },
   {
@@ -51,7 +51,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[aluminum-ingot]",
+    order = "a[ti-ingots]-f[aluminum-ingot]",
     stack_size = 100
   },
   {
@@ -60,7 +60,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[zinc-ingot]",
+    order = "a[ti-ingots]-g[zinc-ingot]",
     stack_size = 100
   },
   {
@@ -69,7 +69,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[cobalt-ingot]",
+    order = "a[ti-ingots]-h[cobalt-ingot]",
     stack_size = 100
   },
   {
@@ -78,7 +78,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[silver-ingot]",
+    order = "a[ti-ingots]-i[silver-ingot]",
     stack_size = 100
   },
   {
@@ -87,7 +87,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[gold-ingot]",
+    order = "a[ti-ingots]-j[gold-ingot]",
     stack_size = 100
   },
   {
@@ -96,7 +96,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[titanium-ingot]",
+    order = "a[ti-ingots]-k[titanium-ingot]",
     stack_size = 100
   },
   {
@@ -105,7 +105,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[tungsten-ingot]",
+    order = "a[ti-ingots]-l[tungsten-ingot]",
     stack_size = 100
   },
   {
@@ -114,7 +114,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[platinum-ingot]",
+    order = "a[ti-ingots]-m[platinum-ingot]",
     stack_size = 100
   },
   {
@@ -123,7 +123,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[silicon-ingot]",
+    order = "a[ti-ingots]-n[silicon-ingot]",
     stack_size = 100
   },
   --Alloy Ingots
@@ -133,7 +133,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-c[bronze-ingot]",
+    order = "b[ti-ingots]-a[bronze-ingot]",
     stack_size = 100
   },
   {
@@ -142,7 +142,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[brass-ingot]",
+    order = "b[ti-ingots]-b[brass-ingot]",
     stack_size = 100
   },
   {
@@ -151,7 +151,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[duralumin-ingot]",
+    order = "b[ti-ingots]-c[duralumin-ingot]",
     stack_size = 100
   },
   {
@@ -160,7 +160,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[electrum-ingot]",
+    order = "b[ti-ingots]-d[electrum-ingot]",
     stack_size = 100
   },
   {
@@ -169,7 +169,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[kovar-ingot]",
+    order = "f[ti-ingots]-e[kovar-ingot]",
     stack_size = 100
   },
   {
@@ -178,7 +178,7 @@ data:extend({
     icon = "__base__/graphics/icons/iron-gear-wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "ti-ingots",
-    order = "a[ti-ingots]-a[glass]",
+    order = "b[ti-ingots]-f[glass]",
     stack_size = 100
   },
 

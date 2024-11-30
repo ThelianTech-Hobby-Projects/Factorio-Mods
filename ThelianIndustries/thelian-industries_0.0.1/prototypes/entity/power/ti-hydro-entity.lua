@@ -1,3 +1,4 @@
+if settings.startup["ti-full-power-overhaul"].value == true then
 if settings.startup["ti-hydropower-overhaul"].value == true then
 data:extend({
     util.merge({
@@ -92,4 +93,5 @@ data:extend({
         },
     }),
 })
+end
 end

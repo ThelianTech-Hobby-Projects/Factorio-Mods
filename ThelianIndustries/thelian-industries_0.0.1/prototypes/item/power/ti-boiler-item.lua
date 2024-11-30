@@ -1,4 +1,4 @@
---require("__thelian-lib__/data/item-groups.lua")
+if settings.startup["ti-full-power-overhaul"].value == true then
   data:extend({
     {
       type = "item",
@@ -68,3 +68,4 @@
       stack_size = 50,
     },
   })
+end
