@@ -25,7 +25,6 @@
 ## System Exploration & Outpost Automation
 - 
 ---
-## Final Preparation for Sending Packages.
+## Final Preparation for Sending "Packages".
 - 
 ---
-## Post Op Space Age DLC (Future Integration)
