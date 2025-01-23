@@ -18,7 +18,7 @@
 
 ---
 
-[thelian-license]: https://github.com/ThelianTech/ThelianTech-Hobby-Projects/blob/main/ThelianIndustries/LICENSE.md
+[thelian-license]: https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/blob/main/ThelianIndustries/LICENSE.md
 [thelian-shield]: https://img.shields.io/badge/license-ThelianTech_Factorio_Code_License-blue?style=plastic
 [thelian-graphics-license]: https://github.com/ThelianTech-Hobby-Projects/Factorio-Mods/blob/main/ThelianIndustries/thelian-graphics/LICENSE.md
 [thelian-graphics-shield]: https://img.shields.io/badge/license-ThelianIndustries_Graphics_Mod_License-blue?style=plastic
