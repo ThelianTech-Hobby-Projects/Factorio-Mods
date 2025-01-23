@@ -22,14 +22,15 @@
 - Researching Technologies for ever advancing technology for more efficient processes in crafting and ore extraction. 
 - Underground Ore deposits and extraction, processing and smelting.
 - More Efficient Crafting Recipes, Start Of Petroleum & Oil Chain.
-- Early To Late Game Liquid Fuels for Crafting and Power Generation.
-- Start of Early Rocketry Technology, Planet Exploration
+- Early Game Liquid Fuels for Crafting and Power Generation.
+- Start of Early Rocketry Technology, Planet Discovery & Exploration.
+- 
 
 #### System Exploration & Outpost Automation
 
 - 
 
-#### Final Preparation for Sending Packages.
+#### Final Preparation for Sending "Packages".
 
 - 
 
@@ -42,20 +43,28 @@
 #### Work In Progress Features
 
 - :white_check_mark: Overhauled Electricity System: Poles, Substations, Power Generation... 50% complete
-- :white_check_mark: New Ores, Mining, Metallurgy, & Smelting Systems
+- :white_check_mark: New Ores, Mining, Metallurgy, & Smelting Systems... 25% complete
+- :white_check_mark: New and Overhauled Intermediates... 20% complete
 
 
-#### **Planned Features**
+#### **Planned Features & Overhauls**
 
 - :white_check_mark: Fully Overhauled Research System and Technology Tree
 - :white_check_mark: New Oil/Plastic Overhaul
 - :white_check_mark: New Chemistry Overhaul
 - :white_check_mark: New Waste & Recycling Treatment and Management systems
-- :white_check_mark: Revamp Offshore Pump with New water from Ocean and tiers.
+- :white_check_mark: Overhauled Cargo Rocket and Rocket-Silo Systems
+- :white_check_mark: Inter-Platform Logistics
 - :white_check_mark: Overhauled Modules
+- :white_check_mark: New Planets
+- :white_check_mark: Expanded Star System
+- :question: Mod Compatibility for certain mods.
+
+#### **Planned Mechanics **
+- :white_check_mark: Realistic inter-planetary travel distance & speeds
+- :white_check_mark: 
 - :question: Machines Need occasional Repair
 - :question: New Pollution as a piped liquid mechanic, or maybe different pollution layers. 
-- :question: Mod Compatibility for certain mods.
 
 #### **Incompatible/Wont Implement**
 

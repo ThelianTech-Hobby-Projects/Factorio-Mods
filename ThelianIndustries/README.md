@@ -1,4 +1,4 @@
-# **ThelianIndustry Mods**
+# **ThelianIndustries Mods**
 
 ##### Each of ThelianTech's ThelianIndustries mods' directories uses its own license if provided, otherwise defaults to the next root directory license
 

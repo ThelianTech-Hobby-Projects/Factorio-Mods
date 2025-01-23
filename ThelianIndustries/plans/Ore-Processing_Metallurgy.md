@@ -1,0 +1,87 @@
+# Mining, Ore Processing, and Smelting Chains
+#### Processing Chain
+- Surface Mining for surface ore patches (Depletable)
+    - Starter Sorted Ore Patches
+    - Advanced Mixed Ore Patches and Veins
+- Advanced Underground Mining for Underground Ore Deposits:
+  - Requires Explosives
+  - Enriched Ore Veins (Still Depletable, Lasts Long Time)
+- Planet Exploration:
+    - Other Planets: Resource yields are very rich, sparse deposits.
+    - Volcanic World: Can Extract Metals from Lava, Infinite yields.
+- Mining Machinery:
+    - Surface Mining: 
+- Processing Machinery:
+    - Ore Crusher, Ore Sorter, Ore Wash Plant, Froth Floatation Cell.
+    - Blast Furnace, Arc Furnace, Rotary Kiln, Oxygen Furnace.
+    - Metal Caster, Cooled Metal Caster, Electrolysis Bath Tank.
+---
+#### List of Ores & Usage:
+- Bituminous Ore: Main Source of Coal, Primary Source of Early game Solid Fuels
+- Hematite Ore: Main source of Iron.
+- Cuprite Ore: Main source of Copper, Various uses, Transportation of fluids, electricity/basic electronics
+- Cassiterite Ore: Main source of Tin
+- Galena Ore: Main source of Lead
+- Bauxite Ore: Main source of Aluminum
+- Sphalerite Ore: Main source of Zinc
+- Cobaltite Ore: Main source of Cobalt
+- Pentlandite Ore: Main Source of Nickel
+- Ilmenite Ore: Main source of Titanium
+- Argentite Ore: Main source of Silver used in electronics,
+- Placer Gold: Source of Gold, used in electronics,
+- Calcite Ore: Main source of Limestone and Lime, used in various industrial uses, Primarily in Concrete and Steel production.
+- Quartzite ore: Main source of Silicates and Silicon, Primarily used in Glass, Advanced Electronics and Research equipment.
+- Pyrolusite Ore: Main source of Manganese, Primarily used in Steel Alloys,
+- Cinnabar Ore: Main Source of Mercury, Primarily used in Temperature Control and Scientific research.
+- Carnallite Ore: Main source of Magnesium/Potassium, Primarily used for Agricultural and Scientific research.
+- Phosphorite Ore: Main source of Phosphorous, Primarily used for Agricultural and Scientific research.
+- Petalite Ore: Main source of Lithium, Used in Advanced Electronics and Power Storage.
+- Wolframite Ore: Main source of Tungsten,
+- Sperrylite Ore: main Source of Platinum, Primarily used in Advanced Electronics and Advanced Components.
+- Zircon Ore: main source of Zirconium, Used in Nuclear Technology, Specifically Fuel Rods.
+- Monazite Ore: Main source of Holmium, Used in Nuclear Technology, Specifically Control Rods.
+---
+#### List of Alloys, Ingots, Powders, Materials
+- Iron Ingot:
+- Copper Ingot:
+- Tin Ingot:
+- Lead Ingot:
+- Aluminum Ingot:
+- Zinc Ingot/Powder:
+- Nickel Ingot:
+- Cobalt Ingot:
+- Titanium Ingot:
+- Silver Ingot:
+- Gold Ingot:
+- Platinum Ingot:
+- Manganese Ingot:
+- Silicon Ingot:
+- Lithium Ingot:
+- Tungsten Ingot:
+- Bronze Ingot:
+- Brass Ingot:
+- Duralumin Ingot:
+- Electrum Ingot:
+- Invar Ingot:
+- Kovar Ingot:
+- Nitinol Ingot:
+
+- 
+#### List of Materials & Powders
+- Calcite
+- Mercury
+- Silicates
+- Magnesium/Potassium Powders
+- Phosphorous Powder
+- Zirconium
+- Holmium
+
+- Rock Salt
+- Rock Tailings
+- Rock Gravel
+- Rock Sand
+- Rock Clay
+- Manufactured Gravel
+- Manufactured Sand
+---
+#### List of Basic Parts, Metal Components
