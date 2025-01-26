@@ -30,4 +30,4 @@ You may distribute Any Mod packages using the source/codebase including Bug Fixe
 #### They Must also include a copy of this license to be publicly available and viewable in the their publicly available source/codebase  
 #### In the Event that another Developer/Maintainer takes over the development/maintenance of this mod/source/codebase in any format, Must retain Credits to the original developers and must link back to the original source/codebase github repository.
 
-COPYRIGHT © 2024 ThelianTech Studios
+##### COPYRIGHT © 2025 ThelianTech Studios
