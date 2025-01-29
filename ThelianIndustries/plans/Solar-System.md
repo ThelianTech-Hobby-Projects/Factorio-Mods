@@ -17,11 +17,11 @@
 
 ---
 ###### Game Stage: 2 - Gleba, Fulgora, & Vulcanis 
-## Vulcanis
+## Vulcanus
 
 ### :white_small_square: 
 
-## Vulcanis Orbit
+## Vulcanus Orbit
 
 ### :white_small_square: 
 ---
