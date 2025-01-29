@@ -6,7 +6,9 @@
 
 ---
 ## Start of a New Game
-- You Start with your Space Tug 9000 in Orbit, It has been thoroughly damaged from all the asteroids that this star system is littered with. You must repair it so you can finish setting up a supply line back to earth.
+- You Start crash-landed on Nauvis, after your Space Tug 9000 in Orbit suffered from a catastrophic reactor meltdown, It had been thoroughly damaged from all the asteroids located in this star system.
+- Your objective is to re-build a new inter-stellar Space Tug 9000 and finish setting up the supply line back to earth.
+- Before you can achieve your objective, you must first find a way to launch yourself back into space.
 - All early game minable deposits will be in starting area to simulate landing in a spot of easy accessible surface deposits.
 - Starting Gear includes 
 ---

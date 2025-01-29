@@ -14,5 +14,5 @@
 - Revamp Planetary Distances and Travel Speeds to Simulate more realistic values.
 - Add New Planet Types: Oceanic, Terrestrial, Gas Giants, Icy.
 - Gas Giant: use a new type of platform that must be kept aloft in the atmoshere, uses new helium/hydrogen and hovercraft technologies.
-- Additional Fulgora Content, new enemies, smaller moon orbiting Fulgora Tech-Gate Logistical Robotics behind this.
-- New Prototype Robotics for early automated Construction Robots Technology. Logistical Robots Locked behind Fulgora's Moon
+- Additional Fulgora Content, new enemies, new planet called Voltaris, Tech-Gating advanced Logistics behind this.
+- New Prototype Robotics for early automated Construction Robots Technology. Logistical Robots Locked behind Voltaris
