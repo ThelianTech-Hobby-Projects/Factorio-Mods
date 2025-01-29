@@ -7,11 +7,11 @@
 
 ### :white_small_square: 
 
-## Navius Orbit
+## Nauvis Orbit
 
 ### :white_small_square: 
 
-## Luna (Navius Moon)
+## Luna (Nauvis Moon)
 
 ### :white_small_square: 
 
