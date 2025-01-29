@@ -33,4 +33,4 @@
 
 #### In the Event that another Developer/Maintainer takes over the development/maintenance of this mod/source/codebase in any format, Must retain Credits to the original developers and must link back to the original source/codebase github repository.
 
-COPYRIGHT © 2024 ThelianTech Studios
+COPYRIGHT Â© 2025 ThelianTech Studios
