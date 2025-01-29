@@ -1,5 +1,5 @@
 # Mining, Ore Processing, and Smelting Chains
-#### Processing Chain
+### Processing Chain
 - Surface Mining for surface ore patches (Depletable)
     - Starter Sorted Ore Patches
     - Advanced Mixed Ore Patches and Veins
@@ -7,41 +7,50 @@
   - Requires Explosives
   - Enriched Ore Veins (Still Depletable, Lasts Long Time)
 - Planet Exploration:
-    - Other Planets: Resource yields are very rich, sparse deposits.
-    - Volcanic World: Can Extract Metals from Lava, Infinite yields.
+    - Rocky/Terristrial World/s: Resource yields are Varied richness, varied deposit/s quantities, Ore Patches/Veins.
+    - Oceanic World/s: Resource Distilation from Fluid/s, Underwater Ore Patches/Veins.
+    - Volcanic World/s: Can Extract Metals from Lava, Infinite yields.
+    - Icy/Cold World/s: Can be Terrestrial, Oceanic, or Gas. Usually Chemistry or other Various Liquid resources.
+    - Gas Giant/s: Gas Extraction, Chemistry resource/s.
 - Mining Machinery:
-    - Surface Mining: 
+    - Surface Mining: Various Surface Miners can mine surface deposits, surface deposits are depletable
+        - Steam Surface Miner, Early Electric Surface Miners, Advanced Surface Miners.
+    - Underground Mining: Underground Ore Veins are higher yield ore deposits, that cannot be mined by surface miners. Depletable but Usually lasts longer than surface deposits
+        - Mineshafts uses Explosives, Automated Mineshafts uses high tech explosives.
+    - Deep Sea Mining: Certain Ore deposits are hidden deep in the depths of the sea, Can only be mined by Specialized Mining Operations
+        - Ocean Dredges, Offshore Oil Rigs
 - Processing Machinery:
     - Ore Crusher, Ore Sorter, Ore Wash Plant, Froth Floatation Cell.
     - Blast Furnace, Arc Furnace, Rotary Kiln, Oxygen Furnace.
     - Metal Caster, Cooled Metal Caster, Electrolysis Bath Tank.
 ---
-#### List of Ores & Usage:
-- Bituminous Ore: Main Source of Coal, Primary Source of Early game Solid Fuels
-- Hematite Ore: Main source of Iron.
-- Cuprite Ore: Main source of Copper, Various uses, Transportation of fluids, electricity/basic electronics
-- Cassiterite Ore: Main source of Tin
-- Galena Ore: Main source of Lead
+### List of Ores & Usage: Sorted By Planet
+- Navius:
+    - Bituminous Ore: Main Source of Coal
+    - Hematite Ore: Main source of Iron
+    - Cuprite Ore: Main source of Copper
+    - Cassiterite Ore: Main source of Tin
+    - Galena Ore: Main source of Lead
 - Bauxite Ore: Main source of Aluminum
 - Sphalerite Ore: Main source of Zinc
 - Cobaltite Ore: Main source of Cobalt
 - Pentlandite Ore: Main Source of Nickel
 - Ilmenite Ore: Main source of Titanium
-- Argentite Ore: Main source of Silver used in electronics,
-- Placer Gold: Source of Gold, used in electronics,
-- Calcite Ore: Main source of Limestone and Lime, used in various industrial uses, Primarily in Concrete and Steel production.
-- Quartzite ore: Main source of Silicates and Silicon, Primarily used in Glass, Advanced Electronics and Research equipment.
-- Pyrolusite Ore: Main source of Manganese, Primarily used in Steel Alloys,
-- Cinnabar Ore: Main Source of Mercury, Primarily used in Temperature Control and Scientific research.
-- Carnallite Ore: Main source of Magnesium/Potassium, Primarily used for Agricultural and Scientific research.
-- Phosphorite Ore: Main source of Phosphorous, Primarily used for Agricultural and Scientific research.
-- Petalite Ore: Main source of Lithium, Used in Advanced Electronics and Power Storage.
-- Wolframite Ore: Main source of Tungsten,
-- Sperrylite Ore: main Source of Platinum, Primarily used in Advanced Electronics and Advanced Components.
-- Zircon Ore: main source of Zirconium, Used in Nuclear Technology, Specifically Fuel Rods.
-- Monazite Ore: Main source of Holmium, Used in Nuclear Technology, Specifically Control Rods.
+- Argentite Ore: Main source of Silver
+- Placer Gold: Source of Gold
+- Calcite Ore: Main source of Limestone and Lime
+- Quartzite ore: Main source of Silicates and Silicon
+- Pyrolusite Ore: Main source of Manganese
+- Cinnabar Ore: Main Source of Mercury
+- Carnallite Ore: Main source of Magnesium/Potassium
+- Phosphorite Ore: Main source of Phosphorous
+- Petalite Ore: Main source of Lithium
+- Wolframite Ore: Main source of Tungsten
+- Sperrylite Ore: main Source of Platinum
+- Zircon Ore: main source of Zirconium
+- Monazite Ore: Main source of Neodymium
 ---
-#### List of Alloys, Ingots, Powders, Materials
+### List of Alloys, Ingots, Powders, Materials
 - Iron Ingot:
 - Copper Ingot:
 - Tin Ingot:
@@ -58,6 +67,7 @@
 - Silicon Ingot:
 - Lithium Ingot:
 - Tungsten Ingot:
+- Neodymium Ingot:
 - Bronze Ingot:
 - Brass Ingot:
 - Duralumin Ingot:
@@ -67,7 +77,7 @@
 - Nitinol Ingot:
 
 - 
-#### List of Materials & Powders
+### List of Materials & Powders
 - Calcite
 - Mercury
 - Silicates
@@ -84,4 +94,73 @@
 - Manufactured Gravel
 - Manufactured Sand
 ---
-#### List of Basic Parts, Metal Components
+### List of Basic Parts, Metal Components
+- Aluminum:
+    - aluminum-fastener=Aluminum Fastener
+    - aluminum-gear=Aluminum Gear
+    - aluminum-heatsink=Aluminum Heatsink
+    - aluminum-piston=Aluminum Piston
+    - aluminum-plate=Aluminum Plate
+    - aluminum-rivet=Aluminum Rivets
+    - aluminum-rod=Aluminum Rod
+    - aluminum-sheet=Aluminum Sheet
+- Brass:
+    - brass-ball-bearing=Brass Ball Bearing
+    - brass-bracket=Brass Bracket
+    - brass-gear=Brass Gear
+    - brass-heatsink=Brass Heat-Sink
+    - brass-nozzle=Brass Nozzle
+    - brass-piping=Brass Piping
+    - brass-plate=Brass Plate
+    - brass-sheet=Brass Sheet
+    - brass-valve= Brass Valve
+- Bronze:
+    - bronze-ball-bearing=Bronze Ball Bearing
+    - bronze-hinges=Bronze Hinge
+    - bronze-nozzle=Bronze Nozzle
+    - bronze-sheet=Bronze Sheet
+- Cobalt:
+- Copper:
+    - copper-coil=Copper Coil
+    - copper-heatsink=Copper Heatsink
+    - copper-pipe=Copper Piping
+    - copper-rod=Copper Rod
+    - copper-sheet=Copper Sheet
+- Duralumin:
+- Electrum:
+- Gold:
+- Iron:
+    - bolts=Pile of Bolts
+    - nails=Pile of Nails
+    - nuts=Pile of Nuts
+    - rebar=Rebar
+    - screws=Pile of Screws
+- Kovar:
+- Lead:
+    - lead-plate=Lead Plate
+    - lead-rod=Lead Rod
+    - lead-sheet=Lead Sheet
+- Platinum:
+- Silicon:
+- Silver:
+- Steel:
+    - steel-axle=Steel Axle
+    - steel-ball-bearing=Steel Ball Bearing
+    - steel-bolts=Steel Bolts
+    - steel-fastener=Steel Fastener
+    - steel-gear=Steel Gear
+    - steel-nuts=Steel Nuts
+    - steel-piston=Steel Piston
+    - steel-plate=Steel Plate
+    - steel-rivet=Steel Rivet
+    - steel-rod=Steel Rod
+    - steel-sheet=Steel Sheet
+    - steel-washers=Steel Washers
+- Tin:
+    - tin-sheet=Tin Sheet
+    - tin-foil-roll=Roll of Tin Foil
+    - tin-can=Tin Can
+    - tin-can-lid=Tin Can Lids
+- Titanium:
+- Tungsten:
+- Zinc:

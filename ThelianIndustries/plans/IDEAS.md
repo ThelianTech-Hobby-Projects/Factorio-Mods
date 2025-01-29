@@ -6,7 +6,13 @@
 - All basic and advanced electric Crafting and Smelting machinery can be crafted from a new set of universal construction materials for compact inventory usage
 - Early game burner and steam phase crafting is scalable to mid game by use of steam temperature. 
 - Early game water pump using burner power. can also use same idea for creating early game saltwater to water extraction using boiling technology. 
-- Overhaul Belt logistics. To have 2 types of belts. Loose material belt and Regular Conveyor belts. Each have restrictions on what type of items can be moved on them
-- Add new loaders to be used for inline belt loading of machines. And remove inserter entities, replace with 2 different types?
-- new Loaders will have circuit network capabilities.
-- Super Heaters, Uses a less effective boiler to hear water to low temp steam. Then charges steam to high temp.
+- Overhaul Belt logistics. To have 2 types of belts. Loose material belt and Regular Conveyor belts. Each have restrictions on what type of items can be transported on them
+- Add new loaders (Better looking inserters) to be used for inline belt loading of machines. And remove current inserter entities, replace with 2 different types? New Loaders will have circuit network capabilities, filters.
+- Super Heaters, Uses a less effective boiler to hear water to a lower temp steam. Then charges steam to high temp.
+- New Research Labs, and Research Computer/SuperComputer, New Research Data Hard Drives. Primitive Research Desk (Desk with a vintage typwriter on it)
+- New 1x1 Belt Splitters, dynamically connects using belt directions, will have circuit network capabilities, filters.
+- Revamp Planetary Distances and Travel Speeds to Simulate more realistic values.
+- Add New Planet Types: Oceanic, Terrestrial, Gas Giants, Icy.
+- Gas Giant: use a new type of platform that must be kept aloft in the atmoshere, uses new helium/hydrogen and hovercraft technologies.
+- Additional Fulgora Content, new enemies, smaller moon orbiting Fulgora Tech-Gate Logistical Robotics behind this.
+- New Prototype Robotics for early automated Construction Robots Technology. Logistical Robots Locked behind Fulgora's Moon

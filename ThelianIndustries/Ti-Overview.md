@@ -8,7 +8,7 @@
 ## Start of a New Game
 - You Start with your Space Tug 9000 in Orbit, It has been thoroughly damaged from all the asteroids that this star system is littered with. You must repair it so you can finish setting up a supply line back to earth.
 - All early game minable deposits will be in starting area to simulate landing in a spot of easy accessible surface deposits.
--  
+- Starting Gear includes 
 ---
 #### Early Game Automation and Science Projects
 - Setup primitive ore processing and smelting.
@@ -28,6 +28,8 @@
 
 #### System Exploration & Outpost Automation
 
+- Space Platform Logistics and Inter-Planetary Travel
+- Each Planet has new resource/s for use in advanced technologies, and more efficient crafting recipies
 - 
 
 #### Final Preparation for Sending "Packages".
