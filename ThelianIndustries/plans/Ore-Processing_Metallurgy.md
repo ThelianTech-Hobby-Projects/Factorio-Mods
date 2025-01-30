@@ -44,11 +44,14 @@
 - Cinnabar Ore: Main Source of Mercury
 - Carnallite Ore: Main source of Magnesium/Potassium
 - Phosphorite Ore: Main source of Phosphorous
+- WIP Ore: Main Source of Calcium
 - Petalite Ore: Main source of Lithium
 - Wolframite Ore: Main source of Tungsten
 - Sperrylite Ore: main Source of Platinum
 - Zircon Ore: main source of Zirconium
 - Monazite Ore: Main source of Neodymium
+- WIP Ore: Main Source of Promethium
+- WIP Ore: Main Source of Chromium
 ---
 ### List of Alloys, Ingots, Powders, Materials
 - Iron Ingot:

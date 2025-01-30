@@ -1,13 +1,14 @@
 # Idea's and Concepts to ponder about
 ---
-- New modules and names: Overclocking, Efficiency, and have Productivity Integrated into machine tiers or quality tiers. (Mostly Post Space Age)
+- New modules and names: Overclocking, Efficiency, and Crafting Efficiency, 
 - Overhauling names to be more realistic. 
 - Look into the creation of multi outputs and additional progress bars for said outputs.
 - All basic and advanced electric Crafting and Smelting machinery can be crafted from a new set of universal construction materials for compact inventory usage
 - Early game burner and steam phase crafting is scalable to mid game by use of steam temperature. 
 - Early game water pump using burner power. can also use same idea for creating early game saltwater to water extraction using boiling technology. 
 - Overhaul Belt logistics. To have 2 types of belts. Loose material belt and Regular Conveyor belts. Each have restrictions on what type of items can be transported on them
-- Add new loaders (Better looking inserters) to be used for inline belt loading of machines. And remove current inserter entities, replace with 2 different types? New Loaders will have circuit network capabilities, filters.
+- Add new loaders (Better looking inserters) to be used for inline belt loading of machines. And replaces inserter entities, replace with 2 different types? New Loaders will have circuit network capabilities, filters.
+- Inserters will still have usecases on different structires, and surfaces that have no gravity, meaning space platforms and planetary orbits. 
 - Super Heaters, Uses a less effective boiler to hear water to a lower temp steam. Then charges steam to high temp.
 - New Research Labs, and Research Computer/SuperComputer, New Research Data Hard Drives. Primitive Research Desk (Desk with a vintage typwriter on it)
 - New 1x1 Belt Splitters, dynamically connects using belt directions, will have circuit network capabilities, filters.
@@ -16,3 +17,18 @@
 - Gas Giant: use a new type of platform that must be kept aloft in the atmoshere, uses new helium/hydrogen and hovercraft technologies.
 - Additional Fulgora Content, new enemies, new planet called Voltaris, Tech-Gating advanced Logistics behind this.
 - New Prototype Robotics for early automated Construction Robots Technology. Logistical Robots Locked behind Voltaris
+- Nauvis captured biter spawners for eggs, add ability to be affected by beacons and a new effect, Aromatic Therapy. (Fancy Speed & Productivity Effect) Locked Behind Gleba Tech
+- MkII Captured Biter Spanwer with integrated module slots, Aromatic Therapy modules used in crafting recipe of new MkII capture robot.
+- Overhaul Effects Mechanic system and Intertwine Quality. all machines start with a base chance of 5% of quality at Normal quality, and Speed or Productivity, only Reduces or manipulates the current percentage rate, and Quality Modules are still normalized but rebalance speed debuffing. 
+- Fish now have 5 min spoil timer and need to be crafting with a fresh water filled fish bowl, spoilage time for this is 2 hours, spoilage result is a polluted water filled fish bowl.
+- Fish poison you when eaten raw, need to be cooked to actually be healthy.
+- New Pipe Systems, 4 new Types of pipes normal Liquid type, gas type, molten type, & special type.
+- Molten Metals and Lava, can only be transported using new molten pipe system pipe type. Molten Type Pipes do not have underground pipes, and long distance transportation needs Filling Crucibles which are then transported using betls (Yes its a barrel system get over it.)
+- New Gas Type pipe systems will be used when transporting gases. Toxic, corrosive, temperature, IRL properties, will be simulated by usage of the new gas pipes. 
+- Special Type Pipe Networks are custom made for usage within special crafting chains, Like the new Fusion Reactor,
+- Inter Platform Item/Player transportation. Lets get rid of dropping items down to the planets surface to then launch them back up to a stationary science making platform. 
+- OverHaul Fluids transportation, new Fluid Cargo Rocket, and new Fluid Cargo Hub. New Molten Crucible, Fluid wagon for trains.... and more. 
+- Check to see if we can customize a pipe segments max distance, allows for upgrading to higher tier pips to allow a longer pipe distance. Vanilla Defaults to like 300 blocks or something.
+- 
+- 
+- 

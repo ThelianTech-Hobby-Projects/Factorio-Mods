@@ -45,7 +45,7 @@
 
 ## Voltaris
 
-### :white_small_square: Description:
+### :white_small_square: Description: (Currently AI Generated)
 
 	Voltaris is a toxic and electrically charged world, haunted by the ancient remnants of the Fulgorian civilization. 
 	The atmosphere, thick with toxic gases and suspended oily particles, creates an environment where the day is 
@@ -64,7 +64,7 @@
 ---
 ## Tectara
 
-### :white_small_square: Description:
+### :white_small_square: Description: (Currently AI Generated)
 
 	Tectara is a volatile and dynamic volcanic planet, almost identical to Vulcanus in terms of terrain and environment, 
 	but with the added chaos of frequent and destructive natural disasters. It is a world of shifting tectonic plates, 
@@ -96,20 +96,29 @@
 
 ### :white_small_square: 
 ---
-###### Game Stage: 4 -  Aquilio, *WIP*, & *WIP*
-## *WIP*
+###### Game Stage: 4 -  Aquilio, Zephyrus, & *WIP*
 
-### :white_small_square: 
+## Zephyrus
 
-## *WIP* Orbit
+### :white_small_square: Description: (Partially/Mostly AI Generated)
 
-### :white_small_square: 
----
-## *WIP*
+	Zephyrus is an immense gas giant, a world of crushing gravity and chaotic jet streams that rip through its dense atmosphere at 
+	unimaginable speeds. Unlike any other world, it has no known solid ground, if there is any surface beneath the endless storms, no 
+	explorer will ever survive long enough to find it. The pressure at lower altitudes is fatal, and the towering storms can 
+	generate winds powerful enough to tear apart entire fleets of starships. Surviving on Zephyrus requires technology far beyond 
+	conventional planetary colonization. The Zepherys Platform, A massive hovering airship sustained by advanced hovercraft and airship 
+	technology—serves as the only possible foothold in the planet's ever-churning upper atmosphere. Positioned at a safe altitude 
+	where the pressure is survivable, the platform provides the foundation for establishing gas harvesting operations. The dangers of Zephyrus 
+	are endless. Gigantic storm systems can last for centuries, generating tornado-like wind gusts capable of shredding even the toughest 
+	infrastructure. The swirling, multicolored clouds conceal unseen threats, including corrosive gases that eat away at machinery and 
+	floating pockets of highly volatile compounds that can ignite from the smallest spark. Equipment and infrastructure must be 
+	constantly maintained, repaired, or replaced as they slowly succumb to the planet’s relentless forces. Despite the hazards, Zephyrus 
+	is an unparalleled source of rare and valuable gases. Harvesting and refining these gases is a monumental challenge, requiring 
+	specialized shielding, adaptive filtration systems, and the fortification of the Zepherys Platform itself against the constant onslaught 
+	of nature’s fury. Those who can survive Zephyrus’s wrath stand to gain immense wealth—but only if they can keep their floating empire 
+	from being torn apart by the planet’s merciless winds.
 
-### :white_small_square: 
-
-## *WIP* Orbit
+## Zephyrus Orbit
 
 ### :white_small_square: 
 ---
