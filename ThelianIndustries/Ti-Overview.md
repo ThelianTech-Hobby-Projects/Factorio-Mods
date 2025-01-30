@@ -16,7 +16,7 @@
 - Setup primitive ore processing and smelting.
 - Early Steam and Powerpack Automation & Crafting Phase. 
 - Create an early mall to help with the production of construction parts, and research equipment.
-- Research Progression Technologies and prepare for Mega base Starter and Tier 2 machines, extraction, processing, and assembling.
+- Research Progression Technologies and prepare for Mega base Starter and Tier 2 machines, extraction, processing, and assembling. (Some are locked behind Vulcanus)
 - Early Chemical Processing recipes for rubber from rubber trees.
 
 #### Research Progression to Advanced Technology
