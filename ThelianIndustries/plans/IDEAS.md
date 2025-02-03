@@ -1,7 +1,7 @@
 # Idea's and Concepts to ponder about
 ---
 - #### Before getting to deep into development, maybe we should think about breaking up Ti into sub-mods similar to bobs mods. 
-- New modules and names: Overclocking, Machine Efficiency, and Crafting Efficiency(Productivity Module), Aromatic Therapy, Precision, & Craftmanship.
+- New modules and names: Overclocking, Machine Efficiency, Crafting Efficiency(Productivity Module), Aromatic Therapy, Precision, & Craftmanship.
 - New Module crafting chain.(similar to Bobs Mods)
 - Overhauling names to be more realistic. 
 - Look into the creation of multi outputs and additional progress bars for said outputs.
