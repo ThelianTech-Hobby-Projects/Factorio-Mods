@@ -1,6 +1,7 @@
 # Idea's and Concepts to ponder about
 ---
 - #### Before getting to deep into development, maybe we should think about breaking up Ti into sub-mods similar to bobs mods. 
+- ##### Possibly Spilt some Mod/pack Content into Planetary Expansion Packs. etc.
 - New modules and names: Overclocking, Machine Efficiency, Crafting Efficiency(Productivity Module), Aromatic Therapy, Precision, & Craftmanship.
 - New Module crafting chain.(similar to Bobs Mods)
 - Overhauling names to be more realistic. 
@@ -21,7 +22,7 @@
 - New Prototype Robotics for early automated Construction Robots Technology. Logistical Robots Locked behind Voltaris
 - Nauvis captured biter spawners for eggs, add ability to be affected by beacons and a new effect, Aromatic Therapy. (Fancy Speed & Productivity Effect) Locked Behind Gleba Tech
 - MkII Captured Biter Spanwer with integrated module slots, Aromatic Therapy modules used in crafting recipe of new MkII capture robot.
-- Overhaul Effects Mechanic system and Intertwine Quality. all machines start with a base chance of 5% of quality at Normal quality, and Speed or Productivity, only Reduces or manipulates the current percentage rate, and Quality Modules are still normalized but rebalance speed debuffing. 
+- Overhaul Effects Mechanics& system's and Intertwine Quality. all machines start with a base chance of 5% of quality at Normal quality, and Speed or Productivity only Reduces or manipulates the current percentage rate, and Quality Modules are still normalized but rebalance speed debuffing. 
 - Fish now have 5 min spoil timer and need to be crafting with a fresh water filled fish bowl, spoilage time for this is 2 hours, spoilage result is a polluted water filled fish bowl.
 - Fish poison you when eaten raw, need to be cooked to actually be healthy.
 - New Pipe Systems, 4 new Types of pipes normal Liquid type, gas type, molten type, & special type.
@@ -29,12 +30,14 @@
 - New Gas Type pipe systems will be used when transporting gases. Toxic, corrosive, temperature, IRL properties, will be simulated by usage of the new gas pipes. 
 - Special Type Pipe Networks are custom made for usage within special crafting chains, Like the new Fusion Reactor,
 - Inter Platform Item/Player transportation. Lets get rid of dropping items down to the planets surface to then launch them back up to a stationary science making platform. 
-- OverHaul Fluids transportation, new Fluid Cargo Rocket, and new Fluid Cargo Hub. New Molten Crucible, Fluid wagon for trains.... and more. 
+- Overhaul Fluids transportation, new Fluid Cargo Rocket, and new Fluid Cargo Hub. New Molten Crucible, Fluid wagon for trains.... and more. 
 - Check to see if we can customize a pipe segments max distance, allows for upgrading to higher tier pips to allow a longer pipe distance. Vanilla Defaults to like 300 blocks or something.
 - Overhaul Vanilla Production Chains to be balanced inline with new systems. 
 - Early Smelting Tech, produces solidified Metal Clumps and lots of slag. Ingots can only be cast from casting machines which needs molten metal from blast furnaces, some advanced chains locked behind vulcanus.
 - Post Game Bonus Planet AKA The Ark, Basing this planet off of the idea of an isolated arkship(ark survival evolved idea), This ark will include features from all the vanilla planets, possibly also features from my custom planets, as the ultimate factory building challenge. 
 - The Ark will have a post game science pack that will be needed to research any infinity tech past lvl 10.
 - Custom Planet using a mix of Gleba and Nauvis. Will include a new enemy faction using a new pollution layer. Terrain will be a mix of Gleba, Nauvis & Volcanoes (Mild Volcanoes compared to Tectara). These Lava pools are Mineral Poor, and only useful for stone. Will Use Gleba Bacteria Chain for Minerals.
-- Enemy Faction for () will be Dinosaurs, and this planet will have a jurassic park theme. 
+- Enemy Faction for () will be Dinosaurs, and this planet will have a jurassic park theme.
+- Vanilla Quality System, need to add more modifiers to entities that are not currently affected by quality. Like maybe creating Quality Rockets that are more efficient and can launch with more cargo etc. etc.
+- Add Tiers to Rockets. I am thinging we have the original factorio rocket, then I am thinking 1 or 2 more tiers, im thinking spaceX's Starship, and have two types. Cargo and Fluid Cargo types. 
 - 
