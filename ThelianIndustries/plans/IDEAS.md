@@ -16,7 +16,7 @@
 - New Research Labs, and Research Computer/SuperComputer, New Research Data Hard Drives. Primitive Research Desk (Desk with a vintage typwriter on it)
 - New 1x1 Belt Splitters, dynamically connects using belt directions, will have circuit network capabilities, filters.
 - Revamp Planetary Distances and Travel Speeds to Simulate more realistic values.
-- Add New Planet Types: Oceanic, Terrestrial, Gas Giants, Icy.
+- Add New Planet Types?: Oceanic, Terrestrial, Gas Giants, Icy.
 - Gas Giant: use a new type of platform that must be kept aloft in the atmoshere, uses new helium/hydrogen and hovercraft technologies.
 - Additional Fulgora Content, new enemies, new planet called Voltaris, Tech-Gating advanced Logistics behind this.
 - New Prototype Robotics for early automated Construction Robots Technology. Logistical Robots Locked behind Voltaris
@@ -37,7 +37,17 @@
 - Post Game Bonus Planet AKA The Ark, Basing this planet off of the idea of an isolated arkship(ark survival evolved idea), This ark will include features from all the vanilla planets, possibly also features from my custom planets, as the ultimate factory building challenge. 
 - The Ark will have a post game science pack that will be needed to research any infinity tech past lvl 10.
 - Custom Planet using a mix of Gleba and Nauvis. Will include a new enemy faction using a new pollution layer. Terrain will be a mix of Gleba, Nauvis & Volcanoes (Mild Volcanoes compared to Tectara). These Lava pools are Mineral Poor, and only useful for stone. Will Use Gleba Bacteria Chain for Minerals.
-- Enemy Faction for () will be Dinosaurs, and this planet will have a jurassic park theme.
+- Enemy Faction for (pyrosauria) will be Dinosaurs, and this planet will have a jurassic park theme.
 - Vanilla Quality System, need to add more modifiers to entities that are not currently affected by quality. Like maybe creating Quality Rockets that are more efficient and can launch with more cargo etc. etc.
 - Add Tiers to Rockets. I am thinging we have the original factorio rocket, then I am thinking 1 or 2 more tiers, im thinking spaceX's Starship, and have two types. Cargo and Fluid Cargo types. 
+- For *Redacted Planet Name* (Archo-Nexus) is a Final Post game victory planet that holds the power of nanites and infinity technology. The orbit of the planet is surrounded by new robotic drones that attack your interstellar-space platform. 
+- The Archo-Nexus, is a mix of all the vanilla planets and some of my custom planets, it will be extremely difficult to complete. It will directly intertwine all the different planets production chains all in one big massive final overhaul for you to create all the sciences, and the new Nanite Science.
+- With Nanite science, All Infinite Techs past lvl 10 are now researchable. 
+- The Archo-Nexus Orbit, new enemies can be easily defeated by using new Plasma Launchers a Fusion based warfare technology, by integrating the knowledge of bio warfare tactics, and Fusion based Technology, you can now create new types of turrets with "smart" plasma bolts that easily will take care of the largest of enemies you will be faced with in orbit.
+- Overhaul Fulgora to be waste and recycling based production and science pack chain, and lock electromagnetic science behind Voltaris.
+- Pyrosauria production and science pack chain is based off of advanced bio-chemical sciences, and the manipulation of biology using pheremones etc. also includes a new bio weapons technology chain.
+- Tectara production and science pack chain is based off of Titanium and Cobalt Metals for use in preparing for advanced Interstellar Space platforms/ships.
+- Voltaris prodution and science pack chain is now the electromagnetic science chain. and using neodynium metals.
+- Zephyrus production and science pack chain is for the efficient crafting of chemistry chains, and the production of fusion based technologies. and now is a requirement along with Aquilio for unlocking Fusion Technology.
+- Fusion & Bio-Warfare based weapons technology, uses promethium shards, electromagnetics, and gathered recycled debris from those nanite infused defence drones in Archo-Nexus Orbit. 
 - 

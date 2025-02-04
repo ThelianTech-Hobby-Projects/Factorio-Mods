@@ -41,7 +41,7 @@
 
 ### :white_small_square: 
 ---
-###### Game Stage: 3 -  Voltaris, Tectara, 
+###### Game Stage: 3 -  Voltaris, Tectara, Pyrosauria
 
 ## Voltaris
 
@@ -88,11 +88,22 @@
 
 ### :white_small_square: 
 ---
-## *WIP*
+## Pyrosauria
 
-### :white_small_square: 
+### :white_small_square: Description: (Currently AI Generated)
 
-## *WIP* Orbit
+	Pyrosauria is a chaotic world where fire and life intertwine in a violent, ever-evolving landscape. Vast lava fields and active 
+	volcanoes carve through dense jungles and tropical swamps, creating a primordial environment teeming with both danger and opportunity. 
+	The planet’s terrain and climate are an unpredictable fusion of volcanic destruction and lush, untamed wilderness, evoking a world straight 
+	from the Jurassic and Cretaceous periods. A newly discovered enemy faction dominates Pyrosauria, thriving in the hostile conditions. 
+	Their base generation and spawning mechanics resemble those of Nauvis, allowing them to adapt to both volcanic and jungle environments. 
+	The planet also features a unique pollution layer, similar to Gleba, where toxins released from industry interact with the atmosphere, 
+	flora, and lava in unpredictable ways. The ever-erupting volcanoes and lava lakes provide an abundant source of stone, constantly 
+	reshaping the terrain as molten rivers cool into new cliffs and plateaus. While the volatile environment makes large-scale construction 
+	challenging, it also presents unparalleled opportunities for biological research, bio-warfare advancements, and harnessing the raw power 
+	of the planet itself. Survival on Pyrosauria demands resilience, adaptability, and an understanding of the balance between destruction and life.
+
+## Pyrosauria Orbit
 
 ### :white_small_square: 
 ---
@@ -122,23 +133,30 @@
 
 ### :white_small_square: 
 ---
-## *WIP*
+###### Game Stage: 5 - Icarion's Grave, & Solar System Edge(*Win_Condition Zone*)
 
-### :white_small_square: 
+## Icarion's Grave
 
-## *WIP* Orbit
+### :white_small_square: Description: (AI Generated)
 
-### :white_small_square: 
----
-###### Game Stage: 5 - *WIP*, & Solar System Edge(*Win_Condition Zone*)
-## *WIP*
+	Once the planet Icarion, this orbit is now home to a vast and perilous asteroid field "the shattered remnants" of a world long destroyed 
+	by an unknown cataclysm. Massive asteroids drift through the void, creating an ever-present hazard for any who dare to navigate these 
+	treacherous depths. Preliminary scans reveal asteroids rich in valuable metals, ice, and other exotic materials, making this field a 
+	high-risk, high-reward venture for those willing to establish operations.At the heart of Icarion’s Grave lies its most coveted resource 
+	Promethium crystals, a rare and radioactive element with exotic properties vital for the creation of FTL/Warp-Drive technology. Its unique 
+	crystalline structure resembles a long, thin hexagonal prism, capped by hexagonal pyramids on both ends, with three torus-like rings evenly 
+	spaced along the main body. However, resource extraction here is no simple task. The unpredictable movements of colossal asteroids pose a 
+	constant threat, requiring vigilant defenses and careful base planning to ensure survival. Establishing a stable mining operation within 
+	this chaotic expanse is not just a challenge, it’s a necessity for those who seek to harness the power of Promethium crystals.
 
-### :white_small_square: 
-
-## *WIP* Orbit
-
-### :white_small_square:
 ---
 ## Solar System Edge
 
 ### :white_small_square: 
+---
+###### Post Game Victory
+
+## Archo-Nexus
+
+### :white_small_square: 
+---
