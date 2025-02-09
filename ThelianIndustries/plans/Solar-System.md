@@ -2,7 +2,7 @@
 ##### This shows solar system changes and overhaul	
 ###### Categorized by Planets & Game Stage
 ---
-###### Game Stage: 1 - Nauvis, & Luna
+##### Game Stage: 1 - Nauvis, & Luna
 ## Navius
 
 ### :white_small_square: 
@@ -16,7 +16,7 @@
 ### :white_small_square: 
 
 ---
-###### Game Stage: 2 - Gleba, Fulgora, & Vulcanis 
+##### Game Stage: 2 - Gleba, Fulgora, & Vulcanis 
 ## Vulcanus
 
 ### :white_small_square: 
@@ -25,7 +25,7 @@
 
 ### :white_small_square: 
 ---
-## Gleba
+## Gleba 
 
 ### :white_small_square: 
 
@@ -41,7 +41,7 @@
 
 ### :white_small_square: 
 ---
-###### Game Stage: 3 -  Voltaris, Tectara, Pyrosauria
+##### Game Stage: 3 -  Voltaris, Tectara, Pyrosauria
 
 ## Voltaris
 
@@ -107,7 +107,7 @@
 
 ### :white_small_square: 
 ---
-###### Game Stage: 4 -  Aquilio, Zephyrus, & *WIP*
+##### Game Stage: 4 -  Aquilio, Zephyrus, & *WIP*
 
 ## Zephyrus
 
@@ -156,7 +156,29 @@
 ---
 ###### Post Game Victory
 
+## Archo-Nexus Orbit
+
+### :white_small_square: Description: (AI Generated)
+
+	Upon entering orbit, it becomes immediately apparent that Archo-Nexus is unlike any other celestial body. Instead of asteroids or natural 
+	space debris, the void around this artificial world is cluttered with the remnants of eons-old technology. Massive wreckage from satellites, 
+	war machines, and unidentified structures drifts aimlessly, colliding and fragmenting into dangerous high speed hazards. Amidst this graveyard 
+	of derelict machines, hostile drones patrol in organized formations. These high speed, self repairing combat units react aggressively to any 
+	presence, launching relentless waves of attacks against incoming ships. The overwhelming force they exert forces unprepared explorers into a 
+	desperate retreat, as sustained conflict in orbit is a near-impossible battle. Successfully landing on Archo-Nexus is a challenge in itself. 
+	Only those who can establish a secure orbital foothold and withstand the onslaught of automated defenses will have the chance to step foot 
+	on its surface. Even then, the planet's true horrors and technological marvels remain buried within its labyrinthine biomes waiting for those 
+	daring enough to uncover them.
+
 ## Archo-Nexus
 
-### :white_small_square: 
+### :white_small_square: Description: (AI Generated)
+
+	Archo-Nexus is an entirely artificial world, designed by an ancient and unknown intelligence. It serves as the ultimate challenge, 
+	combining the dangers, mechanics, and environments of every known planet, including both vanilla and custom planets like Voltaris, 
+	Tectara, and Pyrosauria. Its surface is a meticulously crafted fusion of biomes, each retaining the extreme conditions and hostilities 
+	of their parent worlds. From the volcanic swamps of Pyrosauria to the electrically charged ruins of Voltaris, every inch of this planet 
+	is a test of survival. Unlike natural planets, Archo-Nexus presents an engineered challenge. Harsh environments, unpredictable weather 
+	patterns, and extreme enemy aggression ensure that even the most prepared explorers struggle to survive. The ultimate objective is to 
+	unlock the secrets of its advanced nanite technology—an innovation capable of pushing research and efficiency beyond theoretical limits.
 ---

@@ -2,11 +2,12 @@
 ---
 - #### Before getting to deep into development, maybe we should think about breaking up Ti into sub-mods similar to bobs mods. 
 - ##### Possibly Spilt some Mod/pack Content into Planetary Expansion Packs. etc.
-- New modules and names: Overclocking, Machine Efficiency, Crafting Efficiency(Productivity Module), Aromatic Therapy, Precision, & Craftmanship.
+- New modules and names: Overclocking, Machine Efficiency{Decreases Energy Consumption & Waste Products}, Crafting Efficiency(Productivity Module){Increases Productivity, Deceases Waste Products & Speed}, Aromatic Therapy(Bio Modules){Increases Pollution, Productivity, Speed, Eneger Usage}, Precision{Huge Increases Productivity, Decreases Speed, and waste products}, & Craftmanship{Increases Produtivity, Decreases Waste products (Does not Debuff Speed.)}.
 - New Module crafting chain.(similar to Bobs Mods)
 - Overhauling names to be more realistic. 
 - Look into the creation of multi outputs and additional progress bars for said outputs.
-- All basic and advanced electric Crafting and Smelting machinery can be crafted from a new set of universal construction materials for compact inventory usage
+- Output Bars will directly tie into new Waste and Recycling Chains.
+- All basic and advanced crafting chemistry, oil, metallurgy, and other machinery can be crafted from a new set of universal construction materials for compact inventory usage
 - Early game burner and steam phase crafting is scalable to mid game by use of steam temperature. 
 - Early game water pump using burner power. can also use same idea for creating early game saltwater to water extraction using boiling technology. 
 - Overhaul Belt logistics. To have 2 types of belts. Loose material belt and Regular Conveyor belts. Each have restrictions on what type of items can be transported on them
