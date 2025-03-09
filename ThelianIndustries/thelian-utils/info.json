@@ -8,8 +8,6 @@
   "homepage": "https://github.com/ThelianTech/Factorio-Mods",
   "description": "Various Utilities and QoL Features for the Thelian Industries Modpack",
   "dependencies": [
-    "base >= 2.0.0",
-    "! Noxys_Waterfill",
-    "! Noxys_Swimming"
+    "base >= 2.0.0"
   ]
 }
