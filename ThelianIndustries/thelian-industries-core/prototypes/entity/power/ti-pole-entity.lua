@@ -32,7 +32,7 @@ if settings.startup["ti-transmission-overhaul"].value == true then
                 minable = { result = "long-transmission-pole"},
                 max_health = 200,
                 maximum_wire_distance = 32,
-                supply_area_distance = 1,
+                supply_area_distance = 0,
             },
         }),
         util.merge({
@@ -42,7 +42,7 @@ if settings.startup["ti-transmission-overhaul"].value == true then
                 minable = { result = "industrial-transmission-pole"},
                 max_health = 200,
                 maximum_wire_distance = 50,
-                supply_area_distance = 1,
+                supply_area_distance = 0,
             },
         }),
         util.merge({
@@ -82,7 +82,7 @@ if settings.startup["ti-transmission-overhaul"].value == true then
                 minable = { result = "industrial-transformer"},
                 max_health = 200,
                 maximum_wire_distance = 20,
-                supply_area_distance = 40,
+                supply_area_distance = 25,
             },
         }),
     })

@@ -21,13 +21,13 @@ data:extend({
         name = "ti-transmission-overhaul",
         setting_type = "startup",
         default_value = true,
-        order = "P0",
+        order = "Pp0",
     },
     {
         type = "bool-setting",
         name = "ti-hydropower-overhaul",
         setting_type = "startup",
         default_value = true,
-        order = "P1",
+        order = "Pp1",
     },
 })

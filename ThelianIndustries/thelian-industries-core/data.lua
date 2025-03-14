@@ -1,14 +1,8 @@
-if not timods then
-    timods = {}
-end
-if not timods.timod then
-    timods.timod = {}
-end
     --Item Prototypes
-require("prototypes.item.intermediates.ti-ores")
-require("prototypes.item.intermediates.ti-ingots")
+--require("prototypes.item.intermediates.ti-ores")
+--require("prototypes.item.intermediates.ti-ingots")
 --require("prototypes.item.intermediates.ti-science-parts")
-require("prototypes.item.intermediates.ti-construction-parts")
+--require("prototypes.item.intermediates.ti-construction-parts")
 --require("prototypes.item.intermediates.ti-components")
 --require("prototypes.item.intermediates.ti-chemistry-components")
 --require("prototypes.item.intermediates.ti-electronic-components")

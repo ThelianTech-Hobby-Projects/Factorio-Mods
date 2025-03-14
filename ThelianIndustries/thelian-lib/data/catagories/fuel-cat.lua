@@ -15,5 +15,9 @@ data:extend({
     {
         type = "fuel-category",
         name = "pressurized-water-fuel"
+    },
+    {
+        type = "fuel-category",
+        name = "electrical-battery-fuels"
     }
 })

@@ -1,11 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 05/27/2024
-  Additions:
-      Initial Mod Creation
   Features:
   Changes:
+  Additions:
+      Initial Mod Creation
+  Deletion:
+  Migrations:
   Balancing:
   Bugfixes:
-  Migrations:
-  Deletion:
+
+

@@ -1,13 +1,13 @@
 {
-    "name": "thelian-graphics",
-    "version": "0.0.2",
+    "name": "thelian-assets-pack1",
+    "version": "0.0.1",
     "factorio_version": "2.0",
-    "title": "ThelianIndustries Assets Pack 1",
-    "author": "ThelianTech Studios, ThelianTech",
+    "title": "Thelian Graphical Assets Pack 1",
+    "author": "ThelianTech, ThelianTechStudios",
     "contact": "",
     "homepage":"",
-    "description": "",
+    "description": "First Pack of Graphical Assets used in Thelian Industries.",
     "dependencies": [
-      "? base >= 2.0.0"
+      "base >= 2.0.0"
     ]
   }

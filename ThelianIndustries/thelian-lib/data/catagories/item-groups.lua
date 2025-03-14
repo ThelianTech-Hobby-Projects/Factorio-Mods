@@ -86,9 +86,15 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "ti-logistic-misc",
+        name = "ti-networking",
         group = "ti-logistics",
         order = "f"
+    },
+    {
+        type = "item-subgroup",
+        name = "ti-logistic-misc",
+        group = "ti-logistics",
+        order = "g"
     },
         --------------------Mining, Metallurgy & Smelting-------------------
     {
@@ -103,11 +109,11 @@ data:extend({
         type = "item-subgroup",
         name = "ti-mining",
         group = "ti-ore-processing",
-        order = "d"
+        order = "a"
     },
     {
         type = "item-subgroup",
-        name = "ti-smelting",
+        name = "ti-metallurgy",
         group = "ti-ore-processing",
         order = "b"
     },
@@ -119,6 +125,48 @@ data:extend({
         icon = "__base__/graphics/item-group/production.png",
         icon_size = 128,
         icon_mipmaps = 2
+    },
+    {
+        type = "item-subgroup",
+        name = "advanced-automation-age",
+        group = "ti-machinery",
+        order = "a"
+    },
+    {
+        type = "item-subgroup",
+        name = "advanced-industrial-age",
+        group = "ti-machinery",
+        order = "b"
+    },
+    {
+        type = "item-subgroup",
+        name = "digital-age",
+        group = "ti-machinery",
+        order = "c"
+    },
+    {
+        type = "item-subgroup",
+        name = "electronic-age",
+        group = "ti-machinery",
+        order = "d"
+    },
+    {
+        type = "item-subgroup",
+        name = "automation-age",
+        group = "ti-machinery",
+        order = "e"
+    },
+    {
+        type = "item-subgroup",
+        name = "industrial-age",
+        group = "ti-machinery",
+        order = "f"
+    },
+    {
+        type = "item-subgroup",
+        name = "el-age",
+        group = "ti-machinery",
+        order = "g"
     },
     --------------------Chemical Manufacturing & Processing-------------------
     {
@@ -252,4 +300,5 @@ data:extend({
         icon_size = 128,
         icon_mipmaps = 2
     }
+    --------------------Logical Circuit Network Systems-------------------
 })
