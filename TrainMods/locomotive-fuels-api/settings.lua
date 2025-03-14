@@ -2,9 +2,9 @@ data:extend({
     --Example Startup Setting
     {
         type = "bool-setting",
-        name = "example-setting",
+        name = "mod-debug-mode",
         setting_type = "startup",
-        default_value = false,
-        hidden = true
+        default_value = true,
+        hidden = false
     },
 })

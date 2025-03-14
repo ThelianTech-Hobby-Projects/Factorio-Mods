@@ -1,11 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 00/00/0000
+Date: 12/1/2024
   Additions:
       Initial Mod Creation
+      New Locomotive Fuel Loader
   Features:
+      Locomotive Fuel Loader Compound Entity is part pump, part inserter, and part assembly machine.
   Changes:
+      Successor to FluidTrainsAPI Mod
   Balancing:
   Bugfixes:
   Migrations:
   Deletion:
+      Removed FluidTrainsAPI Mod custom fluid_energy_source scripting for the locomotive
+      Removed Proxy_tank and related scripting implementation to Locomotive and Train Entity 
