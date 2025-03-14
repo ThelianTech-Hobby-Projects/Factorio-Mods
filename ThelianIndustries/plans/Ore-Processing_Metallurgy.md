@@ -1,8 +1,9 @@
 # Mining, Ore Processing, and Smelting Chains
-## Processing Chain
-### :white_small_square: Surface Mining for surface ore patches (Depletable)
-    Starter Sorted Ore Patches
-    Advanced Mixed Ore Patches and Veins
+## Compact Info:
+### :white_small_square: Surface Ore Deposits:
+    Surface Mixed Ore Patches (Depletable, 10k to 50k total yield)
+    Surface Rocks: Visible Source of showing underground deposits, can be mined for tiny amounts of ore, and gravel and clay etc. 
+
 ### :white_small_square: Advanced Underground Mining for Underground Ore Deposits:
     Requires Explosives
     Enriched Ore Veins (Still Depletable, Lasts Long Time)
@@ -23,6 +24,12 @@
     Ore Crusher, Ore Sorter, Ore Wash Plant, Froth Floatation Cell.
     Blast Furnace, Arc Furnace, Rotary Kiln, Oxygen Furnace.
     Metal Caster, Cooled Metal Caster, Electrolysis Bath Tank.
+---
+## Processing Chains:
+ ### :white_small_square: Mining and Processing Ores
+ #### :small_blue_diamond: Tier 1: Early Game
+      - Surface Mining: This includes the starting visible ore patches and rocks
+      
 ---
 ## List of Ores & Usage: Sorted By Planet
 ### :white_small_square: Navius:

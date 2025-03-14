@@ -52,4 +52,4 @@
 - Zephyrus production and science pack chain is for the efficient crafting of chemistry chains, and the production of fusion based technologies. and now is a requirement along with Aquilio for unlocking Fusion Technology.
 - Fusion & Bio-Warfare based weapons technology, uses promethium shards, electromagnetics, and gathered recycled debris from those nanite infused defence drones in Archo-Nexus Orbit. 
 - Semi Perma Entity placement..... if you make a mistake. you mine building scrap, that needs to be reprocessed from you needing to move an assembler...
-- 
+- Lets look at some control scripting for some new mechanics ideas, I would love to figure out how to dynamically change the mining speeds and adding mining hardness. allows for gateing of mining speed and hardness behind tech, and game stage. 
