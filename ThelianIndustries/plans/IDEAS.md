@@ -53,3 +53,30 @@
 - Fusion & Bio-Warfare based weapons technology, uses promethium shards, electromagnetics, and gathered recycled debris from those nanite infused defence drones in Archo-Nexus Orbit. 
 - Semi Perma Entity placement..... if you make a mistake. you mine building scrap, that needs to be reprocessed from you needing to move an assembler...
 - Lets look at some control scripting for some new mechanics ideas, I would love to figure out how to dynamically change the mining speeds and adding mining hardness. allows for gateing of mining speed and hardness behind tech, and game stage. 
+
+
+
+
+
+List of Emojis for use in documentation:
+:warning:
+:question:
+:star:
+:exclamation:
+:+1:
+:-1:
+:thought_balloon:
+:bug:
+:bulb:
+:mailbox_with_mail:
+:moneybag:
+:pushpin:
+:ticket:
+:rocket:
+:construction:
+:round_pushpin:
+:new:
+:no_entry_sign:
+:x:
+:white_check_mark:
+

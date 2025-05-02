@@ -32,33 +32,60 @@
       
 ---
 ## List of Ores & Usage: Sorted By Planet
-### :white_small_square: Navius:
-    Bituminous Ore: Main Source of Coal
-    Hematite Ore: Main source of Iron
-    Cuprite Ore: Main source of Copper
-    Cassiterite Ore: Main source of Tin
-    Galena Ore: Main source of Lead
-- Bauxite Ore: Main source of Aluminum
-- Sphalerite Ore: Main source of Zinc
-- Cobaltite Ore: Main source of Cobalt
-- Pentlandite Ore: Main Source of Nickel
-- Ilmenite Ore: Main source of Titanium
-- Argentite Ore: Main source of Silver
-- Placer Gold: Source of Gold
-- Calcite Ore: Main source of Limestone and Lime
-- Quartzite ore: Main source of Silicates and Silicon
-- Pyrolusite Ore: Main source of Manganese
-- Cinnabar Ore: Main Source of Mercury
-- Carnallite Ore: Main source of Magnesium/Potassium
-- Phosphorite Ore: Main source of Phosphorous
-- WIP Ore: Main Source of Calcium
-- Petalite Ore: Main source of Lithium
-- Wolframite Ore: Main source of Tungsten
-- Sperrylite Ore: main Source of Platinum
-- Zircon Ore: main source of Zirconium
-- Monazite Ore: Main source of Neodymium
+### :white_small_square: Nauvis:
+    Bituminous Ore: Source of Coal
+    Hematite Ore: Source of Iron
+    Cuprite Ore:Ssource of Copper
+    Cassiterite Ore: Source of Tin
+    Galena Ore: Source of Lead
+    Placer Gold: Source of Gold
+    Uraninite Ore: Source of Uranium
+
+### :white_small_square: Nauvis Orbit:
+    Carbonic Asteriods: Source of Carbon
+    Ice Asteriods: Source of Water
+    Ferric Asteriods: Source of Iron
+    Cuperic Asteriods: Source of Copper
+    Silicic Asteriods: Source of Silicates
+    
+### :white_small_square: Luna:
+    Ice Fields: Source of Water
+    Regolith: Source of Stone Silicates
+    Cinnabar Ore: Source of Mercury
+
+### :white_small_square: Vulcanus:
+    Bauxite Ore: Source of Aluminum
+    Pyrolusite Ore: Source of Manganese
+    Cobaltite Ore: Source of Cobalt
+
+### :white_small_square: Fulgora:
+    Zircon Ore: Source of Zirconium
+    Pentlandite Ore: Source of Nickel
+    
+### :white_small_square: Gleba:
+    
+    Sphalerite Ore: Source of Zinc
+    Argentite Ore: Source of Silver
+    Chromite Ore: Source of Chromium
+
+### :white_small_square: Pyrosauria:
+    Calcite Ore: Source of Limestone and Calcium
+    Carnallite Ore: Source of Magnesium and Potassium
+    Phosphorite Ore: Source of Phosphorous
+
+
+### :white_small_square: Tectara:
+    Wolframite Ore: Source of Tungsten
+    Ilmenite Ore: Source of Titanium
+
+### :white_small_square: Voltaris:
+    Monazite Ore: Source of Neodymium
+    Sperrylite Ore: Source of Platinum
+    Quartzite ore: Source of Silicon
+
+### :white_small_square: WIP
+
 - WIP Ore: Main Source of Promethium
-- WIP Ore: Main Source of Chromium
 ---
 ### List of Alloys, Ingots, Powders, Materials
 - Iron Ingot:
@@ -86,7 +113,7 @@
 - Kovar Ingot:
 - Nitinol Ingot:
 ### List of Materials & Powders
-- Calcite
+- Calcium Carbonate
 - Mercury
 - Silicates
 - Magnesium/Potassium Powders

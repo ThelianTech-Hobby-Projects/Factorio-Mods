@@ -52,11 +52,11 @@
 	marked by scorching heat and danger, while the night brings cold, humid conditions. The planet hums with the 
 	constant buzz of ancient machinery still functioning within the crumbling ruins scattered across the landscape. 
 	The android-like robots, guardians of this forgotten world, are relentless and deadly. These robots utilize magnetism 
-	and electricity to attack, exhibiting behaviors that combine the aggressive territorial nature of biters with the 
-	crushing force of the demolishers. Some of the ruins and vaults remain operational,manufacturing new robots to 
-	replace those destroyed by the player's efforts. Voltaris experiences intense electrical storms, which can occur 
-	without warning, adding an extra layer of peril to its already volatile atmosphere. The air crackles with static 
-	electricity, creating an ever-present hum that permeates the planet’s surface.
+	and electricity to attack, exhibiting behaviors that combine the aggressive territorial nature of biters and intellectual 
+	thought with being able to organize attack groups focused on attacking the player where it hurts the most. Some of the ruins 
+	and vaults remain operational,manufacturing new robots to replace those destroyed by the player's efforts. Voltaris 
+	experiences intense electrical storms, which can occur without warning, adding an extra layer of peril to its already 
+	volatile atmosphere. The air crackles with static electricity, creating an ever-present hum that permeates the planet’s surface.
 
 ## Voltaris Orbit
 
@@ -133,7 +133,7 @@
 
 ### :white_small_square: 
 ---
-###### Game Stage: 5 - Icarion's Grave, & Solar System Edge(*Win_Condition Zone*)
+###### Game Stage: 5 - Icarion's Grave, & Solar System Edge(*Win Condition Zone*)
 
 ## Icarion's Grave
 
