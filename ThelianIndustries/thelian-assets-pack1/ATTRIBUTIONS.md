@@ -3,7 +3,7 @@
 -- Usage of Factorio and Factorio: Space Age Graphical & Sound Assets for creating new tiers of entities/items. [![Factorio][factorio-shield]][factorio-website]
 - NOTE: All Factorio Assets are not stored in __any__ of ThelianTech Mods' Binaries and only use the necessary code references to point to Factorio Binaries.
 ___
--- Some Graphical Assets(Listed) from [**Malcom Riley**](https://github.com/malcolmriley) [![CC BY 4.0][cc-by-shield]][cc-by]
+- Some Graphical Assets(Listed) from [**Malcom Riley**](https://github.com/malcolmriley) [![CC BY 4.0][cc-by-shield]][cc-by]
 - 
 ___
 -- Fluids Item Group Icon From [**Fluids Icon Replacement Mod**](https://mods.factorio.com/mod/FluidsIcon) [![MIT][mit-shield]][mit]

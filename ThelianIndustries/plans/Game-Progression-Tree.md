@@ -5,9 +5,9 @@
 ## :pushpin: Game Stage 1:
 ### :small_blue_diamond: Nauvis, Nauvis Orbit & Luna
 - You will start with some starting gear, and some emergency supplies. I have overhauled the starting progression to use new battery powered equipment, and provides starter solar gear for initial power network and a battery charger to charge batteries.
-- Starting Gear: 3x Re-Charge Mining-Drills, 6x Re-Charge Inserters 20x LumaCell Batteries, 1x Battery Charger, 1x Solar Panel, 1x Pair of Jumper Cables. 1x Re-Charge Ore Scanner, 1x Re-Ore Crusher, 1x Re-Charge Ore Sorter. (Check if possible for some prefered mechanics)
+- Starting Gear: 3x Re-Charge Mining-Drills, 6x Re-Charge Inserters 20x LumaCell Batteries, 1x Battery Charger, 1x Solar Panel, 1x Pair of Jumper Cables. 1x Re-Charge Ore Scanner, 1x Re-Ore Crusher, 1x Re-Charge Ore Sorter. (Check if possible for some preferred mechanics)
 - Starting Resource patches are visible, small size and regular richness. looking at roughly 25k to 100k total yield for starting patches. 
-- Starting resources: Bituminous Ore, Cuprite Ore, Casserite Ore, Galena Ore, Hematite Ore, Wood from trees, Clay from Dirt Mounds.
+- Starting resources: Bituminous Ore, Cuprite Ore, Casserite Ore, Galena Ore, Hematite Ore, Wood from trees, Rubber From Rubber Trees, Clay from Dirt Mounds.
 - Stage Goals: 
   	- Rocket Silo, and Space Platform.
 	- Nauvis Orbit, and Luna.
@@ -31,6 +31,9 @@
 	- Buildings are now "Built" using a new Crafting Chain, and new Construction Materials.
 		- Different Buildings have different requirements for construction parts. 
 			- Mechanical Parts, Hydraulic Parts, Construction Parts (Bundles of different parts)
+	- Research Chains are now more interaction based than science packs based but still use science packs for certain things.
+		- First you will progress through the tech tree by doing the necessary crafting requirements for most of the early game technologies.
+		- Once you have unlocked the research desk, you will be able to start using different science data packets, and other research supplies to "theorize" new and advanced technologies. (This includes all infinite Tech)
 ---
 ## Game Stage 2:
 #### Vulcanus, Gleba, Fulgora

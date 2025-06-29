@@ -56,7 +56,7 @@
 	thought with being able to organize attack groups focused on attacking the player where it hurts the most. Some of the ruins 
 	and vaults remain operational,manufacturing new robots to replace those destroyed by the player's efforts. Voltaris 
 	experiences intense electrical storms, which can occur without warning, adding an extra layer of peril to its already 
-	volatile atmosphere. The air crackles with static electricity, creating an ever-present hum that permeates the planet’s surface.
+	volatile atmosphere. The air crackles with static electricity, creating an ever-present hum that permeates the planetï¿½s surface.
 
 ## Voltaris Orbit
 
@@ -72,7 +72,7 @@
 	with active volcanoes, geysers of molten rock, and vast lava lakes. The atmosphere is thick with ash and smoke, making 
 	visibility poor, and the air is hot and acrid. Lava rivers carve their way through the planet's surface, and the ground 
 	itself is unstable, shifting and buckling under the pressure of constant tectonic movements. While there are no Demolisher-like 
-	enemies on Tectara, the true threat comes from the planet’s unpredictable and often deadly natural disasters. Earthquakes and 
+	enemies on Tectara, the true threat comes from the planetï¿½s unpredictable and often deadly natural disasters. Earthquakes and 
 	volcanic eruptions occur without warning, tearing apart structures, displacing the land, and altering the landscape. These events 
 	are highly destructive, leaving craters and scorched earth in their wake. However, in rare instances, the destruction uncovers 
 	new and valuable ore deposits, giving players a reason to embrace the chaos, despite the risks. Building on Tectara requires 
@@ -82,7 +82,7 @@
 	infrastructure versus the potential gain of unearthing hidden resources. Tectara is an unforgiving world where survival relies 
 	on adaptability. The planet's surface is in constant flux, and the power of its seismic and volcanic activity can both be a blessing 
 	and a curse. Those who dare to settle here must master the art of building resilient outposts and brace themselves for the 
-	next big disaster, which could change the planet’s geography overnight.
+	next big disaster, which could change the planetï¿½s geography overnight.
 
 ## Tectara Orbit
 
@@ -94,7 +94,7 @@
 
 	Pyrosauria is a chaotic world where fire and life intertwine in a violent, ever-evolving landscape. Vast lava fields and active 
 	volcanoes carve through dense jungles and tropical swamps, creating a primordial environment teeming with both danger and opportunity. 
-	The planet’s terrain and climate are an unpredictable fusion of volcanic destruction and lush, untamed wilderness, evoking a world straight 
+	The planetï¿½s terrain and climate are an unpredictable fusion of volcanic destruction and lush, untamed wilderness, evoking a world straight 
 	from the Jurassic and Cretaceous periods. A newly discovered enemy faction dominates Pyrosauria, thriving in the hostile conditions. 
 	Their base generation and spawning mechanics resemble those of Nauvis, allowing them to adapt to both volcanic and jungle environments. 
 	The planet also features a unique pollution layer, similar to Gleba, where toxins released from industry interact with the atmosphere, 
@@ -117,17 +117,17 @@
 	unimaginable speeds. Unlike any other world, it has no known solid ground, if there is any surface beneath the endless storms, no 
 	explorer will ever survive long enough to find it. The pressure at lower altitudes is fatal, and the towering storms can 
 	generate winds powerful enough to tear apart entire fleets of starships. Surviving on Zephyrus requires technology far beyond 
-	conventional planetary colonization. The Zepherys Platform, A massive hovering airship sustained by advanced hovercraft and airship 
-	technology—serves as the only possible foothold in the planet's ever-churning upper atmosphere. Positioned at a safe altitude 
+	conventional planetary colonization. The Zephery's Platform, A massive hovering airship sustained by advanced hovercraft and airship 
+	technology serves as the only possible foothold in the planet's ever-churning upper atmosphere. Positioned at a safe altitude 
 	where the pressure is survivable, the platform provides the foundation for establishing gas harvesting operations. The dangers of Zephyrus 
 	are endless. Gigantic storm systems can last for centuries, generating tornado-like wind gusts capable of shredding even the toughest 
 	infrastructure. The swirling, multicolored clouds conceal unseen threats, including corrosive gases that eat away at machinery and 
 	floating pockets of highly volatile compounds that can ignite from the smallest spark. Equipment and infrastructure must be 
-	constantly maintained, repaired, or replaced as they slowly succumb to the planet’s relentless forces. Despite the hazards, Zephyrus 
+	constantly maintained, repaired, or replaced as they slowly succumb to the planet's relentless forces. Despite the hazards, Zephyrus 
 	is an unparalleled source of rare and valuable gases. Harvesting and refining these gases is a monumental challenge, requiring 
-	specialized shielding, adaptive filtration systems, and the fortification of the Zepherys Platform itself against the constant onslaught 
-	of nature’s fury. Those who can survive Zephyrus’s wrath stand to gain immense wealth—but only if they can keep their floating empire 
-	from being torn apart by the planet’s merciless winds.
+	specialized shielding, adaptive filtration systems, and the fortification of the Zephery's Platform itself against the constant onslaught 
+	of nature's fury. Those who can survive Zephyrus's wrath stand to gain immense wealth but only if they can keep their floating empire 
+	from being torn apart by the planet's merciless winds.
 
 ## Zephyrus Orbit
 
@@ -142,12 +142,12 @@
 	Once the planet Icarion, this orbit is now home to a vast and perilous asteroid field "the shattered remnants" of a world long destroyed 
 	by an unknown cataclysm. Massive asteroids drift through the void, creating an ever-present hazard for any who dare to navigate these 
 	treacherous depths. Preliminary scans reveal asteroids rich in valuable metals, ice, and other exotic materials, making this field a 
-	high-risk, high-reward venture for those willing to establish operations.At the heart of Icarion’s Grave lies its most coveted resource 
+	high-risk, high-reward venture for those willing to establish operations.At the heart of Icarion's Grave lies its most coveted resource 
 	Promethium crystals, a rare and radioactive element with exotic properties vital for the creation of FTL/Warp-Drive technology. Its unique 
 	crystalline structure resembles a long, thin hexagonal prism, capped by hexagonal pyramids on both ends, with three torus-like rings evenly 
 	spaced along the main body. However, resource extraction here is no simple task. The unpredictable movements of colossal asteroids pose a 
 	constant threat, requiring vigilant defenses and careful base planning to ensure survival. Establishing a stable mining operation within 
-	this chaotic expanse is not just a challenge, it’s a necessity for those who seek to harness the power of Promethium crystals.
+	this chaotic expanse is not just a challenge, it's a necessity for those who seek to harness the power of Promethium crystals.
 
 ---
 ## Solar System Edge
@@ -180,5 +180,5 @@
 	of their parent worlds. From the volcanic swamps of Pyrosauria to the electrically charged ruins of Voltaris, every inch of this planet 
 	is a test of survival. Unlike natural planets, Archo-Nexus presents an engineered challenge. Harsh environments, unpredictable weather 
 	patterns, and extreme enemy aggression ensure that even the most prepared explorers struggle to survive. The ultimate objective is to 
-	unlock the secrets of its advanced nanite technology—an innovation capable of pushing research and efficiency beyond theoretical limits.
+	unlock the secrets of its advanced nanite technologyï¿½an innovation capable of pushing research and efficiency beyond theoretical limits.
 ---
