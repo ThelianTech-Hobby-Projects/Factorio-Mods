@@ -2,7 +2,7 @@
 - No Commercial Use
 - No Modification 
 - Limited Distribution
-- All Assets are subject to removal by request from the assets current owner/license holder/s. 
+- All Assets are subject to removal by request from the assets original/current owner/license holder/s. 
 ---
 ## No Commercial Use clause definitions:
 - You are not allowed to make money off of this package/assets/code direct distribution. 
@@ -28,6 +28,9 @@
 - All Assets that have been created by ThelianTech Studios will be listed as CC BY-NC-SA 4.0 licenses.
 - All Assets will be listed in a file, for the purpose of listing the specific license and usage rights associated to the asset.
 - See Attributions.md File to lookup listed licenses and usage rights for assets included in this package. 
+---
+## Attached Licenses
+- All Assets that have been used and packaged here will have a copy of their respective licenses located inside of the legal folder.
 ---
 
 #### In the event that this mod is no longer maintained by ThelianTech or its listed contributors and another developer/maintainer wants to take over development/maintenance, They must comply with the github repository License and all included directory licenses.

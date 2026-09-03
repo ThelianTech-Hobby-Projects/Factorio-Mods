@@ -16,7 +16,7 @@
 ### :white_small_square: 
 
 ---
-##### Game Stage: 2 - Gleba, Fulgora, & Vulcanis 
+##### Game Stage: 2 - Gleba, Fulgora, & Vulcanus 
 ## Vulcanus
 
 ### :white_small_square: 
