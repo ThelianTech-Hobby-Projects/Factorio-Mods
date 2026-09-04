@@ -1,0 +1,16 @@
+{
+    "name": "steam-locomotive-redux",
+    "version": "0.0.1",
+    "factorio_version": "2.0",
+    "title": "Steam Locomotive Redux",
+    "author": "ThelianTech",
+    "contact": "not.a.valid.email.address@example.com",
+    "homepage": "",
+    "description": "A Fork of the Steam Train Mod, Updated for Factorio 2.0",
+    "dependencies": [
+      "base >= 2.0.0",
+      "? space-age",
+      "locomotive-fuels-api >= 0.0.1",
+      "! fluidTrainsReshare >= 0.99"
+    ]
+  }

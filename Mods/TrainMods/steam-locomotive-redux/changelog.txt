@@ -1,0 +1,11 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 00/00/0000
+  Additions:
+      Initial Mod Creation.
+  Features:
+  Changes:
+  Balancing:
+  Bugfixes:
+  Migrations:
+  Deletion:

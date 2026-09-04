@@ -1,0 +1,24 @@
+{
+    "name": "ti-modpack",
+    "version": "0.0.1",
+    "factorio_version": "2.0",
+    "title": "Thelian Industries Modpack",
+    "author": "ThelianTech, ThelianTechStudios",
+    "contact": "not.a.valid.email.address@example.com",
+    "homepage": "",
+    "description": "",
+    "dependencies": [
+      "base >= 2.0.0",
+      "? space-age",
+      "thelian-lib",
+      "thelian-industries-core",
+      "thelian-assets-pack1",
+      "thelian-chemistry",
+      "thelian-metalurgy",
+      "thelian-materials",
+      "thelian-power",
+      "thelian-tectara",
+      "thelian-voltairis",
+      "thelian-utils"
+    ]
+  }

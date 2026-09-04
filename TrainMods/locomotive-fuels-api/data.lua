@@ -1,3 +1,0 @@
--- require("api.group-categories")
--- require("prototype.proxy-entity")
--- require("prototype.fuel-loader")

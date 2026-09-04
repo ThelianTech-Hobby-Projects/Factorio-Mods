@@ -1,2 +1,0 @@
-- Electronic Components: Wires, Boards, Microchips, CPUs, Power Supplies  
-- Structural Parts: Concrete, Brick, Wall Panels, Framing  
