@@ -1,6 +1,6 @@
 # Thelian Industries Metallurgy Plan
 
-**Checkpoint status:** Refreshed through Decision 3.34  
+**Checkpoint status:** Refreshed through Decision 8; Decisions 1-8 complete at current architecture scope; progression-dependent details deferred  
 **Purpose:** Durable continuation checkpoint for metallurgy, mining, ore processing, metal production, alloys, metallurgical components, and directly dependent systems.
 
 ---
@@ -24,6 +24,31 @@ Thelian Industries metallurgy progressively increases the useful material and in
 
 > Better technology makes a finite resource base stretch progressively farther.
 
+### Metallurgy implementation and progression staging principle
+
+Metallurgy planning separates **content foundation** from **final game progression and balance**. The current planning phase should define the metallurgy systems, items, fluids, entities, machines, process ownership, recipe connectivity, technology dependencies, and other relationships needed to make the metallurgy content exist and function in-game. It should not attempt to fully balance the finished game before that content can be tested.
+
+The intended development sequence for metallurgy is:
+
+```text
+Architecture and content definitions
+→ implement metallurgy items / fluids / entities / machines
+→ implement recipes and technologies with simple baseline placeholder values
+→ verify the metallurgy systems function end-to-end in-game
+→ build/refine the real progression structure
+→ perform iterative balance passes through playtesting and code changes
+```
+
+During foundational implementation:
+
+- recipes and technologies should use simple, internally consistent placeholder values rather than prematurely optimized balance values;
+- a **1:1-style ingredient-to-product baseline** is preferred where mechanically coherent, including simple placeholder ratios for multi-input recipes, until the later balance pass establishes the real values;
+- technology and recipe chains may be scaffolded sufficiently to connect and test the metallurgy systems, but their final unlock timing, costs, science requirements, process ratios, yields, throughput, power demand, productivity, stack sizes, and pacing remain provisional;
+- exact numbers should be locked early only when they are required by a specific architectural rule already established in this plan;
+- Factorio's normal behavior remains the baseline unless TI has an explicit reason to diverge.
+
+The later progression/balance phase is responsible for tuning the implemented metallurgy system in-game through code iteration, reload/restart testing, and playtesting. Placeholder implementation values are therefore **functional scaffolding, not canonical final balance**.
+
 ---
 
 # Running Decision Register
@@ -33,12 +58,12 @@ Thelian Industries metallurgy progressively increases the useful material and in
 | 1 | Tiered Mining, Ore Refinement, and Metallurgical Recovery Architecture | **LOCKED** |
 | 2 | Recovery/Yield Semantics and Process Upgrade Rules | **LOCKED** |
 | 3 | Ore and Mineral Taxonomy | **LOCKED through 3.34; exact profile refinement deferred to prototyping** |
-| 4 | Mining Deposit and Extraction Taxonomy | Partially resolved by Decision 1 and Decision 3 |
-| 5 | Crusher and Wash Plant Detailed Roles | Partially resolved |
-| 6 | Stone Brick Smelter, Blast Furnace, Arc Furnace, Foundry Detailed Roles | Partially resolved |
-| 7 | Molten Metal, Casting, and Remelting Architecture | Partially resolved |
-| 8 | Stage 1 Copper/Tin/Bronze Metallurgy | Pending |
-| 9 | Stage 1 Iron/Steel Metallurgy | Pending |
+| 4 | Mining Deposit and Extraction Taxonomy | **LOCKED through 4.22; exact implementation/balance details deferred to prototyping** |
+| 5 | Crusher and Wash Plant Detailed Roles | **LOCKED; exact machine statistics and mineral-specific recipe details deferred to prototyping** |
+| 6 | Stone Brick Smelter, Blast Furnace, Arc Furnace, Foundry Detailed Roles | **LOCKED; exact recipes, alloy assignments, statistics, and balance deferred to prototyping** |
+| 7 | Molten Metal, Casting, and Remelting Architecture | **LOCKED; exact casting/remelting recipes and balance deferred to prototyping** |
+| 8 | Stage 1 Copper/Tin/Bronze Metallurgy | **LOCKED as open architecture direction; foundational implementation may use placeholder recipes/technologies, final progression and balance deferred** |
+| 9 | Stage 1 Iron/Steel Metallurgy | **DEFERRED at detailed progression level; foundational implementation may be scaffolded later with placeholder values before final balance** |
 | 10 | Metal Forms and Component Granularity | Pending |
 
 ---
@@ -214,23 +239,27 @@ Tier numbers are documentation terminology.
 
 #### Tier 1: Blast Furnace
 
-- major industrial transition;
+- first general molten-metal extraction tier;
 - high-temperature metallurgy;
 - solid combustible fuel;
-- progression toward molten-metal processing;
+- produces molten metal for downstream casting and later alloying;
+- may produce a limited set of selected early/simple alloys;
 - advanced recipes may require fluxes/additives;
 - no universal material-productivity bonus.
 
 #### Tier 2: Arc Furnace
 
-- advanced electric high-temperature metallurgy;
-- first general extraction tier powered by electricity rather than solid combustible fuel;
+- advanced electric high-temperature solid-metal extraction tier;
+- functions primarily as the advanced successor to the Stone Brick Smelter rather than as a general molten-metal tier;
+- primarily produces ingots or other solid metal outputs;
 - exact recipe/capability advantages remain mineral-specific.
 
 #### Tier 3: Foundry
 
-- highest general metallurgy tier;
+- advanced molten-metal extraction, refining, and alloying tier;
 - electric;
+- functions as the advanced successor to the Blast Furnace for molten metallurgy;
+- supports advanced alloy production by combining appropriate molten-metal feeds;
 - recipes may use fluxes, reagents, or additives for recovery, throughput, separation, or other process-specific purposes;
 - no universal additive or universal recovery bonus.
 
@@ -390,15 +419,15 @@ This supersedes the older universal 3.0× concentrate assumption and the older 1
 
 ### 4. Molten-metal extraction
 
-The Blast Furnace introduces molten metallurgy without an automatic productivity multiplier.
+The Blast Furnace introduces molten metallurgy without an automatic productivity multiplier. The Foundry is the advanced molten-metal extraction/refining and alloying tier. The Arc Furnace primarily belongs to the solid-metal/ingot path rather than the general molten-metal path.
 
 Concept:
 
 ```text
 Supported Feedstock
-+ Required Fuel
++ Required Fuel or Power
 + Recipe-Specific Flux/Additives
-→ Molten Metal
+→ Metal Output Appropriate to the Machine Path
 + Byproducts
 ```
 
@@ -406,7 +435,7 @@ A simple process may be approximately 1:1 material-equivalent.
 
 Higher or lower recovery is permitted when the mineral-specific process justifies it.
 
-The same governing rule applies to Arc Furnace and Foundry recipes.
+The same governing recovery rule applies across Blast Furnace, Arc Furnace, and Foundry recipes even though their output forms and capabilities differ.
 
 ### 5. Fluxes, reagents, and additives
 
@@ -442,17 +471,19 @@ Actual primary-metal losses must be explicit.
 
 ### 7. Remelting
 
-Remelting is a separate subtractive process:
+Remelting is a separate subtractive process with technology-gated recovery progression:
 
 ```text
 Refined Metal / Ingot / Eligible Part
 → Remelting
-→ 0.95× Molten-Metal Equivalent
+→ 0.95× Molten-Metal Equivalent baseline
 ```
 
-**0.95× return, 5% loss is locked.**
+**0.95× return, 5% loss is the locked baseline.**
 
-Fluxes/additives do not inherently restore the lost refined metal.
+Advanced remelting recipes may use appropriate fluxes, protective process aids, or other justified metallurgy inputs to reduce oxidation and related remelting losses. Technological progression may improve remelting recovery toward a **hard maximum of 0.99× molten-metal equivalent (99% recovery)**.
+
+Remelting may still generate slag or other appropriate thermal byproducts. Exact flux identities, recipe progression, recovery steps between 0.95× and 0.99×, and byproduct quantities remain deferred to prototyping.
 
 ### 8. Throughput is independent from recovery
 
@@ -5241,121 +5272,756 @@ The existing code scaffolds should be reconciled against these locked decisions 
 
 ---
 
-# Continuation Context
+# Decision 4.1: Surface Mining Machine Classes and Progression Roles: LOCKED
+
+## Core architecture
+
+Surface extraction and underground extraction are separate machine classes. The Deep Mine is not the final upgrade tier of the surface-mining drill family.
+
+```text
+SURFACE EXTRACTION
+
+Manual Mining
+→ Burner Surface Miner
+→ Electric Surface Miner
+→ Advanced / Heavy Surface Miner
+
+UNDERGROUND EXTRACTION
+
+Exposed Underground Access Node
+→ Deep Mine
+```
+
+## A. Manual mining
+
+Manual mining is the emergency/starter extraction method for exposed surface resources. It does not access underground reserves and receives no special geological advantage. Normal finite surface-resource depletion applies.
+
+## B. Burner Surface Miner
+
+The Burner Surface Miner is the first automated surface-extraction machine. Its role is primitive early automation with low throughput, limited practical coverage, and burner-fuel operation. It does not receive a blanket recovery/productivity bonus merely because it automates extraction.
+
+## C. Electric Surface Miner
+
+The Electric Surface Miner is the standard scalable surface-mining workhorse. Its role is substantially improved throughput and convenience, electric operation, and broader practical coverage while continuing to mine the same finite geological surface resource system. It supports specialized deposit and trace-output behavior normally.
+
+## D. Advanced / Heavy Surface Miner
+
+TI uses one later physical surface-mining generation rather than proliferating generic Mk2/Mk3/Mk4 drill tiers. The Advanced / Heavy Surface Miner is intended for high-throughput late surface extraction, larger practical coverage, and later-game operational improvements.
+
+It does **not** create additional geology or automatically receive a universal recovery bonus. Any resource-drain reduction, productivity behavior, recovery advantage, module behavior, or other efficiency effect requires an explicit later balance/process rule.
+
+## E. Deep Mine is a separate underground extraction class
+
+The Deep Mine operates only through the underground-access-node and simulated finite underground-reserve architecture established by Decisions 3.21 through 3.28. It extracts automatic mixed outputs from finite internal reserve pools and is not Surface Miner Mk4.
+
+## F. Physical machine-count rule
+
+After manual mining, TI uses exactly three general physical surface-mining generations by default:
+
+1. **Burner Surface Miner**
+2. **Electric Surface Miner**
+3. **Advanced / Heavy Surface Miner**
+
+Mineral-specific drill families are not part of the default taxonomy. Generic surface-mining progression should prefer these three physical generations plus technology, recipe, module, and infrastructure progression rather than repeated Mark-tier proliferation.
+
+## G. Deferred details
+
+The following remain intentionally open for later balance/prototyping:
+
+- final machine names;
+- footprints;
+- mining radius/coverage;
+- mining speed;
+- energy consumption and fuel characteristics;
+- module slots and beacon interaction;
+- pollution;
+- resource-drain behavior;
+- productivity semantics beyond already locked global recovery rules;
+- crafting costs and technology placement;
+- graphics and animation requirements.
+
+These implementation/balance details must preserve the locked distinction between throughput progression and geological/recovery semantics.
+
+---
+
+# Decision 4.2: Surface Mining Geological Semantics Across Machine Tiers: LOCKED
+
+## Locked direction
+
+TI initially follows vanilla Factorio: Space Age plus Quality semantics for surface-miner resource drain and mining-efficiency behavior rather than introducing a separate TI-specific drain-efficiency system by default.
+
+### Locked rules
+
+1. Surface-miner tier alone does not alter the underlying geological profile, trace abundance, associated underground bodies, or underground reserve generation.
+2. Burner, Electric, and Advanced / Heavy Surface Miners inherit ordinary Factorio mining/depletion semantics unless later prototyping demonstrates a need for TI-specific behavior.
+3. Factorio Quality is the presumed first implementation direction. If machine quality affects resource drain or mining efficiency, TI initially preserves and evaluates that behavior rather than overriding it preemptively.
+4. The Advanced / Heavy Surface Miner does not currently receive an additional TI-specific resource-drain bonus solely because it is the late surface-mining tier.
+5. Better miner tier or machine quality does not make a deposit geologically richer and does not change its generated trace percentages or associated-body composition.
+6. Improved trace recovery belongs primarily to downstream beneficiation/separation and mineral-specific processing rather than to the mining machine changing ore composition.
+7. Decision 3.28 Original Surface Reference Yield remains based on original generated geology before player mining efficiency, productivity, or quality effects and therefore remains insulated from those exploitation mechanics.
+8. Any custom TI resource-drain, depletion-efficiency, or quality interaction is deferred until in-game prototyping and balance testing.
+
+---
+
+# Decision 4.3: Surface and Deep Mining Output-State Boundary: LOCKED
+
+## Locked direction
+
+Normal surface miners and Deep Mines are extraction-only machines. They output canonical raw geological material and may also produce unrefined excavation waste. All actual ore preparation and beneficiation remains downstream in the Crusher, Wash Plant, or another explicitly specialized beneficiation process.
+
+### Locked rules
+
+1. Burner Surface Miner, Electric Surface Miner, Advanced / Heavy Surface Miner, and Deep Mine normally produce the canonical Raw Ore state of each extracted mineral.
+2. A geological profile that permits directly mined trace-mineral coproducts emits those coproducts in their canonical Raw Ore state.
+3. Mining machines do not normally emit Crushed Ore, Concentrate, purified metal, or another beneficiated state merely because the mining machine is more advanced.
+4. Crushing remains owned by the Crusher stage. Washing, separation, and concentration remain owned by the Wash Plant or another explicitly specialized beneficiation process.
+5. Mining may additionally produce unrefined non-ore excavation byproducts such as waste rock, rock fragments, gravel, rock fines, sand, clay, overburden, or another geology-appropriate material.
+6. Exact mining-waste products, probabilities, quantities, and geological dependencies remain deferred to later prototyping.
+7. Slag is not a normal mining byproduct. Slag remains a thermal/metallurgical byproduct associated with smelting, foundry work, or related high-temperature processing.
+8. Deep Mine mixed extraction follows the same material-state boundary: multiple reserve pools may produce multiple canonical Raw Ore outputs plus possible excavation waste, but not automatically crushed or concentrated products.
+9. Any future machine or technology that deliberately combines extraction with crushing or beneficiation must be designed as an explicit specialized exception rather than becoming an inherent feature of ordinary mining-machine progression.
+
+---
+
+# Decision 4.4: Mining Waste and Excavation Byproduct Semantics: LOCKED
+
+## Locked direction
+
+Surface and underground mining may generate bounded unrefined excavation byproducts in addition to canonical Raw Ore. The possible waste composition is geology/profile-driven and selected from a limited shared TI waste-rock/material vocabulary rather than requiring unique waste items for every ore.
+
+### Locked rules
+
+1. Mining waste may include waste rock, rock fragments, gravel, rock fines, sand, clay, overburden, or comparable physically excavated material where geologically appropriate.
+2. Deposit geology/profile primarily determines which mining-waste families are plausible. A Hematite body, Bauxite deposit, Coal seam, Limestone body, and quartz-vein deposit do not need to share the same waste mix.
+3. TI should use a limited shared canonical mining-waste vocabulary rather than creating one unique waste item per mineral or deposit profile.
+4. Mining waste is distinct from beneficiation waste. Crusher rejects, wash tailings, sludge, separated gangue, and comparable process residues belong primarily to beneficiation stages rather than to the extraction stage.
+5. Slag remains a thermal/metallurgical byproduct and is not a normal mining-waste item.
+6. Miner tier does not change the underlying geological waste composition. Machine progression may later affect throughput or operational ratios, but it does not reroll or redefine what host-rock material exists.
+7. Deep Mining follows the same geological principle and may produce excavation rock/waste while extracting finite underground reserves. Surface and Deep Mining may later use different waste quantities because underground development removes additional host rock, but that distinction is deferred.
+8. Mining waste is a bounded secondary stream rather than a mandatory one-for-one companion to every Raw Ore item. It should create logistics, recycling, and material-recovery opportunities without overwhelming primary ore extraction by default.
+9. Exact waste items, rates, probabilities versus deterministic fractional accumulation, profile tables, machine-specific modifiers, logistics pressure, and reuse/recycling balance remain deferred to prototyping.
+
+---
+
+# Decision 4.5: Deep Mine Physical Machine Progression and Tier Count: LOCKED
+
+## Locked direction
+
+1. Underground extraction uses one general physical **Deep Mine** machine by default rather than multiple generic Deep Mine Mk tiers.
+2. The Deep Mine remains the dedicated machine coupled to an underground-access node and extracts the node's finite internal reserve pools through fully automatic mixed extraction.
+3. Deep Mining progression is primarily achieved through throughput technologies, machine Quality, modules, power/logistics improvements, excavation-consumable progression, and other operational upgrades rather than repeated replacement of the physical Deep Mine prototype.
+4. Deep Mine progression does not alter generated reserve quantity, geological profile, trace abundance, associated-body occurrence, survey truth, or permit manual targeting of individual reserve pools.
+5. Vanilla Space Age + Quality behavior is the presumed first implementation direction wherever technically appropriate. TI does not create a parallel Deep Mine Mk progression before prototyping demonstrates a need for one.
+6. If prototyping demonstrates that one physical Deep Mine does not provide sufficient progression depth, a later explicit decision may introduce a second physical generation. Multiple generic Deep Mine tiers are not part of the current default architecture.
+7. Exact throughput modifiers, Quality effects, module behavior, excavation consumables, power requirements, technology bonuses, and operational efficiencies remain deferred to prototyping.
+
+---
+
+# Decision 4.6: Mineral-Specific Mining Time and Miner Compatibility: LOCKED
+
+## Locked direction
+
+1. TI does not use resource-category gating as the normal mechanism for representing ore hardness, density, competency, or extraction difficulty. Ordinary solid mineral deposits remain broadly compatible with the normal Burner, Electric, and Advanced / Heavy Surface Miner progression.
+2. Mineral-specific extraction difficulty is represented primarily through the resource prototype's `minable.mining_time`. Softer or easier-to-extract resources use shorter mining times, while harder, denser, tougher, or otherwise more difficult resources use longer mining times.
+3. Miner-side `mining_speed` and resource-side `mining_time` remain separate variables, allowing the same miner to extract different minerals at materially different rates without forbidding access to the harder ore.
+4. TI uses modern Factorio mining-time semantics rather than the historical `hardness` / `mining_power` model. The older hardness system is not part of the current Factorio prototype model; `mining_time` is the intended functional lever for resource extraction difficulty.
+5. Geological/deposit-profile variants may receive different mining times only when the variant itself reasonably changes physical extraction difficulty. Profile-specific mining time must not be used merely as arbitrary rarity or progression gating.
+6. Mining time does not alter generated richness, trace abundance, mining-waste composition, associated underground bodies, underground reserve quantity, or Original Surface Reference Yield. It affects extraction rate only.
+7. Resource categories remain available for genuinely different extraction classes or exceptional mechanics, such as a future fluid, solution, dredging, or otherwise fundamentally different extraction system. They are not used merely to prevent an earlier general-purpose surface miner from mining a harder solid ore.
+8. Mineral-specific and profile-specific `mining_time` values, machine-speed interactions, Quality behavior, module effects, and balance targets remain deferred to prototyping.
+
+---
+
+# Decision 4.7: Surface-Mining Fluid and Consumable Requirements: LOCKED
+
+## Locked direction
+
+1. Normal TI solid surface resources do not require mineral-specific fluids or chemical reagents by default. Ordinary low-difficulty ores are physically extracted using the miner's normal fuel or electrical energy and produce canonical Raw Ore plus any geology-authorized excavation byproducts.
+2. Selected ores or geological profiles may later require a mining fluid where there is a clear extraction, geological, chemical, technological, or gameplay justification.
+3. Water is the preferred general-purpose candidate for mechanically difficult extraction where fluid use represents drill/cutter cooling, dust suppression, flushing, or similar mining support rather than ore beneficiation.
+4. Mineral-specific chemical reagents, including a Vanilla-style acid requirement, remain explicitly permitted for exceptional resources when justified, but are not automatically assigned to hard ores merely to increase recipe complexity.
+5. Resource hardness/extraction difficulty remains primarily represented by Decision 4.6 `minable.mining_time`; any fluid requirement is a separate and independent mechanic.
+6. Fluid-assisted mining does not imply beneficiation or concentration at the drill. Normal mineral outputs remain canonical Raw Ore, plus any geology-authorized excavation byproducts.
+7. The exact ores or profiles requiring water or other fluids, which miner generations support them, fluid consumption rates, fluid-box layouts, and whether any resource uses a mineral-specific reagent are deferred to prototyping.
+8. No machine wear, overheating, maintenance, breakdown, or repair-parts system is implied by this decision. Cooling fluids, if used, are an abstract operating requirement unless a later explicit architecture decision establishes maintenance mechanics.
+9. Fundamentally different extraction systems such as solution mining, in-situ leaching, brine extraction, dredging, or pumping may later use dedicated fluids, resource categories, or machines through explicit decisions.
+
+---
+
+# Decision 4.8: Mixed-Resource Surface Mining and Output Handling: LOCKED
+
+## Locked direction
+
+1. TI preserves normal vanilla Factorio surface-mining behavior when a mining area contains multiple compatible resource entities. A miner mines everything compatible within its working area according to Factorio's normal mechanics rather than introducing TI-specific targeting or resource-selection controls.
+2. Mixed outputs are therefore allowed naturally. If a miner physically covers multiple resource entities or independent neighboring deposits, its output may contain multiple canonical Raw Ore types and any geology-authorized mining byproducts those entities produce.
+3. TI does not add manual per-resource targeting, priority selection, or special mixed-mining restrictions to ordinary surface miners. Player sorting and routing of mixed outputs remains a normal Factorio logistics problem.
+4. Vanilla mining behavior is the player-facing authority. TI-specific geology operates underneath that behavior and must not alter ordinary Factorio-style miner interaction unless a later explicit decision establishes a fundamentally different extraction mechanic.
+5. Mixed mining does not merge geological deposits. Each deposit retains its own stable identity, geological profile, depletion state, trace behavior, Original Surface Reference Yield, associated underground continuation, and underground access node. A shared miner merely extracts from resource entities inside its coverage.
+6. Trace-bearing primary-resource sub-entities, if retained after prototyping, participate through their normal entity mining results and require no special miner targeting. Independent deposits likewise remain independent even when one miner overlaps both.
+7. The Decision 3 trace-count limit applies per specialized geological profile, not per mining machine. A miner spanning multiple independent deposits may therefore output more total mineral types without violating the geological trace cap.
+8. Exact entity-selection order, extraction scheduling, belt/output interactions, and any implementation safeguards are left to vanilla Factorio behavior unless prototyping reveals a TI-specific technical issue that requires intervention.
+
+---
+
+
+# Decision 4.9: Footprint-Bound Surface Mining Area: LOCKED
+
+## Locked direction
+
+1. TI preserves normal Factorio surface-miner placement and automatic compatible-resource extraction behavior, with one deliberate modification: a surface miner's effective mining area is constrained to the physical footprint of the mining machine itself. Surface miners do not normally extract resource entities beyond the tiles physically occupied by their entity.
+2. Resources underneath belts, pipes, power infrastructure, buildings, or other non-mining entities remain part of the finite surface deposit and are not extracted merely because a nearby miner would have reached them under vanilla's extended mining-area behavior.
+3. To recover resource entities left beneath logistics or other infrastructure, the player must later relocate the obstructing infrastructure and place a miner physically over the remaining resource area.
+4. This footprint-bound model creates progressive mine excavation and gives infrastructure placement a spatial opportunity cost while retaining ordinary Factorio construction freedom. Buildings and logistics entities may still be placed over surface resources.
+5. A miner automatically extracts every compatible resource entity beneath its footprint according to the mixed-resource behavior locked in Decision 4.8. Covering multiple resource types does not merge their geological identities, profiles, trace behavior, depletion state, Original Surface Reference Yield, or underground continuations.
+6. Miner footprint and effective mining-area dimensions may differ among the Burner, Electric, and Advanced / Heavy Surface Miners, but each machine's mining coverage corresponds directly to its own physical footprint rather than extending beyond it. Exact machine dimensions remain deferred to prototype design.
+7. The underground-access-node system must respect the physical-excavation model. Node exposure should be tied to actual excavation of the node's location rather than remote extraction from a larger surrounding mining radius.
+8. Exact underground-access-node reveal behavior, collision handling, resource-entity edge cases, and implementation details remain deferred to prototyping.
+
+---
+
+# Decision 4.10: Surface Miner Output Routing and Direct-Insertion Boundaries: LOCKED
+
+## Locked direction
+
+1. TI preserves normal Factorio-style surface-miner item-output and routing behavior. Surface miners use ordinary directional item outputs and may feed belts, chests, or other compatible adjacent inventories according to normal engine behavior.
+2. The footprint-bound mining rule established by Decision 4.9 changes only which resource entities the miner can excavate. It does not replace or redesign the normal Factorio item-output interface.
+3. Canonical Raw Ore, directly mined trace Raw Ore, and geology-authorized mining-waste outputs share the miner's ordinary output/logistics interface unless later prototyping demonstrates a technical need for another arrangement.
+4. Mixed outputs remain a normal player sorting and logistics problem. TI does not automatically separate ore types, trace outputs, or excavation byproducts at the miner.
+5. Logistics infrastructure placed over unmined resources receives no special extraction treatment. Ore beneath belts, pipes, power infrastructure, buildings, or other non-mining entities remains unextracted until that infrastructure is relocated and a miner physically occupies the resource area under Decision 4.9.
+6. TI does not introduce remote extraction, hidden patch-wide collection, automatic compensation for infrastructure-covered ore, or centralized whole-patch output behavior for ordinary surface miners.
+7. Deep Mine output architecture may later require additional throughput or multi-output considerations because of automatic mixed underground extraction, but its exact output ports, belt throughput, loader use, inventory behavior, and logistics integration remain deferred to machine prototyping.
+8. Any deviation from vanilla-style surface-miner output routing requires a later explicit technical or gameplay justification.
+
+---
+
+# Decision 4.11: Surface Deposit Depletion, Exhaustion, Automated Miner Deconstruction, and Miner-End-State Behavior: LOCKED
+
+## Locked direction
+
+1. TI preserves vanilla Factorio finite surface-resource depletion behavior by default. A surface miner continues extracting compatible resource entities beneath its footprint while any remain and naturally stops when its footprint contains no remaining mineable resource.
+2. Footprint-bound excavation from Decision 4.9 remains authoritative. Players normally relocate miners and mine-site infrastructure as portions of a finite surface deposit are exhausted so previously infrastructure-covered resource entities can be recovered later.
+3. Mixed-resource miners continue operating on whatever compatible resource entities remain beneath their footprint as individual resource types or entities are depleted. Direct trace outputs and geology-driven mining waste cease naturally with the resource entities that generate them and do not persist as separate infinite outputs.
+4. After construction robotics and roboport-network capability have been unlocked, TI introduces a dedicated later technology that enables automatic reclamation of exhausted surface miners. Exact technology name, science cost, prerequisites, and placement are deferred, but it must be post-construction-robot/roboport progression rather than available from the start.
+5. Once that technology has been researched for a force, a supported surface mining drill whose effective mining footprint contains no compatible mineable resource is automatically marked for deconstruction. Normal Factorio construction robots then remove it only when it is within a functioning construction network with the required logistics capacity. TI does not teleport or directly delete the miner.
+6. The intended implementation should follow the proven event-driven pattern used by the MIT-licensed Factorio mod Auto Deconstruct: react to resource depletion, identify potentially affected drills, recheck the drill after a short delay, verify that its runtime status is `defines.entity_status.no_minable_resources`, and then use `LuaEntity::order_deconstruction` rather than continuously scanning every drill every tick. The exact TI implementation may be independently reimplemented or may reuse suitably attributed MIT-licensed logic if that is preferable during implementation.
+7. A short confirmation/ejection delay is permitted so the drill can finish its final mining/output state and to avoid false-positive deconstruction orders. Exact ticks, queue structure, and output-buffer handling remain implementation details for prototyping.
+8. TI's native feature is scoped to marking the exhausted mining machine itself by default. It does not automatically deconstruct connected belts, chests, pipes, beacons, power infrastructure, or the surrounding mine layout unless a later explicit decision adds such behavior.
+9. Player-issued deconstruction commands and cancellations should remain authoritative. Exact handling of manual cancellation, blueprint ghosts, replacement miners, and mod-compatibility edge cases is deferred to implementation testing.
+10. The predetermined underground-access-node location remains the narrow geology-specific exception to otherwise vanilla surface-depletion behavior. Actual excavation of the surface resource covering that location exposes or permits discovery of the node under Decisions 3.23 and 4.9. Automatic deconstruction of an exhausted miner can naturally help construction robots clear the exhausted machine from that location, but it does not create, move, reroll, or otherwise modify the underground reserve.
+11. Automatic miner deconstruction is a logistics/automation convenience unlocked by technology. It does not alter mining speed, resource drain, ore yield, Quality behavior, trace abundance, waste composition, geological profile, Original Surface Reference Yield, or underground reserve generation.
+12. Exact supported miner prototypes, technology identifiers, multiplayer/force behavior, deconstruction-network edge cases, performance safeguards, and whether the same system later applies to Deep Mines remain deferred to prototyping or a later explicit decision.
+
+## Reference implementation research
+
+The Factorio mod **Auto Deconstruct** (`softmix/AutoDeconstruct`, MIT license) provides the reference implementation pattern for this feature. Its current Factorio 2.1 implementation listens to `on_resource_depleted`, searches for potentially affected mining drills, rechecks drill state after a short delay, confirms `defines.entity_status.no_minable_resources`, and calls `order_deconstruction` on the exhausted drill. Its periodic queue processor is enabled only while pending deconstruction work exists, avoiding a permanent all-miner polling loop. TI should preserve the core event-driven efficiency while keeping its own default scope narrower than Auto Deconstruct's optional belt/chest/beacon/pipe cleanup features.
+
+---
+
+# Decision 4.12: Deep Mine Depletion, Exhaustion, Automatic Reclamation, and Site Removal: LOCKED
+
+## Locked direction
+
+1. All underground reserve pools associated with an underground-access node are finite and permanently depletable.
+2. A Deep Mine continues operating while any extractable authoritative underground reserve remains and stops once all primary, contained-trace, and distinct associated-body reserve pools have been exhausted.
+3. Underground exhaustion never regenerates, rerolls, replaces, or expands the original geological reserve.
+4. The automatic miner-reclamation technology established by Decision 4.11 also applies to supported exhausted Deep Mines by default. Once the entire authoritative underground reserve has been exhausted, the Deep Mine may be marked for deconstruction using the same normal Factorio construction-robot workflow.
+5. TI does not directly delete or teleport the Deep Mine. The machine is reclaimed only through normal deconstruction orders and construction robots when the required network conditions are satisfied.
+6. Unlike the earlier proposed persistent depleted-site concept, the underground-access node/site entity does not remain permanently after complete underground exhaustion. Once the reserve is fully depleted, the geological access-site entity is removed or otherwise ceases to exist as an interactable mineable site.
+7. Removing the depleted access-site entity is a deliberate gameplay-simplicity rule. It mirrors vanilla Factorio surface-resource depletion, avoids permanently reserving unusable factory space, and prevents exhausted underground sites from becoming long-term map clutter or construction blockers.
+8. No permanent depleted underground-site marker is required by default. If later prototyping shows that historical/depletion information is useful, that information must be represented through a non-blocking UI, statistic, map-history, or other explicit later system rather than by retaining the physical access-node entity.
+9. Mining waste and mineral output cease with the final authoritative reserve. No residual or infinite post-depletion output remains.
+10. Exact sequencing between final output emission, Deep Mine status transition, automatic deconstruction marking, and access-node removal remains deferred to prototyping, but the system must not lose the last valid reserve-backed outputs or allow rebuilding to regenerate geology.
+
+---
+
+# Decision 4.13: Deep Mine Coupling, Occupancy, and Rebuild Semantics: LOCKED
+
+1. Each underground-access node supports at most one active Deep Mine at a time. Multiple Deep Mines may not simultaneously extract from the same authoritative underground reserve system.
+2. The underground-access node and the Deep Mine building use the same physical footprint by design. The Deep Mine is placed directly on top of the access node and is position-locked to that node, analogous to vanilla Factorio pumpjack placement on an oil resource.
+3. The Deep Mine cannot be shifted, offset, or placed merely adjacent to the node. Placement is valid only when the building is aligned exactly with a compatible exposed underground-access node.
+4. The access node acts as the physical and logical anchor for the Deep Mine. Once occupied, that node cannot accept a second Deep Mine until the existing Deep Mine is removed.
+5. Removing or deconstructing a Deep Mine before complete reserve exhaustion does not alter, regenerate, reroll, or reset the underground geology. The access node remains because the authoritative reserve still exists.
+6. All remaining primary, trace, and associated-body reserve quantities persist exactly across Deep Mine removal and rebuilding. Replacing a Deep Mine on the same still-active node resumes extraction from the same remaining reserve state.
+7. Force-based geological survey knowledge belongs to the underground geological site, not to the Deep Mine entity, and therefore survives removal or replacement of the machine.
+8. Once the entire authoritative reserve is exhausted, Decision 4.12 applies: the Deep Mine may be automatically reclaimed under the Decision 4.11 technology and the exhausted access-node/site entity is removed rather than remaining as a permanent blocker.
+9. Exact prototype implementation for placement validation, node replacement/overlay behavior, collision masks, graphics layering, and entity-state handoff remains deferred to Factorio API prototyping, but the player-facing behavior must remain equivalent to a one-node/one-machine pumpjack-style placement relationship.
+
+---
+
+# Decision 4.14: Underground Access-Node Placement, Collision, and Factory-Space Interaction: LOCKED
+
+1. Underground-access nodes are non-obstructive geological entities rather than ordinary buildings. Their physical visibility is governed by Decision 4.15: they may be visually obscured by overlapping surface ore or visible from the beginning in a donut-style implementation, but they impose no construction, collision, or placement restrictions merely because they exist.
+2. As surface excavation removes any surface ore visually obscuring the predetermined node location, the node becomes more apparent/selectable but does not itself prevent ordinary Factorio infrastructure from occupying the same area. Existing belts, pipes, power infrastructure, or buildings are not automatically removed.
+3. A Deep Mine may be placed only when its entire required footprint is clear and exactly aligned with the exposed node under the pumpjack-style placement relationship established by Decision 4.13. If infrastructure occupies that footprint, the player must relocate it before Deep Mine construction.
+4. An active underground-access node with remaining reserves cannot normally be manually mined, deconstructed, or deleted. Removing the attached Deep Mine reveals the same persistent node and remaining authoritative reserve state.
+5. The access node is removed only when its finite underground reserve system is fully exhausted under Decision 4.12.
+6. Once revealed, the node may expose geological and survey information appropriate to the force's current Decision 3.24 survey state.
+7. Exact collision masks, selection boxes, render layering, overlap behavior, node graphics, and Factorio prototype implementation remain deferred to prototyping, but the player-facing behavior above is locked.
+
+---
+
+# Decision 4.15: Passive Underground Access-Node Revelation: LOCKED
+
+1. Underground-access nodes do not require a separate hidden/discovered visibility state solely for player-facing revelation. Apparent discovery arises naturally from the physical relationship between the node and the surface deposit.
+2. Under the preferred overlapped implementation, the predetermined access-node entity already exists at its fixed location beneath or among surface resource entities and is visually obscured by those resource entities until ordinary surface mining removes them.
+3. Under the alternative donut-style implementation, the underground-access node may instead be visibly exposed from the beginning in the center of the surface deposit. The final overlapped-versus-donut representation remains deferred to prototyping.
+4. TI provides no automatic discovery alert, popup, map notification, forced tutorial message, or other explicit announcement merely because an access node becomes visually apparent. Passive environmental discovery is intentional.
+5. A representative intended discovery sequence is: a surface miner depletes the ore beneath its footprint; the Decision 4.11 reclamation system may later mark the exhausted miner for robot deconstruction; once the miner and covering ore are gone, the player may notice the unusual access-node entity and independently investigate the Deep Mining technology required to use it.
+6. Physical visibility is separate from geological survey knowledge. Seeing or selecting an access node does not automatically reveal authoritative underground reserve quantities, trace abundance, associated bodies, or other information beyond what Decision 3.24 permits for the force's current survey state.
+7. No dedicated force-level discovery event is required solely to manage visibility. Normal entity/map representation is sufficient by default, and TI does not automatically bookmark every node for the player.
+8. Exact graphics, render layering, overlap behavior, selection presentation, map representation, and the final choice between overlapped and donut-style surface layouts remain deferred to prototyping.
+
+---
+
+# Decision 4.16: Bootstrap-Only Manual Ore Mining Through Native Resource Categories: LOCKED
+
+1. TI restricts player-character manual mining of geological resource entities to a deliberately small early-game bootstrap set. By default, the manually mineable TI surface-resource set is Cuprite, Cassiterite, Coal, and Limestone/Stone-equivalent starting material. Exact final starter-resource naming remains subject to early-game prototyping, but the intent is that only the first bootstrap resources are hand-mineable.
+2. All other TI geological resource entities require an appropriate mining machine and are not manually mineable by the player character. This includes Galena and the broader metallurgy roster even when such resources occur in the starting region. Early progression must therefore avoid requiring non-hand-mineable materials to construct the first automated mining capability.
+3. This behavior is implemented natively through Factorio resource categories rather than a runtime cancellation script. `ResourceEntityPrototype.category` assigns each resource to a resource category; `CharacterPrototype.mining_categories` defines which resource categories the player character may manually mine; and `MiningDrillPrototype.resource_categories` independently defines which categories each mining drill may extract.
+4. TI should therefore use a character-mineable bootstrap resource category and one or more machine-only resource categories. The normal player character receives only the bootstrap mining category, while the general Burner, Electric, and Advanced/Heavy Surface Miners receive both bootstrap and machine-only solid-resource categories. This prevents character mining without preventing normal drill compatibility.
+5. This is not a reversal of Decision 4.6. Resource categories are not used to simulate hardness or to gate ordinary ores between Burner, Electric, and Advanced/Heavy Surface Miners. Ore extraction difficulty remains governed primarily by `minable.mining_time`. Resource categories are used here only to distinguish character-manual extraction capability from machine extraction capability.
+6. Any resource that requires water, acid, another reagent, or another specialized fluid-assisted extraction mechanic under Decision 4.7 is machine-only by default and is not manually mineable by the character unless a later explicit exception is justified.
+7. Underground-access nodes and internal underground reserve systems are never manually mineable. Deep Mine machinery remains the required interface for underground extraction.
+8. The manual-mining restriction applies specifically to geological resource entities. Ordinary Factorio interactions with trees, loose rocks, buildings, and comparable non-resource entities remain unaffected by resource-category mining restrictions.
+9. A runtime custom script is not part of the default implementation because the current Factorio prototype API provides the necessary character-versus-drill resource-category separation directly. Script interception remains only a fallback if later compatibility requirements, replacement character prototypes, or engine limitations invalidate the native category approach during prototyping.
+10. If TI supports mods that replace or add player-character prototypes, compatibility patches may need to ensure those characters receive the intended TI bootstrap `mining_categories`. Exact cross-mod compatibility policy remains deferred.
+11. Whether the player begins with primitive Burner mining equipment or first gathers the bootstrap resources by hand remains deferred to early-game progression prototyping.
+
+---
+
+# Decision 4.17: Finite Mining Productivity with Immutable Geological Quantities: LOCKED
+
+1. Surface and underground geological quantities remain finite authoritative resource quantities. Mining productivity increases useful output obtained while consuming those quantities, but does not alter generated richness, geological profile, original surface resource quantities, Original Surface Reference Yield, underground reserve generation, trace abundance, or associated-body reserve quantities.
+2. All actual surface resource entities use normal Factorio-style mining-productivity behavior. This applies equally to primary mineral entities and spatial trace-resource entities generated within specialized deposits. TI does not suppress productivity merely because a surface entity represents a trace mineral.
+3. Surface geology determines how many primary and trace resource entities exist, where they occur, their original richness, and their deposit-profile relationships. Mining productivity operates only on extraction output from those already-generated finite entities.
+4. TI surface-mining productivity progression is finite/capped rather than infinitely repeatable by default. Exact technology count, percentage per level, science requirements, and final cap remain deferred to balance prototyping.
+5. Deep Mines use a separate Deep Mining Productivity progression. Deep Mine productivity operates on extracted output rather than modifying the authoritative internal reserve pools. If one reserve unit is consumed, productivity may produce additional output items from that extraction event without increasing the stored reserve quantity.
+6. Deep Mining Productivity is likewise finite/capped by default rather than infinitely repeatable. Exact levels, percentages, and final cap remain deferred. A conceptual very-late-game cap on the order of several-hundred-percent total productivity may be explored during prototyping, but no exact value is locked.
+7. Primary underground reserves, contained/disseminated trace reserves, and separate associated-body reserves remain finite regardless of productivity level. Productivity never regenerates, rerolls, or enlarges those stored geological reserves.
+8. Machine Quality, modules, and mining technologies may affect throughput, productivity, resource-drain behavior inherited from Factorio, energy use, or other operational characteristics where technically appropriate, but they do not rewrite generated geological state.
+9. The immutable Original Surface Reference Yield from Decision 3.28 remains based on the original generated surface deposit before player-side productivity or Quality effects. Bonus mined output never feeds back into underground reserve generation.
+10. Mining waste is not automatically multiplied simply because valuable-ore productivity increases. Waste remains geology- and operation-driven unless later prototyping establishes a different explicit rule.
+11. TI does not require infinite mining-productivity research to support the late-game or megabase ethos. If the overhaul needs effectively infinite or renewable raw-material supply, it may later introduce separate Space Age-style production routes, planetary resource loops, recycling loops, environmental extraction systems, asteroid resources, lava/chemical conversion analogues, or other explicitly designed renewable sources. Those systems are outside Decision 4.17 and must not silently make finite surface or underground deposits infinite.
+12. The exact balance between very large capped finite deposits, finite productivity, underground reserve scaling, and any future renewable-resource routes is deliberately deferred to prototyping. The current architectural goal is finite geology with sufficiently large late-game reserves and bounded productivity, while preserving the option for separate renewable endgame supply systems.
+
+---
+
+# Decision 4.18: Residual Surface Ore and Patch Exhaustion: LOCKED
+
+1. TI retains vanilla-style finite surface-resource entities as the authoritative representation of remaining surface geology. Residual resource entities underneath belts, pipes, buildings, power infrastructure, or other obstructions remain in place until physically mined and are not automatically removed, consolidated, transferred, or rounded away.
+2. The player may relocate infrastructure and mine residual portions later, or leave those resources permanently buried beneath the factory. TI does not require complete extraction of a surface deposit.
+3. No separate player-facing whole-patch exhaustion state is required. Individual surface miners determine exhaustion from the compatible resource entities beneath their own footprint, and the Decision 4.11 automatic reclamation system operates per exhausted miner rather than waiting for the entire geological deposit to disappear.
+4. Original Surface Reference Yield and underground reserve generation remain based on the immutable original generated deposit and are unaffected by abandoned or residual surface ore.
+5. Underground-access-node exposure depends on excavation of the node's own physical location rather than complete exhaustion of the entire surface patch.
+6. TI does not automatically delete tiny leftover ore amounts, redistribute residual richness, or declare a deposit exhausted merely because most of the patch has been mined.
+7. Any future performance-oriented cleanup of extremely small residual resource entities must preserve these gameplay semantics and remains deferred to implementation prototyping.
+
+---
+
+# Decision 4.19: Resource Entity Depletion Granularity and Final-Unit Handling: LOCKED
+
+1. TI retains Factorio's normal per-resource-entity finite depletion model for surface deposits. Each primary, specialized, and spatial trace-resource entity depletes independently according to its own resource amount and is removed when exhausted.
+2. TI does not synchronize depletion across an entire geological patch and does not maintain a fixed trace-to-primary percentage throughout the life of a partially mined deposit. Generated trace abundance describes the original geological distribution only.
+3. Actual trace-resource entities embedded in a deposit remain ordinary finite resource entities. A Silver resource entity inside a Galena deposit may exhaust before or after neighboring Galena entities according to its own richness and mining history.
+4. Factorio's normal final-unit, resource-consumption, and rounding behavior is inherited wherever practical. TI does not add custom redistribution, fractional-preservation, whole-patch balancing, or neighboring-entity transfer merely to force exact inventory-item totals from individual surface resource entities.
+5. Mining productivity remains governed by Decision 4.17 and may increase received output from a finite resource entity without changing that entity's original geological richness or Original Surface Reference Yield.
+6. Even extremely rich late-game surface deposits remain represented by ordinary Factorio resource entities rather than TI's simulated underground-reserve system. Surface and underground depletion architectures remain intentionally separate.
+7. If practical engine limits, prototype numeric limits, save-size concerns, or runtime performance issues emerge at intended late-game richness values, TI should first adjust richness caps or generation parameters during prototyping rather than replacing surface-resource depletion with a scripted reserve simulation by default.
+8. Any future optimization that changes how tiny residual resource entities are represented must preserve the locked gameplay semantics from Decisions 4.18 and 4.19.
+
+---
+
+# Decision 4.20: Deep Mine Buffered Mixed-Output Routing and Blockage Semantics: LOCKED
+
+1. The Deep Mine uses a buffered mixed-output architecture modeled conceptually after Factorio: Space Age's Recycler. Primary mineral output, trace/secondary mineral output, associated-body mineral output, and applicable mining-waste output remain part of one general extraction/output system rather than requiring dedicated per-mineral output ports.
+2. Each distinct mineral output available from the attached underground deposit receives bounded internal output capacity. The default design target is one item stack of visible internal storage per distinct mineral output. Exact inventory construction and prototype implementation remain deferred.
+3. A blocked belt or downstream output does not immediately stop extraction if the corresponding mineral's internal buffer still has capacity. Extracted material may accumulate internally up to its one-stack limit while the Deep Mine continues operating and attempts ordinary output ejection.
+4. When the next already-determined extraction result cannot be committed because its compatible internal output stack is full or otherwise unavailable, the Deep Mine pauses. It may not discard that result, consume geological reserve without producing it, reroll another mineral, substitute another reserve body, or skip the blocked result merely to keep operating.
+5. The Deep Mine may retain one already-determined pending extraction result while waiting for compatible visible output capacity. This pending state is a transaction boundary, not additional general-purpose storage. No further geological extraction occurs while that pending result remains blocked.
+6. Geological reserve is consumed only when the corresponding extraction result is successfully committed to the machine's output state or otherwise reaches the locked transaction point chosen during implementation. Output blockage must never silently destroy finite geology or valuable output.
+7. Item quality is part of output identity for buffering purposes. Different qualities that cannot stack together are not merged or rerolled. If a newly determined quality result cannot enter the visible buffer, it may remain as the single pending result and stall further extraction until compatible capacity becomes available.
+8. The one-stack-per-mineral rule is a default player-facing storage bound, not an unlimited hidden warehouse. Any invisible/pending state exists only to preserve one completed or already-determined extraction transaction while respecting output capacity.
+9. Fractional per-mineral accumulators established by Decision 3.26 remain separate internal geological-accounting state. They do not represent physical inventory and do not consume output slots until sufficient entitlement exists to emit an actual item result.
+10. Output blockage cannot be used as an indirect mineral-targeting mechanism. The automatic mixed-extraction rule from Decision 3.25 remains authoritative even when one mineral or quality is temporarily unable to leave the machine.
+11. Exact visible slot count, whether storage is filtered or script-managed, prototype composition, graphics, output direction, inserter/belt behavior, waste buffering, stack-output technology interactions, Quality implementation, and pending-result implementation remain deferred to prototyping. The intended behavioral reference is bounded multi-output buffering similar to the Space Age Recycler rather than an unbuffered ordinary mining drill.
+
+---
+
+# Decision 4.21: Deep Mine Power, Excavation Inputs, and Input-Starvation Semantics: LOCKED AS A PROTOTYPING BASELINE
+
+1. The Deep Mine is expected to be an electrically powered industrial extraction machine. Electricity is the default baseline operating requirement, but exact power demand, drain behavior, scaling with throughput, module interaction, and Quality interaction remain fully deferred to implementation prototyping and balance testing.
+2. Later Deep Mining progression may use industrial excavation consumables as productive operating inputs. Candidate roles include drilling, blasting, excavation support, cooling, fluids, fuels, or comparable mining work, but no specific consumable family, recipe, ratio, port, or technology requirement is locked at this stage.
+3. Decision 4.21 does not establish a generalized maintenance, durability, random-breakdown, repair, or wear simulation. Such systems would require a separate future decision if ever desired.
+4. The current baseline assumption is that if a Deep Mine lacks whatever electricity or productive inputs its eventual implementation requires, extraction pauses without changing, rerolling, regenerating, or otherwise consuming the authoritative underground geology. The exact transaction point for power/input consumption relative to reserve debit, pending output, and buffer commitment remains open for prototyping.
+5. A small shared set of general excavation inputs is the preferred starting hypothesis over unique consumables for every mineral, while profile- or mineral-specific fluids/reagents remain permissible where later geological, chemical, technological, or gameplay prototyping justifies them. This is a design preference, not a finalized recipe architecture.
+6. Internal input buffering is permitted if useful for stable machine operation, but slot count, stack capacity, filtered versus ordinary inventory behavior, fluid capacity, and visible versus hidden buffering remain implementation-open.
+7. All concrete defaults under Decision 4.21 are intentionally deferred to the actual development/prototyping phase. During implementation, TI may establish, test, balance, replace, simplify, or omit candidate power/consumable/input-buffer behaviors as needed, provided finite authoritative reserve semantics and the already-locked extraction/output rules are preserved.
+
+---
 
 ## Current planning position
 
-**Decision 3, Ore and Mineral Taxonomy, is locked through sub-decision 3.34, with exact specialized-profile refinement deferred to prototyping.**
+**Decision 3, Ore and Mineral Taxonomy, is locked through sub-decision 3.34, with exact specialized-profile refinement deferred to prototyping. Decision 4, Mining Deposit and Extraction Taxonomy, is LOCKED through 4.22 and is complete at the architecture-planning level.**
 
-The next planning step is:
+Do not reopen Decisions 1 through 4.22 unless a genuine dependency conflict is discovered during implementation or later process design.
 
-# Decision 4.1: Surface Mining Machine Classes and Progression Roles
+# Decision 4.22: Factorio-Style RNG for Deep Mine Mixed Extraction: LOCKED
 
-Begin the Mining Deposit and Extraction Taxonomy from the already locked surface-deposit, underground-continuation, Deep Mine, and geological-profile architecture. Define the player-facing classes and progression roles of surface mining machines without reopening the geological generation rules unless a genuine dependency conflict is discovered.
+1. Deep Mine mixed extraction uses ordinary Factorio-style probabilistic RNG rather than a custom fairness, pity, anti-streak, or deterministic scheduling system.
+2. Whenever an underground extraction event requires selection among multiple currently available mineral outputs, TI performs a weighted random roll using probabilities defined by the generated underground geological state/profile.
+3. Random streaks and short-term deviations from the expected distribution are legitimate outcomes. TI does not artificially correct unlikely sequences merely to force short-run output ratios to match nominal probabilities.
+4. Finite underground reserve quantities remain authoritative. A mineral can be selected only while its corresponding reserve remains available, and extraction/output cannot create geological material beyond the remaining finite reserve plus any separately authorized mining-productivity bonus under Decision 4.17.
+5. When a reserve is permanently exhausted, that mineral/body is removed from subsequent eligible RNG outcomes. Remaining probabilities may be renormalized or otherwise adjusted using the simplest implementation consistent with the generated deposit data.
+6. The player cannot manually target, prioritize, disable, reorder, or filter underground reserve selection through the normal Deep Mine interface.
+7. Once an RNG result has been determined, Decision 4.20 governs buffering and blockage. A blocked result may not be discarded, replaced, or rerolled into another mineral merely to keep the mine operating.
+8. Contained trace or probabilistic coproduct behavior should likewise use ordinary Factorio-style probability mechanics where applicable, while remaining bounded by the authoritative geological/accounting model already established in Decision 3.
+9. Exact probability weights, rolls per cycle, reserve-debit timing, Quality interaction details, and implementation mechanics are deferred to geological-profile and Deep Mine prototyping. Factorio's native behavior is the baseline unless TI has a specific gameplay reason to diverge.
 
-Do not reopen Decisions 1 through 3.34 unless a genuine dependency conflict is discovered.
-
-### Particularly important established invariants
-
-1. One canonical primary mineral family per metal by default.
-2. Raw → Crushed → Concentrate is the default conventional path, with mineral-specific alternatives permitted.
-3. Trace minerals use canonical raw/concentrate item families, not `trace-*` item variants.
-4. Deposit-specific geology belongs to resource/deposit profiles, not hidden primary-item provenance.
-5. One pure/default resource prototype is the map-gen/autoplace base and universal fallback.
-6. Runtime geological logic may replace that base patch with a curated specialized variant.
-7. One entire normal deposit uses one geological profile.
-8. The profile is selected by a deterministic weighted roll scoped to planet + canonical primary mineral + stable deposit identity; natural terrain/biome is not an input.
-9. Curated planet/mineral profiles define scientifically plausible trace composition, associated bodies, and profile weights without changing the already-selected primary mineral identity.
-10. Failed or unresolved conversion falls back to the pure/default deposit.
-11. Each primary mineral supports 1 pure/default profile plus up to 5 specialized profiles, maximum 6 total.
-12. Profile resolution is terrain-independent: build the planet/mineral-specific outcome pool containing Pure/Default plus configured specialized profiles, then deterministically select one coherent profile for the whole deposit.
-13. If no specialized profiles are configured, the deposit remains Pure/Default; any resolution/conversion failure also results in Pure/Default.
-14. Natural terrain tiles, biome families, and TI geology classes are not inputs to normal deposit-profile selection.
-15. Real-world geology remains the research authority for authoring curated profiles and mineral associations, without requiring spatial terrain/geology-class mappings.
-16. Deposit profile identity is resolved once and remains stable; save/load, chunk revisitation, runtime order, and later terrain replacement do not reroll it.
-17. Unknown or modded terrain has no special effect on normal profile selection because terrain is not an input; Pure/Default remains the universal technical fallback.
-18. Planetary primary-resource allocation is locked by Decision 3.33: Nauvis = Coal/Hematite/Cuprite/Cassiterite/Galena/Bauxite; Luna = Cinnabar/Argentite/Uraninite/Ice Fields; Vulcanus = Pyrolusite/Cobaltite/Chromite; Fulgora = Zircon/Pentlandite; Gleba = Sphalerite/Limestone-Calcite/Gold-Bearing Quartz; Pyrosauria = Carnallite/Phosphorite; Tectara = Wolframite/Ilmenite; Voltaris = Monazite/Sperrylite. Petalite and Quartzite remain canonical but unassigned as primary planetary deposits.
-19. A specialized deposit profile may expose one primary trace mineral plus at most one substantially rarer secondary trace mineral.
-20. Pure/Default deposits have no geological trace coproducts.
-21. Trace-bearing specialized deposits receive deterministic deposit-level trace-abundance variation, so deposits of the same profile may be trace-poor or trace-rich within later-defined bounds.
-22. The exact Factorio representation of trace abundance remains implementation-open; candidate approaches include abundance-adjusted mining outputs or profile-governed mixed trace resource entities within the patch.
-23. Canonical primary ore-item identity remains unchanged unless a later explicit decision intentionally revisits Decisions 3.6/3.7.
-24. Three trace-abundance representation candidates remain valid for prototyping: uniform probabilistic specialized entities (A), physically distributed ordinary trace-resource entities (B), and trace-bearing primary-resource sub-entities (C).
-25. Option C is the preferred design direction, but final implementation is deferred to comparative in-game prototyping.
-26. Dynamic per-entity tooltip reporting of generated trace abundance is a preferred usability experiment, subject to API/performance validation; static Factoriopedia text remains profile-level documentation.
-27. Each trace mineral in a generated deposit receives a discrete abundance grade whose later-defined numeric range produces a deposit-specific exact value.
-28. A separate multiplicative trace-scaling/reduction layer converts the base grade value into final trace abundance, keeping trace outputs appropriately small.
-29. Generated abundance values are stable per deposit and may be persisted in Factorio runtime storage if the selected implementation requires explicit state.
-30. Exact grade taxonomy, ranges, multipliers, distributions, and yield formulas remain deferred for later balance/prototyping work.
-31. Trace minerals share a common qualitative abundance-grade vocabulary for player readability, but grade availability, selection weights, numeric ranges, and scaling mathematics are profile/trace-specific.
-32. Trace abundance generation is two-stage: select a grade using profile-specific weights, then generate the exact deposit value inside that grade's profile/trace-specific range.
-33. Underground continuation inherits the surface deposit's geological profile identity but independently generates underground trace grades and exact abundance values within that profile's permitted ranges.
-34. The inherited profile constrains which trace/secondary minerals may appear as optional underground nodes.
-35. Surface and underground trace representations must remain balance-coherent and must not double-count the same geological trace reserve across coproduct, separate-node, and beneficiation representations.
-36. Contained/disseminated trace mineralization uses one conceptual recovery budget shared between direct mining coproduct and beneficiation recovery.
-37. Separate associated underground nodes represent distinct finite geological bodies with their own reserves, not duplicate recovery channels for the contained trace budget.
-38. A trace mineral may be contained-only, separate-body-only, both, or neither depending on later geological research.
-39. Each paired underground continuation normally spawns one surface underground-vein/mine-access node rather than a tiled underground resource patch.
-40. The player places the Deep Mine building over or directly coupled to that spawned access node to extract the simulated underground reserve.
-41. Decision 1 underground Nodes 1–5 are logical reserve-generation components aggregated into that node's internal simulated reserve; same-primary nodes may combine while distinct associated bodies may remain separate internal pools.
-42. Underground reserve components are finite, inherit the surface geological profile, independently generate underground abundance, and exist without a separate playable underground Factorio surface.
-43. Logical underground Nodes 1–5 are normalized into finite internal reserve pools after generation; same-primary nodes may aggregate while distinct associated bodies remain separate pools.
-44. Contained trace potential remains attached to its host reserve body and becomes accessible only as host material is extracted.
-45. Deep Mine extraction is concurrent across active reserve pools, allowing output composition to change as individual associated reserves deplete.
-46. Underground reserve geology and access location are fixed at map generation; surface depletion reveals access but never creates or rerolls the underground reserve.
-47. Preferred exposure uses an overlapping underground-access entity obscured by surface resource entities, with delayed spawn and central/donut placement retained as technical fallbacks.
-48. Physical discovery is driven by surface excavation, while Deep Mining progression controls exploitation rather than geological existence.
-49. Deep Mine placement requires sufficient clearance of the access footprint; exact clearance and overlap mechanics remain subject to prototyping.
-50. Unsurveyed underground deposits reveal existence and primary mineral but no reserve estimate or trace information by default.
-51. Advanced Ground-Penetrating Radar combines ordinary radar functionality with underground geological surveying; research enables capability, while scanning/rescanning updates force knowledge.
-52. GPR analysis uses an open progression of 3–5 total survey states, moving from unknown to broad estimate, narrower estimates, and ultimately highest-precision/exact knowledge.
-53. Survey knowledge is force-based, persistent, stable between inspections, and decrements coherently as mining depletes the authoritative reserve.
-54. Survey progression changes knowledge only; it never changes or rerolls the underlying geology or reserve state.
-55. Deep Mine extraction is fully automatic mixed extraction; the player does not target or prioritize individual underground reserve bodies.
-56. Deep Mining progression should primarily improve extraction throughput/cycle speed rather than extraction targeting, while preserving finite-reserve semantics.
-57. The Deep Mine is intended to require electricity plus later-defined industrial excavation consumables such as explosives, fuels, fluids, or other mining inputs; exact prototype implementation remains deferred.
-58. Deep Mine outputs are reserve-backed: each cycle derives extraction entitlement from finite internal reserve pools before emitting items.
-59. Fractional per-mineral accumulators may retain sub-item quantities so low-abundance traces remain recoverable without rounding distortion.
-60. Bounded randomness may vary when whole items appear, but must never create material beyond the authoritative geological reserve.
-61. Contributions from multiple internal sources of the same mineral merge into one canonical output item while retaining separate depletion accounting internally.
-62. Underground reserve generation is hierarchical by logical-node role: Node 1 is the guaranteed main continuation, while Nodes 2–5 are subordinate optional bodies.
-63. Optional same-primary nodes contribute smaller additive primary reserves; optional associated-mineral nodes use secondary/trace reserve rules and remain distinct finite pools.
-64. Later optional nodes generally have progressively less favorable occurrence and reserve-size characteristics; exact ranges and formulas remain deferred.
-65. Underground reserve generation uses an immutable Original Surface Reference Yield representing the complete generated surface deposit's geological quantity before player interaction or productivity.
-66. Cross-chunk deposits must not be permanently finalized from a partial generated patch; underground quantity state may remain pending until the complete surface reference can be established.
-67. The underground access node may exist before quantity finalization, while stable geological identity and access-location data remain fixed.
-68. Surface Reference Yield rounding/normalization is explicitly deferred until Factorio generation integration and reserve mathematics are prototyped.
-69. Distance-based resource richness/size scaling and any TI hard cap are separate future world-generation decisions, not part of 3.28.
-70. Surface-resource richness uses bounded distance progression: richness may increase with distance but reaches a hard maximum beyond which distance gives no further richness increase.
-71. Preferred implementation uses a shared default richness curve with per-mineral overrides where justified; current Factorio autoplace richness expressions make this technically viable in principle.
-72. If per-mineral overrides prove impractical in prototyping, TI falls back to one universal bounded linear/near-linear richness curve with a hard cap.
-73. Frequency, patch size, and richness remain separate world-generation dimensions; exact values and formulas remain deferred.
-74. Surface patch-size progression follows vanilla Factorio-style distance scaling by default, but TI imposes a hard upper bound so distance-derived patch-size growth eventually stops.
-75. Decision 3.29's default richness direction is clarified as vanilla-style distance progression bounded by a TI hard maximum rather than an unrelated custom progression curve.
-76. The vanilla-style richness and patch-size progression should be preserved up to the configured TI bounding point; exact cap distance, maximum values, and implementation formulas are deferred to in-game prototyping.
-77. Combined bounded patch-size and richness scaling must be tested against Original Surface Reference Yield because both dimensions feed the total geological quantity used by underground reserve generation.
-78. Surface-resource frequency follows vanilla-style statistical spot-frequency behavior and does not systematically increase with distance from spawn.
-79. Each canonical primary mineral may define its own base deposit frequency, subject to the player's normal map-generation frequency control; exact values remain deferred.
-80. Geological profile variants and paired underground continuations do not independently increase canonical surface-deposit frequency.
-81. Starting-area resource placement remains a separate balance layer from normal world deposit frequency.
-82. Frequency, patch size, and richness now have separate locked directions: frequency remains non-distance-scaling, while size and richness use bounded vanilla-style distance scaling.
-83. TI uses one global canonical mineral/resource vocabulary while planet allocation determines which primary mineral families are active on each world.
-84. Specialized geological profiles, trace associations, and associated underground mineralization are planet-scoped and designed around each planet's assigned primary mineral roster plus real-world mineral-association research; normal profile selection is not terrain-gated.
-85. Industrial minerals and legitimate multi-element mineral feeds are part of the same geological taxonomy even when downstream ownership belongs partly to chemistry, construction, glass, fertilizers, or another system.
-86. Gold-Bearing Quartz is the canonical primary Gold ore family, superseding Placer Gold in that role.
-87. Placer Gold is retained only as a possible later secondary/alluvial Gold deposit type; its implementation remains deferred.
-88. A distinct Gold Nugget or other specialized trace-Gold item is not established by 3.32 and would require an explicit future revision to the canonical trace-item rules.
-89. A stable deposit identity drives the deterministic weighted profile roll; terrain/biome classification and anchor tiles are not inputs to normal profile selection.
-90. Exact implementation mechanics require Factorio API prototyping before being treated as technically locked.
-91. Decision 3.34 locks the formula-complete geology report as the current scientific association baseline and the full current-material candidate association pool for later profile prototyping.
-92. The current default association scope uses existing TI material/resource families; scientifically valid non-roster elements do not become gameplay materials without a separate explicit decision.
-93. Vanadium is explicitly excluded from the current TI material set and is not part of the Uraninite candidate profile pool.
-94. A deposit profile may represent lattice-contained elements, disseminated/accessory minerals, associated mineral phases, distinct associated underground bodies, or processing/mineralogy differences; these occurrence modes are not interchangeable.
-95. The full Decision 3.34 pool is a selection pool, not a commitment to ship every candidate profile. Exact per-planet/per-mineral selections remain deferred to prototyping.
-96. Specialized profiles may legitimately contain no reward trace and instead alter processing difficulty, purity, product ratios, reserve composition, or associated-body structure.
-97. Distinct associated mineral bodies remain separate finite reserve pools where geology and gameplay justify that representation.
-98. Controlled fictional or fantasy-level mineral associations may be added later when explicitly justified by planetary setting, lore, or gameplay, and should be documented as fictional adaptations rather than ordinary real-world geology.
-99. Any future new element/material family still requires a separate explicit design decision even if it appears in the geological research.
 ---
 
-*End of checkpoint through Decision 3.34.*
+# Decision 4 Closure Audit: COMPLETE
+
+Decision 4 now contains enough architecture to proceed into implementation prototyping without further planning sub-decisions.
+
+The following are established at the level needed for a Factorio overhaul mod:
+
+- surface-miner progression and physical coverage rules;
+- native surface-resource depletion and mixed-resource behavior;
+- mining difficulty and optional fluid-assisted extraction boundaries;
+- mining outputs and separation from beneficiation;
+- mining waste boundaries;
+- automatic exhausted-miner reclamation;
+- underground reserve finiteness and depletion;
+- Deep Mine/access-node placement, occupancy, persistence, and site-removal behavior;
+- passive access-node revelation;
+- bootstrap-only manual ore mining;
+- finite surface and Deep Mining productivity;
+- residual surface-resource behavior;
+- Deep Mine buffered mixed output;
+- provisional Deep Mine operating-input baseline;
+- ordinary Factorio-style RNG for mixed underground extraction.
+
+Further questions about exact percentages, stack counts beyond the accepted output-buffer baseline, cycle times, power draw, consumables, reserve multipliers, probability weights, technology bonuses, graphics, prototype classes, collision masks, scripting structure, and detailed UI behavior are implementation/prototyping work unless a genuine architectural conflict appears.
+
+Decision 4 should therefore not continue into 4.23 merely to specify Factorio behavior that can be inherited or tuned during development.
+
+---
+
+# Forward Planning Audit
+
+The remaining numbered decisions should be kept at architecture/process-definition level rather than expanded into implementation micro-decisions:
+
+- **Decision 5: Crusher and Wash Plant Detailed Roles.** Largely established already by Decisions 1 and 2. The remaining useful work is to consolidate the machine/process boundary and identify only genuine exceptions. Exact recipes, speeds, fluids, reagents, waste rates, and mineral-specific numbers belong in prototyping/process design.
+- **Decision 6: Stone Brick Smelter, Blast Furnace, Arc Furnace, Foundry Detailed Roles.** Still needs a concise capability-boundary pass because these machines define actual metallurgical progression. Exact per-mineral recipes and numbers remain later work.
+- **Decision 7: Molten Metal, Casting, and Remelting Architecture.** Partially established. A concise pass is still useful to define the common molten/casting interface and preserve the locked 0.95x remelting return without over-specifying recipes.
+- **Decision 8: Stage 1 Copper/Tin/Bronze Metallurgy.** Architecture direction is now locked, but exact recipe, technology, and tier sequencing is intentionally deferred until the broader early-game/game-progression plan is available.
+- **Decision 9: Stage 1 Iron/Steel Metallurgy.** Intentionally deferred because its useful decisions are progression-dependent and should be resolved together with the broader game-progression plan rather than in isolation.
+- **Decision 10: Metal Forms and Component Granularity.** Still genuinely useful at architecture level because it controls item proliferation, but exact per-metal forms should remain deferred to recipe/progression design.
+
+The default planning rule from this point forward is: **inherit Factorio behavior unless TI explicitly needs a different gameplay rule; lock only architecture and process boundaries now; defer exact values and implementation behavior to development prototyping.**
+
+---
+
+# Decision 5: Crusher and Wash Plant Detailed Roles: LOCKED
+
+Decision 5 consolidates the already-established Crusher and Wash Plant architecture without adding implementation micro-decisions. These machines define the universal ore-preparation and beneficiation boundary before metallurgical extraction.
+
+## 5.1 Ore Crusher role
+
+- TI uses exactly **two physical Ore Crusher generations** by default.
+- The Crusher owns the universal **Raw Ore -> Crushed Ore** preparation stage.
+- The locked baseline relationship remains **2 Raw Ore -> 3 Crushed Ore**, representing the established 1.50x local recovery relationship.
+- Crushing represents mechanical size reduction and preparation, not chemical beneficiation or metallurgical extraction.
+- Crusher processing may generate appropriate mechanical/gangue waste such as Rock Tailings or Rock Gravel where the recipe warrants it.
+- Further progression should primarily come from technology-gated recipes, throughput, efficiency, and process capability rather than a long Mk1-Mk6 machine chain.
+
+## 5.2 Wash Plant / Ore Concentrator role
+
+- TI uses exactly **one physical Wash Plant / Ore Concentrator machine** by default.
+- The Wash Plant owns the universal **Crushed Ore -> Concentrate** beneficiation stage.
+- The locked baseline relationship remains **2 Crushed Ore -> 3 Concentrate**, preserving the established cumulative **2.25x prepared-material recovery** after crushing and concentration.
+- Basic beneficiation may use water or reused process water.
+- Advanced mineral-specific beneficiation may use reagents or other processing aids when justified by the mineral/process design.
+- The Wash Plant may improve separation, primary recovery where explicitly designed, trace recovery, fluid/reagent efficiency, throughput, and waste behavior.
+- Recovered trace minerals use their normal canonical concentrate items. No dedicated `trace-*` concentrate item family is created.
+- Wash Plant processing may generate beneficiation waste such as Rock Sand, Rock Clay, tailings, sludge, or separated gangue as appropriate.
+
+## 5.3 Machine/process boundary
+
+The locked default process boundary is:
+
+```text
+Raw Ore
+-> Ore Crusher
+-> Crushed Ore
+-> Wash Plant / Ore Concentrator
+-> Concentrate
+-> Metallurgical Extraction
+```
+
+- Surface miners and Deep Mines remain extraction-only and do not perform crushing or beneficiation.
+- The Crusher does not perform concentration or metallurgical extraction.
+- The Wash Plant does not perform smelting, reduction, refining, or metal casting.
+- There is no universal post-concentrate beneficiation state. Any exceptional specialized processing step must be justified by the specific mineral/process later.
+
+## 5.4 Explicit prototyping deferrals
+
+Decision 5 intentionally does **not** lock exact implementation values for:
+
+- recipe durations;
+- crafting speeds;
+- machine power draw;
+- exact water consumption;
+- exact reagent identities or quantities;
+- exact waste/byproduct quantities;
+- exact trace-recovery percentages;
+- per-mineral advanced beneficiation recipes;
+- machine footprints;
+- module slots and module behavior;
+- graphics, animations, sounds, and UI details;
+- technology costs and numerical upgrade values.
+
+These are development/prototyping and balance decisions unless a later architecture conflict requires reopening Decision 5.
+
+---
+
+# Decision 6: Stone Brick Smelter, Blast Furnace, Arc Furnace, and Foundry Detailed Roles: LOCKED
+
+Decision 6 defines two related metallurgical progression paths without requiring every mineral to pass through every machine. Exact recipe assignments remain mineral-specific and are deferred to process prototyping.
+
+## 6.1 Solid-metal / ingot progression
+
+```text
+Stone Brick Smelter
+→ Arc Furnace
+```
+
+### Stone Brick Smelter
+
+- primitive starting metallurgical extraction machine;
+- powered by solid combustible fuel;
+- supports simple early metallurgy from appropriate raw or prepared feedstocks;
+- primarily produces solid metal / ingot outputs;
+- intentionally inefficient compared with later industrial metallurgy;
+- does not serve as a general molten-metal machine.
+
+### Arc Furnace
+
+- advanced electric successor to the Stone Brick Smelter path;
+- advanced high-temperature metallurgy powered by electricity;
+- primarily produces ingots or other solid-metal outputs rather than serving as a general molten-metal producer;
+- supports minerals/processes that benefit from advanced electric high-temperature extraction;
+- exact mineral-specific capability advantages remain process-specific rather than a universal recovery multiplier.
+
+## 6.2 Molten-metal progression
+
+```text
+Blast Furnace
+→ Foundry
+```
+
+### Blast Furnace
+
+- first general molten-metal extraction tier and major industrial transition;
+- powered by solid combustible fuel by default;
+- produces molten metal for downstream casting and later alloying;
+- may require mineral/process-specific fluxes or additives;
+- has **limited alloy-production capability** for selected early/simple alloy systems;
+- does not automatically receive a universal material-productivity or recovery bonus.
+
+### Foundry
+
+- advanced electric molten-metal extraction, refining, and alloying tier;
+- functions as the advanced successor to the Blast Furnace path;
+- supports the broadest molten-metallurgy capability;
+- advanced alloys may require combining appropriate molten-metal feeds produced by Blast Furnaces, Foundries, or other explicitly supported molten sources;
+- may use fluxes, reagents, gases, additives, or specialized intermediates where a specific process warrants them;
+- may improve recovery, separation, throughput, or byproduct handling only where the corresponding recipe/process explicitly provides that advantage;
+- remains an extraction/refining/alloying machine rather than the downstream Metal Caster.
+
+## 6.3 Alloy capability boundary
+
+- Blast Furnace alloying is intentionally limited to selected early/simple alloy systems.
+- Advanced alloy systems belong primarily to the Foundry and may require multiple molten-metal feeds.
+- Exact classification of individual TI alloys as Blast-Furnace-capable or Foundry-required is deferred to the later alloy/process-design and prototyping phase.
+- No assumption is made that every alloy must use molten processing if a later process design justifies another route.
+
+## 6.4 Common recovery and byproduct rule
+
+- Machine advancement does not create a universal recovery multiplier. Decision 2 remains authoritative: final recovery depends on prepared-material recovery and the specific extraction recipe/process.
+- Slag and other thermal/metallurgical byproducts remain recipe/process-specific.
+- Fluxes, reagents, gases, and additives remain process-specific rather than universal machine taxes.
+
+## 6.5 Explicit prototyping deferrals
+
+Decision 6 intentionally does **not** lock:
+
+- exact per-mineral machine assignments beyond the progression boundaries above;
+- exact early/simple versus advanced alloy lists;
+- exact recipes and ratios;
+- power or fuel consumption;
+- crafting speeds and throughput;
+- machine footprints;
+- module behavior;
+- flux/reagent/gas quantities;
+- slag/byproduct quantities;
+- exact technology costs or numerical bonuses;
+- graphics, animations, sounds, or implementation details.
+
+These remain development/prototyping decisions unless a genuine architectural conflict requires reopening Decision 6.
+
+---
+
+# Decision 7: Molten Metal, Casting, and Remelting Architecture: LOCKED
+
+Decision 7 establishes the shared solid-metal and molten-metal routing architecture without over-specifying implementation details.
+
+## 7.1 Solid-metal route
+
+```text
+Prepared Ore
+→ Stone Brick Smelter / Arc Furnace
+→ Solid Metal / Ingot
+```
+
+- The solid route does not require molten-metal logistics or the Metal Caster.
+- Stone Brick Smelter and Arc Furnace roles remain governed by Decision 6.
+- Exact per-mineral recipes remain deferred to process prototyping.
+
+## 7.2 Molten-metal route
+
+```text
+Prepared Ore
+→ Blast Furnace / Foundry
+→ Molten Metal
+→ Metal Caster
+→ Solid Metal Products
+```
+
+- Blast Furnace is the first general molten-metal production tier.
+- Foundry is the advanced molten-metal extraction/refining/alloying tier.
+- Metal Caster is downstream from extraction and alloying.
+
+## 7.3 Alloy routing
+
+Selected early/simple alloys may be produced through the Blast Furnace molten route where appropriate.
+
+Advanced alloys belong primarily to the Foundry and may require combining multiple molten-metal feeds:
+
+```text
+Molten Metal A ─┐
+                ├→ Foundry → Molten Advanced Alloy
+Molten Metal B ─┘
+                         ↓
+                    Metal Caster
+```
+
+Exact classification of individual alloys and exact feed ratios remain deferred to later process design and prototyping.
+
+## 7.4 Metal Caster role
+
+Use one general physical Metal Caster by default.
+
+The Metal Caster receives eligible molten pure metals or molten alloys and converts them into supported solid forms. Candidate outputs may include ingots, plates, gears, structural forms, or other products where direct casting is appropriate. Exact castable product lists remain recipe-specific and deferred to prototyping.
+
+## 7.5 Remelting progression
+
+Baseline remelting remains subtractive:
+
+```text
+Eligible Solid Metal / Ingot / Metal Part
+→ Remelting
+→ 0.95× Molten-Metal Equivalent
+```
+
+- **0.95× recovery is the baseline remelting return.**
+- Technological progression may unlock advanced remelting recipes using fluxes, protective process aids, or other justified metallurgy inputs to reduce oxidation and related molten-metal losses.
+- Advanced remelting recovery may improve progressively up to a **hard cap of 0.99× molten-metal equivalent (99% recovery)**.
+- Remelting never reaches 100% material recovery by default.
+- Remelting may produce slag or other appropriate thermal byproducts.
+- Exact fluxes, intermediate recovery steps, recipe ratios, machine ownership, and byproduct quantities remain deferred to prototyping.
+
+This progression supports a meaningful logistics tradeoff between direct local casting and transporting compact solid-metal forms for later remelting. Separate bulk shipping-crate mechanics are not part of Decision 7 and remain governed by the independent logistics/idea-backlog design process.
+
+## 7.6 Explicit prototyping deferrals
+
+Decision 7 intentionally does **not** lock:
+
+- exact molten-fluid quantities;
+- exact temperatures;
+- pipe throughput;
+- casting speeds;
+- coolant or process-fluid usage;
+- exact caster recipes;
+- exact remeltable component lists;
+- direct-casting productivity;
+- exact molten-alloy ratios;
+- exact flux identities and consumption;
+- exact remelting recovery steps between 95% and 99%;
+- machine statistics, graphics, sounds, or implementation details.
+
+These remain development/prototyping decisions unless a genuine architectural conflict requires reopening Decision 7.
+
+---
+
+# Decision 8: Stage 1 Copper, Tin, and Bronze Metallurgy: LOCKED AS OPEN DIRECTION
+
+Decision 8 deliberately locks only the metallurgy architecture that is known now. Exact technology ordering, recipe progression, tier timing, unlock costs, and broader early-game balance are deferred until the wider Thelian Industries game-progression plan has been researched and designed. Metallurgy must reference that future progression work rather than attempting to invent the surrounding game in isolation.
+
+## 8.1 Early Copper and Tin
+
+- Copper and Tin remain early foundational metals sourced from Cuprite and Cassiterite.
+- The Stone Brick Smelter remains the early solid-metal smelting machine.
+- The Blast Furnace is **technology-gated and is not part of the initial early-game Bronze requirement**.
+- Exact first recipes, unlock order, required preparation stage, yields, and timing remain progression/prototyping decisions.
+
+## 8.2 Early Bronze feed-mix architecture
+
+Early Bronze does not require molten-metal alloying or the Blast Furnace. Instead, Copper-bearing and Tin-bearing feedstocks are combined in the required matching alloy ratio into a dedicated **Bronze Feed Mix** intermediate, which is then smelted in the Stone Brick Smelter to produce Bronze.
+
+The intended architecture supports state-matched feed mixes, for example:
+
+```text
+Copper Raw Ore + Tin Raw Ore
+→ Bronze Feed Mix (Raw)
+→ Stone Brick Smelter
+→ Bronze
+
+Copper Crushed Ore + Tin Crushed Ore
+→ Bronze Feed Mix (Crushed)
+→ Stone Brick Smelter
+→ Bronze
+
+Copper Concentrate + Tin Concentrate
+→ Bronze Feed Mix (Concentrate)
+→ Stone Brick Smelter
+→ Bronze
+```
+
+The exact item names, Copper-to-Tin ratios, crafting method, yields, whether every preparation state receives a dedicated feed-mix recipe, and which Bronze output form is produced are intentionally deferred. The locked concept is the **pre-mixed Copper/Tin solid feedstock -> Stone Brick Smelter -> Bronze** route.
+
+## 8.3 Later Bronze processing
+
+Later technology may introduce molten Bronze or alternative Bronze-production routes through the Blast Furnace/Foundry architecture established in Decisions 6 and 7. Those later routes are not required to resolve Decision 8 and are deferred to recipe/progression prototyping.
+
+## 8.4 Progression dependency and implementation rule
+
+No additional metallurgy decision should attempt to finalize exact technology, recipe, tier, or early-game progression sequencing before the metallurgy content foundation exists in-game and the broader progression work is ready to be tested. Questions such as when Crusher/Wash Plant stages become mandatory, when Blast Furnace/Arc Furnace/Foundry technologies unlock, exact metallurgy recipe chains, and the timing of Iron/Steel progression must be revisited in context during the later progression/balance phase.
+
+This does **not** block foundational implementation. Copper, Tin, Bronze Feed Mixes, machines, recipes, and supporting technologies may be implemented with simple placeholder values and 1:1-style ratios where mechanically coherent so the complete metallurgy path can be exercised in-game. Those placeholder values are not final balance decisions.
+
+Decision 8 therefore provides a reference point for later progression work rather than a complete progression specification.
+
+---
+
+# Metallurgy Planning Pause Point
+
+**Decision 9: Stage 1 Iron/Steel Metallurgy remains deferred at the detailed progression level.** Its foundational content may later be implemented with simple placeholder recipes and technologies once the required entities/items/processes are ready, while exact recipe ratios, unlock timing, costs, yields, and pacing remain part of the later progression/balance pass.
+
+**Decision 10: Metal Forms and Component Granularity remains pending at architecture level.** It can be resumed when metallurgy planning returns, without requiring progression-specific assignments first.
+
+The current metallurgy plan is therefore sufficient to pause here without inventing additional progression detail. Future implementation should follow the metallurgy implementation and progression staging principle defined near the beginning of this document.
+
+---
+
+*Internal checkpoint updated through Decision 8. Decisions 1-8 are complete at their current architecture scope; Decision 9 is progression-deferred; Decision 10 remains pending. Foundational metallurgy implementation may use provisional 1:1-style recipes and baseline values until later in-game progression and balance passes.*
