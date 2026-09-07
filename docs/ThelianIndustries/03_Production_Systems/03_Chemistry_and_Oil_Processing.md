@@ -2,7 +2,9 @@
 
 **Status: Placeholder**
 
-The current Thelian Industries planning source contains no substantive specification for this domain yet. This document exists to reserve the canonical documentation location. Do not infer missing design decisions.
+The current Thelian Industries planning source contains no substantive general specification for this domain yet. This document exists to reserve the canonical documentation location. Do not infer missing design decisions.
+
+Metallurgy establishes only a narrow interface here: basic beneficiation may use water or reused process water, and advanced beneficiation/extraction/remelting may use justified process-specific reagents, fluxes, additives, gases, or protective aids. Exact substances and recipes remain deferred.
 
 ## Current Implementation Status
 

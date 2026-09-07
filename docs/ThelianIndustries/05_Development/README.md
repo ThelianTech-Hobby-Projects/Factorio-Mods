@@ -4,6 +4,8 @@
 
 This folder reserves the canonical documentation locations for how Thelian Industries is developed. The legacy planning sources do not define a mod architecture, repository structure, testing strategy, coding/data standards, or release workflow.
 
+The metallurgy decision record does establish a narrow development sequence: define architecture/content, implement items/fluids/entities/machines, connect provisional recipes/technologies, verify the system end-to-end in-game, then refine progression and balance through iterative playtesting. This does not fill the broader development-documentation gaps.
+
 No source-code architecture or implementation status is inferred during this documentation-only migration. The pages below identify missing planning work, not accepted engineering decisions.
 
 ## Documents
@@ -25,4 +27,4 @@ The legacy source set is limited to design and planning files under `Mods/Thelia
 - [Document Authority](../DOCUMENT_AUTHORITY.md)
 - [Project Plan](../00_Project/03_Project_Plan.md)
 - [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md)
-
+- [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)

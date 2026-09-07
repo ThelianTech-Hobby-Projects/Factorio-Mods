@@ -19,6 +19,8 @@ The Stage 1 plan also states that buildings use a new crafting chain and constru
 
 No recipes, quantities, building requirements, or final component hierarchy are specified in the current sources.
 
+The retained lists above are vocabulary, not a final item-granularity decision: metallurgy Decision 10 remains pending. The current metallurgy architecture also locks initial Bronze as Copper-bearing plus Tin-bearing Bronze Feed Mix smelted in the Stone Brick Smelter, not as an initial molten Blast Furnace alloy requirement. Exact forms, ratios, and recipes remain deferred.
+
 ## Related documents
 
 - Material-production concerns: [Metallurgy Processing Chains](../03_Production_Systems/01_Metallurgy_Processing_Chains.md)
@@ -31,3 +33,4 @@ No recipes, quantities, building requirements, or final component hierarchy are 
 - `Mods/ThelianIndustries/plans/Metallurgy_Process-Tree.md`, sections 8–9
 - `Mods/ThelianIndustries/plans/electronics.md`
 - `Mods/ThelianIndustries/plans/Game-Progression-Tree.md`, Stage 1
+- `docs/ThelianIndustries/Plans/InProgress Plans/TI_Metallurgy_Plan.md`, Decisions 8 and 10

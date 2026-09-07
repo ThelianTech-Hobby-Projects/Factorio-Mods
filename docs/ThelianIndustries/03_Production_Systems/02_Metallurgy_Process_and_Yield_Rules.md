@@ -8,6 +8,27 @@ This document owns the current planned metallurgy yield scaling, yield multiplie
 
 For chains, resources, materials, components, and planetary-resource notes, see [Metallurgy Processing Chains](01_Metallurgy_Processing_Chains.md).
 
+**Current locked update (2026-09-07):** [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md), Decision 2, supersedes the older universal concentrate and advanced-machine yield assumptions where they conflict. The retained historical table and context below are preserved for provenance; they are not the current numeric authority.
+
+## Locked recovery semantics
+
+| State / route | Current locked baseline |
+| --- | ---: |
+| Raw Ore | 1.00× cumulative |
+| `2 Raw Ore → 3 Crushed Ore` | 1.50× local and cumulative |
+| `2 Crushed Ore → 3 Concentrate` | 1.50× local; 2.25× cumulative |
+| Baseline extraction from Raw / Crushed / Concentrate | 1.00× / 1.50× / 2.25× final |
+| Advanced beneficiation or extraction | Variable only when an explicit mineral/process recipe justifies it |
+| Eligible metal, ingot, or part → molten remelting | 0.95× baseline; hard cap 0.99× |
+
+Final recovery is `Prepared-Material Recovery × Recipe Extraction Factor`; a simple full-conversion recipe can use a 1.00 extraction factor. Advanced furnaces do not receive a universal recovery multiplier. Throughput changes time, not material ratio.
+
+Fluxes, reagents, additives, and byproducts are process-specific. Slag does not automatically mean lost primary metal, and the locked 5% remelting loss is not a mandatory "universal slag" output. Foundational implementation may use coherent placeholder values where the architecture does not prescribe a number, but those values are not final balance.
+
+### Historical table retained below
+
+The following pre-lock table is retained to preserve the migration record. Its `WashPlant → Smelter = 3.0×` and Foundry-wide `1.5× / 3.0× / 4.5×` values are superseded by the locked table above.
+
 ## Universal yield scaling
 
 | Stage | Yield multiplier |
@@ -20,9 +41,9 @@ For chains, resources, materials, components, and planetary-resource notes, see 
 | Concentrate -> Foundry | 4.5x |
 | Remelt Ingots -> Molten | 0.95x |
 
-**Remelting Loss:** 5% Universal Slag is produced when remelting ingots or scrap.
+**Historical remelting statement:** “5% Universal Slag” is retained as source wording only; current remelting loss and byproduct semantics are defined in the locked update above.
 
-## Standard byproducts
+## Historical default-byproduct table
 
 | Process stage | Default byproducts |
 | --- | --- |
@@ -33,7 +54,7 @@ For chains, resources, materials, components, and planetary-resource notes, see 
 
 Byproduct ratios vary depending on geological composition.
 
-## Fuel and energy categories
+## Historical fuel and energy categories
 
 ### Early Game
 
@@ -71,9 +92,10 @@ The source characterizes this as an expandable, modular ore -> ingot -> alloy ->
 
 ## Migration history
 
-`Metallurgy-Tree.md` contains an older conflicting yield statement, `Ore -> Crusher -> Smelting = 2x Finished Material`. It is superseded for this concern by the `Crushed -> Smelter = 1.5x` rule above, as directed by owner resolution TI-CONFLICT-001. Unique non-conflicting content from the older source is preserved in [Metallurgy Processing Chains](01_Metallurgy_Processing_Chains.md).
+`Metallurgy-Tree.md` contains an older conflicting yield statement, `Ore -> Crusher -> Smelting = 2x Finished Material`. It is superseded by the locked recovery architecture above. Unique non-conflicting content from the older source is preserved in [Metallurgy Processing Chains](01_Metallurgy_Processing_Chains.md).
 
 ## Provenance
 
-- Authoritative numeric source: `Mods/ThelianIndustries/plans/Metallurgy_Process-Tree.md`.
+- Current authoritative numeric source: `docs/ThelianIndustries/Plans/InProgress Plans/TI_Metallurgy_Plan.md`, Decision 2.
+- Historical numeric input: `Mods/ThelianIndustries/plans/Metallurgy_Process-Tree.md`.
 - Historical conflicting source: `Mods/ThelianIndustries/plans/Metallurgy-Tree.md`.

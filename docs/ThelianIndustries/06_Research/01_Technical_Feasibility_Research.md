@@ -26,10 +26,14 @@ This baseline is not a conclusion that any proposed Thelian Industries mechanic 
 The audit specifically identifies the following proposals as requiring a targeted prototype, scripting investigation, or alternative design before they can become implementation commitments:
 
 - restricted loose-material versus normal-belt behavior;
-- mining-hardness or equivalent progression gating;
+- historical mining-hardness or equivalent progression-gating proposal (superseded for ordinary solid ores by the locked `minable.mining_time` architecture);
 - distinct gas, liquid, molten, and special pipe-network behavior;
 - quality-dependent rocket cargo behavior; and
 - complex planetary hazards and inter-platform logistics concepts.
+
+## Locked metallurgy prototype boundary
+
+The metallurgy architecture is not a candidate mechanics list. Technical validation must instead test suitable implementations for character bootstrap mining versus machine mining, `minable.mining_time` and normal miner compatibility, footprint-bound surface extraction, underground access-node exposure, and finite simulated Deep Mine reserves. It must also validate the selected overlapping-resource representation or its fallback. Prototype validation chooses an implementation approach; it does not change the locked architecture or settle deferred numerical balance.
 
 ## Research rules
 
@@ -43,3 +47,4 @@ The audit specifically identifies the following proposals as requiring a targete
 - [Gameplay Mechanics Index](../04_Gameplay_Mechanics/00_Gameplay_Mechanics_Index.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Testing and QA Plan](../05_Development/02_Testing_and_QA_Plan.md)
+- [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)

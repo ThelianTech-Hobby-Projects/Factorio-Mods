@@ -6,6 +6,8 @@ This folder separates research questions and evidence from gameplay decisions. R
 
 The supplied planning audit provides a feasibility baseline for selected idea-backlog concepts. That baseline is preserved here as audit-derived context only; it must be revalidated before implementation work.
 
+Separate from the backlog, the locked metallurgy architecture requires targeted prototype and balance research before implementation details or final values are chosen. See [the metallurgy decision record](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md).
+
 ## Documents
 
 | Document | Current status | Purpose |
@@ -20,4 +22,3 @@ The supplied planning audit provides a feasibility baseline for selected idea-ba
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Open Questions and Research Log](../00_Project/05_Open_Questions_and_Research_Log.md)
 - [Documentation Audit](../00_Project/06_Documentation_Audit.md)
-

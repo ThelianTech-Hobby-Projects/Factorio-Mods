@@ -2,7 +2,7 @@
 
 **Status: Planning Reserved / Research Needed**
 
-This folder reserves the documentation locations for gameplay-mechanics concerns in Thelian Industries. The current legacy planning set does not provide approved, complete specifications for these systems.
+This folder reserves the documentation locations for gameplay-mechanics concerns in Thelian Industries. The current legacy planning set does not provide approved, complete specifications for most of these systems. The narrow exception is the locked mining/resource architecture summarized in [Mining and Resource Gating](06_Mining_and_Resource_Gating.md) and detailed in the metallurgy plan.
 
 Gameplay proposals remain owned by the non-canonical [Idea Backlog](../Plans/Idea_Backlog.md). The pages in this folder must not be used as implementation specifications or as evidence that a proposed mechanic is approved.
 
@@ -16,10 +16,10 @@ Gameplay proposals remain owned by the non-canonical [Idea Backlog](../Plans/Ide
 | [Modules, Quality, and Effects](03_Modules_Quality_and_Effects.md) | Idea / Candidate | Module, quality, and effects proposals are retained in the idea backlog. |
 | [Power, Steam, and Early Infrastructure](04_Power_Steam_and_Early_Infrastructure.md) | Idea / Candidate | Early-infrastructure proposals are retained in the idea backlog. |
 | [Rockets, Space Logistics, and Transport](05_Rockets_Space_Logistics_and_Transport.md) | Idea / Candidate | Transport proposals are retained in the idea backlog. |
-| [Mining and Resource Gating](06_Mining_and_Resource_Gating.md) | Research Needed | Mining-gating proposal and resource concerns are cross-linked without redefining them. |
+| [Mining and Resource Gating](06_Mining_and_Resource_Gating.md) | Locked architecture / prototyping pending | Locked mining and reserve boundaries are summarized; unresolved prototype work remains cross-linked. |
 
 ## Provenance
 
 - Legacy speculative source: `Mods/ThelianIndustries/plans/IDEAS.md`.
 - Related current planning sources: `Game-Progression-Tree.md`, `Metallurgy-Tree.md`, and `Metallurgy_Process-Tree.md`; their canonical migrated concerns belong in progression and production-system documentation.
-
+- Current locked mining source: [TI_Metallurgy_Plan.md](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md).

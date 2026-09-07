@@ -6,7 +6,9 @@
 
 This document owns metallurgy extraction, processing chains, resources, machines, materials, components, and planetary-resource notes. It does not own the current numeric yield multipliers; those are owned by [Metallurgy Process and Yield Rules](02_Metallurgy_Process_and_Yield_Rules.md).
 
-The numeric crushed-ore smelting statement in the older `Metallurgy-Tree.md` is superseded for yield scaling by the newer `Metallurgy_Process-Tree.md`; see the provenance note below.
+The numeric crushed-ore statement in the older `Metallurgy-Tree.md` is historical. Current yield authority is the locked recovery architecture in the metallurgy plan; see the provenance note below.
+
+**Current locked update (2026-09-07):** The owner-designated [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is now the source of truth for metallurgy architecture through Decisions 1–8. The retained migrated material below preserves useful vocabulary and provenance, but the plan supersedes it where it conflicts. Decision 9 remains detailed-progression deferred and Decision 10 remains pending; no final recipe, unlock, timing, or balance claims should be inferred.
 
 ## Current Implementation Status
 
@@ -16,6 +18,22 @@ The audit found no registered TI resources, mining drills, crushers, wash plants
 
 Source-level scaffolds and localization vocabulary are recorded in [Project Context Snapshot](../PROJECT_CONTEXT.md#7-metallurgy-snapshot). They do not alter the planned processing chains in this document.
 
+## Locked architecture update
+
+The current locked conventional boundary is `Raw Ore → Ore Crusher → Crushed Ore → Wash Plant / Ore Concentrator → Concentrate → Metallurgical Extraction`. TI uses two physical Crusher generations and one Wash Plant. Mining remains extraction-only: its normal output is canonical Raw Ore plus possible unrefined excavation waste, while Crusher and Wash Plant own preparation and beneficiation. There is no universal post-concentrate stage.
+
+The locked machine routes are `Stone Brick Smelter → Arc Furnace` for the solid-metal/ingot path and `Blast Furnace → Foundry` for the molten-metal path. The Metal Caster is one downstream casting machine, not an extraction tier. Blast Furnace alloying is limited to selected early/simple systems; advanced molten refining/alloying belongs primarily to the Foundry. Exact mineral assignments, alloy classifications, recipes, power, and throughput remain deferred.
+
+Early Copper and Tin are sourced from Cuprite and Cassiterite. Initial Bronze uses state-matched Copper-bearing plus Tin-bearing **Bronze Feed Mix** → Stone Brick Smelter → Bronze; it does not require the technology-gated Blast Furnace or molten alloying. Ratios, item names, yields, coverage by preparation state, technology order, and output form remain deferred.
+
+### Locked planetary primary-resource allocation
+
+The following is the current independently generated primary-surface-resource allocation and supersedes conflicting earlier lists in this document: Nauvis—Bituminous Coal, Hematite, Cuprite, Cassiterite, Galena, Bauxite; Luna—Cinnabar, Argentite, Uraninite, Ice Fields; Vulcanus—Pyrolusite, Cobaltite, Chromite; Fulgora—Zircon, Pentlandite; Gleba—Sphalerite, Limestone/Calcite, Gold-Bearing Quartz; Pyrosauria—Carnallite, Phosphorite; Tectara—Wolframite, Ilmenite; Voltaris—Monazite, Sperrylite. Petalite and Quartzite remain canonical but unassigned primary families. Gold-Bearing Quartz is the canonical Gold family; Placer Gold is only a possible future secondary/alluvial source.
+
+### Retained material and supersession boundary
+
+The historical machinery, planetary, alloy, component, and byproduct lists below are retained rather than removed. They are planning vocabulary and provenance, not final recipe/process assignments. In particular, older surface/underground yield language, generic mining machinery labels, mandatory Alloy Foundry routing, and planetary allocations conflict with the locked plan and must not override this update.
+
 ## Mining and ore acquisition
 
 ### Surface and underground sources
@@ -24,7 +42,7 @@ Source-level scaffolds and localization vocabulary are recorded in [Project Cont
 - Surface rocks provide tiny/small amounts of ores, gravel, and clay.
 - Underground mining requires Explosives (also described as explosives/technology-gated), uses high-yield enriched ore veins, and is depletable/longer-lasting.
 
-### Planetary extraction notes
+### Historical planetary extraction notes
 
 | Planet type | Extraction method | Notes |
 | --- | --- | --- |
@@ -97,7 +115,7 @@ Source-level scaffolds and localization vocabulary are recorded in [Project Cont
 - Tectara: Wolframite Ore -> Tungsten; Ilmenite Ore -> Titanium.
 - Voltaris: Monazite Ore -> Neodymium; Sperrylite Ore -> Platinum.
 
-**Status: Current Proposed Direction — Exact Resource Allocation Not Final**
+**Status: Historical migration direction — superseded by the locked allocation above**
 
 The planetary metallurgy progression and the use of additional planet-specific metals are part of the current planning direction. The exact assignment of Titanium, Cobalt/Cobaltite, and other additional metals between Tectara, Vulcanus, and later planets has not yet been finalized for implementation.
 
@@ -175,5 +193,5 @@ The source describes the layout as a clear ore -> ingot -> alloy -> parts hierar
 
 - Primary source: `Mods/ThelianIndustries/plans/Metallurgy-Tree.md`.
 - Supporting newer source: `Mods/ThelianIndustries/plans/Metallurgy_Process-Tree.md`.
-- Superseded older yield statement: `Metallurgy-Tree.md` says `Ore -> Crusher -> Smelting = 2x Finished Material`; this statement is retained as history only. Per owner resolution TI-CONFLICT-001, the newer process source owns current yield scaling and its `Crushed -> Smelter = 1.5x` value is canonical for that concern.
+- Superseded older yield statement: `Metallurgy-Tree.md` says `Ore -> Crusher -> Smelting = 2x Finished Material`; this statement is retained as history only. The current locked plan owns yield scaling, including the 1.50× cumulative baseline after crushing.
 - Related open question: the Tectara/Vulcanus additional-metal allocation is tracked in [Open Questions and Research Log](../00_Project/05_Open_Questions_and_Research_Log.md).

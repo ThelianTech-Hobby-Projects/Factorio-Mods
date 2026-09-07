@@ -53,6 +53,8 @@ The source lists these starting resources:
 
 `Cassiterite` is the owner-approved active spelling; the source used `Casserite`.
 
+The locked planetary primary-resource allocation separately includes Bauxite on Nauvis, but that allocation does not by itself expand or rebalance the stated Stage 1 starting-patch list. Starting-area placement and final balance remain separate work.
+
 ### Stage goals
 
 - Rocket Silo and Space Platform.
@@ -66,6 +68,8 @@ The source says Nauvis is changed and overhauled to have a Bronze Age, Iron Age,
 - Copper and tin are the main metals used in the Bronze Age.
 - Iron is the main metal used in the Iron Age.
 - The Early Electronics Age begins electronics use for the rest of the game.
+
+The current metallurgy plan locks the initial Bronze architecture without locking the wider age sequencing: state-matched Copper-bearing plus Tin-bearing feedstocks form a Bronze Feed Mix that is smelted in the Stone Brick Smelter. The Blast Furnace is technology-gated and is not required for initial Bronze. Detailed Iron/Steel progression, technologies, recipes, ratios, costs, yields, and pacing remain deferred.
 
 For that early electronics direction, the source names a new electronics chain using copper, tin, lead, and wood/stone to create electronics components. It lists resistors, capacitors, transistors, diodes, integrated circuits, and circuit boards, plus an Electronics Assembler. The electronics-use/progression concern is owned by the electronics documentation; this is a Stage 1 cross-reference only.
 
@@ -89,6 +93,8 @@ The source says the research chain is more interaction-based than science-pack-b
 - After the research desk is unlocked, different science data packets and other research supplies can be used to “theorize” new and advanced technologies, including infinite technology.
 
 The exact technology tree, desk-unlock condition, data-packet system, and infinite-technology rules remain unspecified. See [Victory and Postgame](03_Victory_and_Postgame.md) for the separate postgame candidate concepts and the future research-design owner.
+
+Metallurgy content may be implemented with simple, internally consistent placeholder technologies and 1:1-style recipes where mechanically coherent so its end-to-end system can be tested. These are not final unlock, science, balance, or progression decisions; [the metallurgy plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) remains the architecture source.
 
 ## Stage 2 — Vulcanus, Gleba, and Fulgora
 

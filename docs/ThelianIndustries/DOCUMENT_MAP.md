@@ -10,8 +10,8 @@ This map assigns an authoritative owner per concern. Shared concepts may have mu
 | Project framing, scope, open questions, and documentation audit | [00_Project/](00_Project/README.md) | Project-level planning administration. |
 | Overall game-design direction | [01_Game_Design/](01_Game_Design/README.md) | Planning-only system direction. |
 | Game stages, worlds, victory, and postgame | [02_Progression_and_Worlds/](02_Progression_and_Worlds/README.md) | Owns progression sequencing and world descriptions. |
-| Metallurgical processing and yield rules | [03_Production_Systems/](03_Production_Systems/README.md) | Yield ownership belongs to the process-and-yield document. |
-| Speculative mechanics and candidates | [Plans/](Plans/README.md) | The idea backlog remains authoritative until an owner promotes an item. |
+| Metallurgical processing and yield rules | [03_Production_Systems/](03_Production_Systems/README.md) | The owner documents hold the canonical summaries; [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is the current locked source through Decisions 1–8. |
+| Speculative mechanics and candidates | [Plans/Idea_Backlog.md](Plans/Idea_Backlog.md) | The Idea Backlog remains authoritative for candidates; the Plans folder also contains the locked metallurgy decision record. |
 | Durable owner-approved decisions | [Decisions/](Decisions/README.md) | No substantive ADRs are created by this migration. |
 | Migration review evidence | [Reviews/](Reviews/README.md) | Owns audit findings and provenance notes. |
 | Historical material | [Archive/](Archive/README.md) | Does not override active planning sources. |
@@ -59,6 +59,7 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `03_Production_Systems/00_Production_Systems_Overview.md` | Production Systems Overview | Canonical planning | Planning Draft | Production source overview | metallurgy and electronics plans | metallurgy, electronics | Yes |
 | `03_Production_Systems/01_Metallurgy_Processing_Chains.md` | Metallurgy Processing Chains | Canonical planning | Planning Draft | Owns nonnumeric metallurgy concerns | `Metallurgy-Tree.md` and process plan | yield rules, electronics | Yes |
 | `03_Production_Systems/02_Metallurgy_Process_and_Yield_Rules.md` | Metallurgy Process and Yield Rules | Canonical planning | Planning Draft | Owns numeric yield relationships | `Metallurgy_Process-Tree.md` | metallurgy chains | Yes |
+| `Plans/InProgress Plans/TI_Metallurgy_Plan.md` | Thelian Industries Metallurgy Plan | Current metallurgy decision record | Locked through Decisions 1–8 at architecture scope | Detailed metallurgy source of truth; does not claim implementation | Owner-designated planning record | production, mining, progression | Yes |
 | `03_Production_Systems/03_Chemistry_and_Oil_Processing.md` | Chemistry and Oil Processing | Canonical placeholder | Placeholder | Reserves chemistry domain | empty `Chemistry_Oil-Processing.md` | research log | Yes |
 | `03_Production_Systems/04_Electronics.md` | Electronics | Canonical planning | Planning Draft | Owns electronics-use concern | `electronics.md`, Stage 1 notes | metallurgy, components | Yes |
 | `03_Production_Systems/05_Recycling_and_Waste.md` | Recycling and Waste | Canonical placeholder | Placeholder | Reserves recycling domain | empty `Recycling-Chain.md` | research log | Yes |
@@ -70,7 +71,7 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `04_Gameplay_Mechanics/03_Modules_Quality_and_Effects.md` | Modules, Quality, and Effects | Canonical reservation | Idea / Research Needed | Reserves module design | idea backlog | technical research | Yes |
 | `04_Gameplay_Mechanics/04_Power_Steam_and_Early_Infrastructure.md` | Power, Steam, and Early Infrastructure | Canonical reservation | Planning Draft / Idea | Reserves early infrastructure | progression plan and backlog | progression, ideas | Yes |
 | `04_Gameplay_Mechanics/05_Rockets_Space_Logistics_and_Transport.md` | Rockets, Space Logistics, and Transport | Canonical reservation | Idea / Research Needed | Reserves transport design | idea backlog | technical research | Yes |
-| `04_Gameplay_Mechanics/06_Mining_and_Resource_Gating.md` | Mining and Resource Gating | Canonical reservation | Planning Draft / Research Needed | Reserves gating design | metallurgy and backlog | metallurgy, technical research | Yes |
+| `04_Gameplay_Mechanics/06_Mining_and_Resource_Gating.md` | Mining and Resource Gating | Canonical planning | Locked architecture / prototyping pending | Summarizes mining and reserve boundaries | metallurgy plan and backlog | metallurgy, technical research | Yes |
 | `05_Development/README.md` | Development | Canonical navigation | Placeholder / Planning Required | Domain index | No dedicated legacy source | development pages | Yes |
 | `05_Development/00_Mod_Architecture.md` | Mod Architecture | Canonical placeholder | Placeholder / Planning Required | Reserves architecture | No dedicated legacy source | repository structure | Yes |
 | `05_Development/01_Repository_and_Mod_Structure.md` | Repository and Mod Structure | Canonical placeholder | Placeholder / Planning Required | Reserves structure guidance | No dedicated legacy source | architecture | Yes |

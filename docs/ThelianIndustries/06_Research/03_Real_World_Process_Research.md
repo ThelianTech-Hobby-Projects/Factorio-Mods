@@ -8,6 +8,8 @@ The current Thelian Industries legacy planning sources do not define a real-worl
 
 This page reserves the research location. No real-world process claim or design inference is added during this migration.
 
+The locked metallurgy architecture identifies a focused future information need: geology/process research may justify mineral-specific trace associations, deposit-profile content, and process-specific flux or reagent choices. It must not silently alter the locked architecture.
+
 ## Information needed
 
 - Owner-approved research scope and source-quality expectations.
@@ -19,4 +21,4 @@ This page reserves the research location. No real-world process claim or design 
 - [Research Index](00_Research_Index.md)
 - [Gameplay Balance Research](02_Gameplay_Balance_Research.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md)
-
+- [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)

@@ -3,6 +3,8 @@
 > **This is a generated working-context snapshot. It is not the canonical source of truth.**
 >
 > It captures a static source audit performed on 2026-09-04. For current implementation claims, consult the code; for intended design, consult the canonical planning documents and owner decisions.
+>
+> **Post-snapshot planning addendum (2026-09-07):** [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is newer than this snapshot and controls current intended-design statements for locked metallurgy Decisions 1–8. It does not change any static implementation evidence recorded here.
 
 ## 0. Snapshot Metadata
 
@@ -72,7 +74,7 @@ ti-modpack
 
 Canonical planning describes a Factorio Space Age overhaul with staged progression, metallurgy, electronics, worlds, and speculative subsystem work. Most of that direction is **Docs Ahead of Implementation** in this snapshot.
 
-Owner-resolved planning decisions remain intact: Archo Nexus is the canonical postgame name; Stage 6 is post-victory; active spellings are Nauvis, Aquilo, and Cassiterite; newer process planning owns planned yield scaling; and shared metallurgy/electronics ownership is deliberate. None of these decisions prove current code implementation.
+Owner-resolved planning decisions remain intact: Archo Nexus is the canonical postgame name; Stage 6 is post-victory; active spellings are Nauvis, Aquilo, and Cassiterite; the current metallurgy decision record owns planned recovery architecture; and shared metallurgy/electronics ownership is deliberate. None of these decisions prove current code implementation.
 
 ## 5. Progression Snapshot
 
@@ -103,9 +105,9 @@ The active core loader comments out every intermediate-item require, including o
 - `ti-ores.lua`: 54 unregistered item tables, including waste/rock materials and ore-family items. These are item prototypes, not `resource` prototypes.
 - `ti-ingots.lua`: 20 unregistered ingot/alloy/glass item tables.
 - `ti-compnents.lua`: seven unregistered mechanical/fluid-parts tables; its filename is misspelled relative to the commented `ti-components` require, and three fluid-part IDs contain leading spaces.
-- Canonical 1.0x/1.5x/3.0x/etc. yield relationships have **no current recipe implementation**, so there is no demonstrated code-versus-plan numeric drift.
+- The current locked Raw / Crushed / Concentrate recovery baselines are 1.00× / 1.50× / 2.25×; the prior universal 3.0× concentrate assumption is superseded. These relationships have **no current recipe implementation**, so there is no demonstrated code-versus-plan numeric drift.
 
-Planning owners: [Metallurgy Processing Chains](03_Production_Systems/01_Metallurgy_Processing_Chains.md) and [Metallurgy Process and Yield Rules](03_Production_Systems/02_Metallurgy_Process_and_Yield_Rules.md).
+Planning owners: [Metallurgy Processing Chains](03_Production_Systems/01_Metallurgy_Processing_Chains.md) and [Metallurgy Process and Yield Rules](03_Production_Systems/02_Metallurgy_Process_and_Yield_Rules.md); current source record: [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md).
 
 ## 8. Electronics Snapshot
 
@@ -217,7 +219,7 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 
 ## 21. Current Open Decisions and Gaps
 
-- Exact additional-metal allocation between Tectara, Vulcanus, and later planets remains an owner decision.
+- Primary allocation is now locked: Tectara has Wolframite/Tungsten and Ilmenite/Titanium; Vulcanus has Pyrolusite/Manganese, Cobaltite/Cobalt, and Chromite/Chromium. Specialized-profile refinement remains deferred.
 - All major planned systems require implementation specifications before code can substantiate them.
 - Package assembly requires reconciliation of the declared modpack dependencies with actual package names/manifests.
 - No runtime or Factorio data-stage execution test was performed; static source risks require verification.
@@ -226,8 +228,8 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 
 | System | Planning state |
 | --- | --- |
-| Metallurgy | Most developed planning area; yield direction is planned, not implemented |
-| Stage 1 progression | Detailed planning draft |
+| Metallurgy | Locked architecture through Decisions 1–8; not implemented |
+| Stage 1 Copper/Tin/Bronze | Locked as an open architecture direction; detailed progression and balance deferred |
 | Worlds | Concept drafts; several descriptions explicitly AI-generated |
 | Electronics | Thin planning draft |
 | Chemistry, recycling, recipe tables, dedicated technology design | Placeholders / planning required |

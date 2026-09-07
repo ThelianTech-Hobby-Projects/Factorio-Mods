@@ -8,6 +8,10 @@ The current legacy planning sources do not define automated tests, runtime verif
 
 No testing plan, coverage claim, or verified implementation status is inferred in this migration.
 
+## Metallurgy minimum validation boundary
+
+The locked metallurgy plan requires end-to-end in-game verification of the implemented content chain using provisional values before finalized progression and balance. Prototype choices then require targeted validation; later balance work includes code iteration, reload/restart testing, and playtesting. Exact acceptance criteria, automated coverage, regression strategy, and release QA remain open.
+
 ## Information needed
 
 - Owner-approved test and playtest strategy.
@@ -19,4 +23,4 @@ No testing plan, coverage claim, or verified implementation status is inferred i
 - [Document Authority](../DOCUMENT_AUTHORITY.md)
 - [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md)
 - [Release Workflow](04_Release_Workflow.md)
-
+- [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
