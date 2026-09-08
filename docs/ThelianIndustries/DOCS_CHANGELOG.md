@@ -1,5 +1,11 @@
 # Documentation Changelog
 
+## 2026-09-08 — Quartzite and Petalite Primary Allocation
+
+- Recorded Quartzite as Nauvis's locked primary Silicon / silica-feed resource and Petalite as Voltaris's locked primary Lithium resource.
+- Removed superseded references that treated either canonical family as awaiting primary planetary assignment, while preserving trace and associated-occurrence boundaries.
+- This is a documentation-only planning update; it makes no implementation claim.
+
 ## 2026-09-07 — Metallurgy Architecture Synchronization
 
 - Reconciled official Thelian Industries documentation with the owner-designated [metallurgy decision record](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md).

@@ -8,7 +8,7 @@ This log preserves unresolved planning work. It is not a decision record and mus
 
 The following legacy allocation note is retained for provenance but is superseded by the owner-designated [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md), Decision 3.33. That plan locks the current primary allocation: Tectara has Wolframite/Tungsten and Ilmenite/Titanium; Vulcanus has Pyrolusite/Manganese, Cobaltite/Cobalt, and Chromite/Chromium. It also locks the complete current allocation summarized in [Metallurgy Processing Chains](../03_Production_Systems/01_Metallurgy_Processing_Chains.md#locked-planetary-primary-resource-allocation).
 
-Still-open work includes Petalite/Lithium and Quartzite/Silicon-silica primary allocation, planet/mineral profile tables and weights, trace associations and abundance mathematics, reserve values, technical prototyping, and final balance. These are not a reopening of the locked allocation.
+Still-open work includes planet/mineral profile tables and weights, trace associations and abundance mathematics, reserve values, technical prototyping, and final balance. These are not a reopening of the locked allocation: Quartzite is assigned to Nauvis as Silicon / silica feed, and Petalite is assigned to Voltaris as Lithium.
 
 The historical conflict is preserved below only as migration evidence; do not use it to override Decision 3.33.
 

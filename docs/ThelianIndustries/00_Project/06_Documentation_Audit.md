@@ -9,3 +9,7 @@ The baseline planning audit supplied for this migration remains at [`docs/Codex_
 ## 2026-09-07 metallurgy authority refresh
 
 Official documentation was reconciled against the owner-designated [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md). The production-chain, yield, mining, project, progression, context, and navigation documents now identify its Decisions 1–8 as the current architecture source of truth and retain earlier material as provenance where it conflicts. Decisions 9–10 and final progression/balance remain deferred; no implementation status changed.
+
+## 2026-09-08 Quartzite and Petalite allocation refresh
+
+The locked planetary-allocation references now place Quartzite (Silicon / silica feed; quartz-dominant `SiO2`) on Nauvis and Petalite (Lithium; `LiAlSi4O10`) on Voltaris. Stale unassigned-family wording was removed from active planning/reference summaries. The change does not alter trace, beneficiation, or associated-body candidates, and it makes no implementation claim.

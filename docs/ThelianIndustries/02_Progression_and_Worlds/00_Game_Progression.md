@@ -53,7 +53,7 @@ The source lists these starting resources:
 
 `Cassiterite` is the owner-approved active spelling; the source used `Casserite`.
 
-The locked planetary primary-resource allocation separately includes Bauxite on Nauvis, but that allocation does not by itself expand or rebalance the stated Stage 1 starting-patch list. Starting-area placement and final balance remain separate work.
+The locked planetary primary-resource allocation separately includes Bauxite and Quartzite (Silicon / silica feed; quartz-dominant `SiO2`) on Nauvis, but that allocation does not by itself expand or rebalance the stated Stage 1 starting-patch list. Starting-area placement and final balance remain separate work.
 
 ### Stage goals
 

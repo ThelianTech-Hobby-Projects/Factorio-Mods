@@ -219,7 +219,7 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 
 ## 21. Current Open Decisions and Gaps
 
-- Primary allocation is now locked: Tectara has Wolframite/Tungsten and Ilmenite/Titanium; Vulcanus has Pyrolusite/Manganese, Cobaltite/Cobalt, and Chromite/Chromium. Specialized-profile refinement remains deferred.
+- Primary allocation is now locked: Nauvis includes Quartzite/Silicon-silica feed (quartz-dominant `SiO2`), Voltaris includes Petalite/Lithium (`LiAlSi4O10`), Tectara has Wolframite/Tungsten and Ilmenite/Titanium, and Vulcanus has Pyrolusite/Manganese, Cobaltite/Cobalt, and Chromite/Chromium. Specialized-profile refinement remains deferred. This is current planning direction, not source-code implementation evidence.
 - All major planned systems require implementation specifications before code can substantiate them.
 - Package assembly requires reconciliation of the declared modpack dependencies with actual package names/manifests.
 - No runtime or Factorio data-stage execution test was performed; static source risks require verification.

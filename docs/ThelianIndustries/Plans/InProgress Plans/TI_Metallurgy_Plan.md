@@ -4565,6 +4565,7 @@ Planet assignment determines where a canonical mineral/resource family may appea
 | Cassiterite | Tin |
 | Galena | Lead |
 | Bauxite | Aluminum |
+| Quartzite | Silicon / silica feed |
 
 Gold-Bearing Quartz is not a Nauvis primary deposit under this allocation. Uraninite is not a Nauvis primary deposit under this allocation.
 
@@ -4624,15 +4625,11 @@ Zircon → Zirconium is restored to the canonical mineral vocabulary and retaine
 |---|---|
 | Monazite | Neodymium / selected rare-earth feed |
 | Sperrylite | Platinum |
+| Petalite | Lithium |
 
-### I. Canonical families not yet assigned as primary planetary deposits
+### I. Canonical-family assignment status
 
-The following canonical families remain in the global vocabulary but are **not assigned as independently generated primary planetary deposits by Decision 3.33**:
-
-- Petalite → Lithium
-- Quartzite → Silicon / silica feed
-
-They remain available for later allocation, trace/associated use, specialized processing, or another explicitly designed source architecture.
+All canonical primary mineral/resource families currently retained in the locked global vocabulary have a primary planetary assignment under Decision 3.33. Future additions to the canonical vocabulary, if any, require a separate explicit allocation decision.
 
 ### J. Planetary allocation and specialized profiles remain distinct
 
@@ -4650,6 +4647,7 @@ Nauvis
 - Tin ← Cassiterite
 - Lead ← Galena
 - Aluminum ← Bauxite
+- Silicon / Silica Feed ← Quartzite
 
 Luna
 - Mercury ← Cinnabar
@@ -4682,6 +4680,7 @@ Tectara
 Voltaris
 - Neodymium / Rare-Earth Feed ← Monazite
 - Platinum ← Sperrylite
+- Lithium ← Petalite
 ```
 
 ### L. Explicit deferrals
@@ -4694,7 +4693,6 @@ Decision 3.33 does not yet lock:
 - exact planet/mineral profile weights;
 - exact starting-area resource placement;
 - exact resource frequency, size, or richness balance values beyond the already locked world-generation architecture;
-- future assignment of Petalite or Quartzite;
 - whether any future planet or resource family is added to the project.
 
 ---
@@ -4767,6 +4765,14 @@ Principal Al minerals: Gibbsite `Al(OH)3`; Boehmite `AlO(OH)`; Diaspore `AlO(OH)
 - REE-Bearing Bauxite: principal Al hydroxides plus Monazite-type `(Ce,La,Nd,Th)PO4` accessory phases; Neodymium/REE feed; rare/deposit-specific.
 - Titaniferous Bauxite: principal Al hydroxides plus Anatase `TiO2` and Rutile `TiO2`; Titanium association.
 - Iron-Rich Bauxite: principal Al hydroxides plus Goethite `FeO(OH)` and Hematite `Fe2O3`; primarily a processing/residue profile rather than an Iron reward.
+
+**Quartzite / Silica -> Silicon; Quartzite has no single bulk formula**
+Dominant Quartz is `SiO2`.
+- High-Purity Quartz: Quartz `SiO2`; no trace reward; improved purity/processing yield.
+- Ferruginous Quartzite: Quartz `SiO2`; Hematite `Fe2O3`; Magnetite `Fe3O4`; Goethite `FeO(OH)`; Iron association; optional Hematite-rich body.
+- Heavy-Mineral Silica Sand: Quartz `SiO2`; Zircon `ZrSiO4`; Ilmenite `FeTiO3`; Rutile `TiO2`; Zirconium + Titanium; Zircon/Ilmenite lenses.
+- Alumina-Bearing Quartzite: Quartz `SiO2`; K-feldspar `KAlSi3O8`; Albite `NaAlSi3O8`; Kaolinite `Al2Si2O5(OH)4`; Aluminum preferably treated as an impurity/processing penalty rather than a reward.
+- Hydrothermal Vein Quartz: Quartz `SiO2`; native Gold `Au`; Pyrite `FeS2`; Arsenopyrite `FeAsS`; no Gold output by default unless a separate Gold-Bearing Quartz mineralized system is explicitly generated.
 
 #### Luna
 
@@ -4888,21 +4894,11 @@ Generalized monazite-group formula `(Ce,La,Nd,Pr,Sm,Th,Ca,U)PO4`; common Monazit
 - Chromite-Associated PGE Reef: Sperrylite `PtAs2`; Chromite `FeCr2O4`; associated Chromite body.
 - Gold-Bearing PGE Reef: Sperrylite `PtAs2`; native Gold `Au`; Pentlandite `(Fe,Ni)9S8`; Chalcopyrite `CuFeS2`; Gold trace; optional Pentlandite/Copper-sulfide body.
 
-#### Canonical but currently unassigned primary-resource families
-
 **Petalite `LiAlSi4O10` -> Lithium**
 - Tin-Bearing Petalite Pegmatite: Petalite `LiAlSi4O10`; Cassiterite `SnO2`; Tin trace; Cassiterite body.
 - Tin-Lithium Granite System: Petalite `LiAlSi4O10`; Cassiterite `SnO2`; optional Tin; Cassiterite body.
 - Tungsten-Associated Rare-Metal Granite Belt: Petalite `LiAlSi4O10`; Wolframite `(Fe,Mn)WO4`; Scheelite `CaWO4`; Wolframite-associated body.
 - Zoned Lithium Pegmatite: Petalite `LiAlSi4O10`; Spodumene `LiAlSi2O6`; Lepidolite approximately `K(Li,Al)3(Si,Al)4O10(F,OH)2`; Quartz `SiO2`; K-feldspar `KAlSi3O8`; Albite `NaAlSi3O8`; processing/mineralogical variation without required trace reward.
-
-**Quartzite / Silica -> Silicon; Quartzite has no single bulk formula**
-Dominant Quartz is `SiO2`.
-- High-Purity Quartz: Quartz `SiO2`; no trace reward; improved purity/processing yield.
-- Ferruginous Quartzite: Quartz `SiO2`; Hematite `Fe2O3`; Magnetite `Fe3O4`; Goethite `FeO(OH)`; Iron association; optional Hematite-rich body.
-- Heavy-Mineral Silica Sand: Quartz `SiO2`; Zircon `ZrSiO4`; Ilmenite `FeTiO3`; Rutile `TiO2`; Zirconium + Titanium; Zircon/Ilmenite lenses.
-- Alumina-Bearing Quartzite: Quartz `SiO2`; K-feldspar `KAlSi3O8`; Albite `NaAlSi3O8`; Kaolinite `Al2Si2O5(OH)4`; Aluminum preferably treated as an impurity/processing penalty rather than a reward.
-- Hydrothermal Vein Quartz: Quartz `SiO2`; native Gold `Au`; Pyrite `FeS2`; Arsenopyrite `FeAsS`; no Gold output by default unless a separate Gold-Bearing Quartz mineralized system is explicitly generated.
 
 ### D. Representation rules retained from earlier Decision 3 architecture
 
@@ -5064,6 +5060,7 @@ These require technical prototyping, geological/mineralogical research, planetar
 - Cassiterite → Tin
 - Galena → Lead
 - Bauxite → Aluminum
+- Quartzite → Silicon / silica feed
 
 Stage 1 starting-resource direction also includes non-geological resources/materials such as:
 
@@ -5118,11 +5115,7 @@ Regolith has been removed from the planned resource roster.
 
 - Monazite → Neodymium / selected rare-earth feed
 - Sperrylite → Platinum
-
-### Canonical but currently unassigned primary families
-
 - Petalite → Lithium
-- Quartzite → Silicon / silica feed
 
 ## Nauvis Orbit concepts
 

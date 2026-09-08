@@ -34,7 +34,7 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `README.md` | Documentation Package | Canonical navigation | Planning Draft | Package entry point | Migration prompt | authority, project index, review | Yes |
 | `DOCUMENT_AUTHORITY.md` | Document Authority | Canonical governance | Planning Draft | Defines authority order | Migration prompt | map, AGENTS | Yes |
 | `DOCUMENT_MAP.md` | Document Map | Canonical governance | Planning Draft | Navigation and ownership register | Migration prompt | all domains | Yes |
-| `CHANGELOG.md` | Changelog | Canonical record | Documentation-only | Records migration | Migration prompt | review | No |
+| `DOCS_CHANGELOG.md` | Documentation Changelog | Canonical record | Documentation-only | Records documentation migration and planning-document updates; the repository-level `CHANGELOG.md` remains reserved for implementation changes | Migration prompt | review | No |
 | `AGENTS.md` | Agent Guidance | Canonical process | Planning Draft | Guides future documentation work | Migration prompt | authority, map | Yes |
 | `PROJECT_CONTEXT.md` | Project Context Snapshot | Generated working context | Static audit snapshot | Portable implementation-and-planning context; not independent authority | live codebase audit and canonical docs | codebase audit, authority | Yes |
 | `00_Project/README.md` | Project Documentation | Canonical navigation | Planning Draft | Project-area index | Migration prompt | project pages | Yes |

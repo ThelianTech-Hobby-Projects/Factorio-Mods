@@ -28,7 +28,7 @@ Early Copper and Tin are sourced from Cuprite and Cassiterite. Initial Bronze us
 
 ### Locked planetary primary-resource allocation
 
-The following is the current independently generated primary-surface-resource allocation and supersedes conflicting earlier lists in this document: Nauvis—Bituminous Coal, Hematite, Cuprite, Cassiterite, Galena, Bauxite; Luna—Cinnabar, Argentite, Uraninite, Ice Fields; Vulcanus—Pyrolusite, Cobaltite, Chromite; Fulgora—Zircon, Pentlandite; Gleba—Sphalerite, Limestone/Calcite, Gold-Bearing Quartz; Pyrosauria—Carnallite, Phosphorite; Tectara—Wolframite, Ilmenite; Voltaris—Monazite, Sperrylite. Petalite and Quartzite remain canonical but unassigned primary families. Gold-Bearing Quartz is the canonical Gold family; Placer Gold is only a possible future secondary/alluvial source.
+The following is the current independently generated primary-surface-resource allocation and supersedes conflicting earlier lists in this document: Nauvis—Bituminous Coal, Hematite, Cuprite, Cassiterite, Galena, Bauxite, Quartzite (Silicon / silica feed); Luna—Cinnabar, Argentite, Uraninite, Ice Fields; Vulcanus—Pyrolusite, Cobaltite, Chromite; Fulgora—Zircon, Pentlandite; Gleba—Sphalerite, Limestone/Calcite, Gold-Bearing Quartz; Pyrosauria—Carnallite, Phosphorite; Tectara—Wolframite, Ilmenite; Voltaris—Monazite, Sperrylite, Petalite (Lithium). Quartzite is quartz-dominant `SiO2`; Petalite is `LiAlSi4O10`. Gold-Bearing Quartz is the canonical Gold family; Placer Gold is only a possible future secondary/alluvial source.
 
 ### Retained material and supersession boundary
 
