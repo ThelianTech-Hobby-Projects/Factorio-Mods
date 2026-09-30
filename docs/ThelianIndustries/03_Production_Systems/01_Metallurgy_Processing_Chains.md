@@ -172,10 +172,22 @@ Axle, Ball Bearing, Bolts, Gear, Nuts, Piston, Plate, Rivet, Rod, Sheet, and Was
 
 - Mechanical Parts: Copper -> Brass -> Aluminum -> Steel -> Cobalt Steel.
 - Hydraulic Parts: Copper -> Brass -> Stainless Steel.
-- Electronic Components: Wires, Boards, Microchips, CPUs, Power Supplies.
+- Historical Electronic Components vocabulary: Wires, Boards, Microchips, CPUs, Power Supplies. The current active taxonomy uses processors rather than generic CPUs; see [Electronics](04_Electronics.md).
 - Structural Parts: Concrete, Brick, Wall Panels, Framing.
 
 Material-production aspects belong here. Electronics-use and progression aspects are deliberately shared with [Electronics](04_Electronics.md), which links back here.
+
+### Locked Electronics-facing metallurgy interface
+
+The [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) establishes a reciprocal material boundary:
+
+- Metallurgy owns Copper, Aluminum, Steel, Gold, Silver, Tin, Lead, Nickel, and Chromium forms consumed by Electronics, including required wire, sheet, foil, plate, and contact/feed forms.
+- Metallurgy owns production of the one Tin–Lead Solder alloy family and Nichrome as a Nickel–Chromium material.
+- Metallurgy owns one canonical Silicon Ingot and its upstream Quartzite/silica purification. Improved purification increases recovery of the same ingot rather than creating purity-tier ingots.
+- Silver is not a general Electronics wire family; it is supplied for specialized PCB metallization/plating and related contacts. Electronics owns how those material forms are consumed.
+- Electronics owns Silicon Wafer consumption, components, boards, chips, processors, controllers, and higher assemblies.
+
+Exact solder proportions, Nichrome proportions/form, Quartzite-to-Silicon machinery and chemistry, glass/fiberglass and Ceramic ownership boundaries, recipes, and numerical yields remain deferred. [Chemistry and Oil Processing](03_Chemistry_and_Oil_Processing.md) holds the current chemical-interface reservation; dedicated material-plan links should replace the reserved boundaries when those plans are generated.
 
 ## Byproducts and planning notes
 

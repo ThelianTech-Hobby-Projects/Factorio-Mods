@@ -6,6 +6,8 @@ This folder reserves the canonical documentation locations for how Thelian Indus
 
 The metallurgy decision record does establish a narrow development sequence: define architecture/content, implement items/fluids/entities/machines, connect provisional recipes/technologies, verify the system end-to-end in-game, then refine progression and balance through iterative playtesting. This does not fill the broader development-documentation gaps.
 
+The electronics decision record adds narrow implementation constraints: preserve the three machine capability tiers, use only limited next-tier prototype bridges, bootstrap Tier 1 through designated crude recipes, and reconcile force-level recipe availability when those crude routes retire. Exact code architecture, recipes, thresholds, statistics, and balance remain open; these constraints do not fill the broader development-documentation gaps.
+
 No source-code architecture or implementation status is inferred during this documentation-only migration. The pages below identify missing planning work, not accepted engineering decisions.
 
 ## Documents
@@ -28,3 +30,4 @@ The legacy source set is limited to design and planning files under `Mods/Thelia
 - [Project Plan](../00_Project/03_Project_Plan.md)
 - [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
+- [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)

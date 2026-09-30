@@ -12,10 +12,11 @@ The [Idea Backlog](../Plans/Idea_Backlog.md) remains the authoritative owner of 
 
 Any feasibility assessment must remain separate from a design decision. The audit-derived research baseline is tracked in [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md); it is not a commitment to implement a pipe system.
 
+The locked [Electronics](../03_Production_Systems/04_Electronics.md) interfaces may consume Molten Solder, Etching Solution, and the temporary `PCB Etching Solution Placeholder`. Their existence does not approve separate liquid/gas/molten pipe networks or any transport behavior from the Idea Backlog; those mechanics remain independently unplanned.
+
 ## Related documents
 
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md)
 - [Chemistry and Oil Processing](../03_Production_Systems/03_Chemistry_and_Oil_Processing.md)
 - [Metallurgy Processing Chains](../03_Production_Systems/01_Metallurgy_Processing_Chains.md)
-

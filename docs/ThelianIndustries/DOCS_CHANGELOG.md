@@ -1,5 +1,12 @@
 # Documentation Changelog
 
+## 2026-09-30 — Electronics Architecture Synchronization
+
+- Reconciled official Thelian Industries documentation with the owner-designated [electronics decision record](Plans/InProgress%20Plans/TI_Electronics_Plan.md).
+- Recorded the locked electronics taxonomy, material interfaces, assembly hierarchy, three-machine capability model, bootstrap/retirement direction, and explicit deferred boundaries while retaining useful legacy provenance.
+- Added reciprocal cross-system links where owner documents exist and reserved future-link markers where a dependent system has not yet produced an owner document.
+- This is a documentation-only planning update; it adds no prototypes, recipes, technologies, machines, runtime behavior, or implementation claim.
+
 ## 2026-09-08 — Quartzite and Petalite Primary Allocation
 
 - Recorded Quartzite as Nauvis's locked primary Silicon / silica-feed resource and Petalite as Voltaris's locked primary Lithium resource.

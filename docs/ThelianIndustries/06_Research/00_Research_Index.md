@@ -16,6 +16,8 @@ This index tracks evidence-gathering needs separately from design approval. A re
 
 Locked metallurgy architecture creates additional prototype and balance work without making it speculative: validate the technical implementation of its mining/reserve model, then balance its final ratios, unlocks, timings, machine statistics, and pacing. See [the metallurgy decision record](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md).
 
+Locked electronics architecture also creates targeted work without making the architecture speculative: validate three-tier recipe capability, next-tier bridges, pre-Tier-1 bootstrap/retirement, and force-level recipe-state reconciliation; then tune the explicitly deferred numerical and eligibility details. Research may select feasible mechanisms and evidence, but it must not silently reopen locked Electronics decisions. See [the electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md).
+
 ## Authority boundary
 
 The [Idea Backlog](../Plans/Idea_Backlog.md) owns speculative concepts. The audit baseline is evidence context rather than gameplay design. See [Document Authority](../DOCUMENT_AUTHORITY.md) for the distinction between planned design and verified implementation.

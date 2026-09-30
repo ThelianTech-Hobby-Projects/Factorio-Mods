@@ -14,14 +14,27 @@ The historical conflict is preserved below only as migration evidence; do not us
 
 ## Missing Dedicated Specifications
 
-The following legacy sources are empty and require future owner-provided design before their domains can be specified:
+The following legacy sources are empty and require future owner-provided design before their domains can be completely specified:
 
 - chemistry and oil processing;
 - recycling and waste;
 - recipe tables; and
 - the dedicated technology tree.
 
-The otherwise empty recycling and recipe-table sources also now have narrow locked metallurgy interfaces: remelting recovery semantics and foundational Crusher/Wash Plant/Bronze route constraints. Final recycling systems and recipe tables remain open.
+The otherwise empty chemistry, recipe-table, and technology sources now also carry narrow locked Electronics interfaces; recycling and recipe tables carry narrow locked metallurgy interfaces. These constraints do not constitute complete general-domain plans.
+
+## Electronics deferred cross-system work
+
+The [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) has no active unresolved decision inside the current Electronics-only architecture scope. Remaining work is intentionally deferred to its owners:
+
+- Quantum/endgame manufacturing: [Victory and Postgame](../02_Progression_and_Worlds/03_Victory_and_Postgame.md), with a dedicated Quantum/endgame manufacturing link reserved when that plan is generated;
+- `Fiberglass Placeholder`, `PCB Etching Solution Placeholder`, resins, acids, Electrolyte, and related chemical chains: [Chemistry and Oil Processing](../03_Production_Systems/03_Chemistry_and_Oil_Processing.md), with a dedicated chemistry-plan link reserved when generated;
+- solder, Nichrome, Silicon Ingot, material forms, and silica-to-silicon processing: [Metallurgy Processing Chains](../03_Production_Systems/01_Metallurgy_Processing_Chains.md);
+- large magnetics: [Power, Steam, and Early Infrastructure](../04_Gameplay_Mechanics/04_Power_Steam_and_Early_Infrastructure.md), with a dedicated Electrical Machinery plan link reserved when generated;
+- exact ratios, yields, times, power, speeds, module rules, eligibility, prototype penalties, retirement thresholds, technology costs, and balance: [Recipe Tables](../03_Production_Systems/06_Recipe_Tables.md) and [Gameplay Balance Research](../06_Research/02_Gameplay_Balance_Research.md); and
+- iconography and interface presentation: reserved for an art/UI documentation link when that documentation is generated.
+
+Resolving these interfaces should update only the affected boundary and must not silently reopen unrelated locked Electronics architecture.
 
 ## Incomplete Stage Detail
 
@@ -33,4 +46,4 @@ For metallurgy specifically, exact technology/tier timing, recipe progression, r
 
 The idea backlog contains candidate mechanics and questions. It remains the authoritative source for their planning status: [Idea Backlog](../Plans/Idea_Backlog.md).
 
-**Provenance:** Current metallurgy source of truth: [TI_Metallurgy_Plan.md](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md). Historical input: [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), and the [migration audit](../Reviews/migration_audit_2026-09-04.md).
+**Provenance:** Current domain sources of truth: [TI_Metallurgy_Plan.md](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) and [TI_Electronics_Plan.md](../Plans/InProgress%20Plans/TI_Electronics_Plan.md). Historical input: [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), and the [migration audit](../Reviews/migration_audit_2026-09-04.md).

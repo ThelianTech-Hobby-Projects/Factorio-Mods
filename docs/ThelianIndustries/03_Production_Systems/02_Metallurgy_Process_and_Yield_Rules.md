@@ -23,6 +23,10 @@ For chains, resources, materials, components, and planetary-resource notes, see 
 
 Final recovery is `Prepared-Material Recovery × Recipe Extraction Factor`; a simple full-conversion recipe can use a 1.00 extraction factor. Advanced furnaces do not receive a universal recovery multiplier. Throughput changes time, not material ratio.
 
+### Silicon recovery boundary
+
+The [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) constrains the shared interface without replacing this document's general yield authority: improved purification produces more of the same canonical Silicon Ingot; TI does not create Basic/Advanced or purity-tier Silicon Ingots or Wafers. Each Silicon Ingot will have a fixed relationship to Silicon Wafer output, but the number and exact Quartzite/silica purification/extraction factors are deferred. No existing universal metallurgy multiplier may be assigned to Silicon without a justified mineral/process recipe.
+
 Fluxes, reagents, additives, and byproducts are process-specific. Slag does not automatically mean lost primary metal, and the locked 5% remelting loss is not a mandatory "universal slag" output. Foundational implementation may use coherent placeholder values where the architecture does not prescribe a number, but those values are not final balance.
 
 ### Historical table retained below
@@ -99,3 +103,4 @@ The source characterizes this as an expandable, modular ore -> ingot -> alloy ->
 - Current authoritative numeric source: `docs/ThelianIndustries/Plans/InProgress Plans/TI_Metallurgy_Plan.md`, Decision 2.
 - Historical numeric input: `Mods/ThelianIndustries/plans/Metallurgy_Process-Tree.md`.
 - Historical conflicting source: `Mods/ThelianIndustries/plans/Metallurgy-Tree.md`.
+- Cross-system constraint source: [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md).

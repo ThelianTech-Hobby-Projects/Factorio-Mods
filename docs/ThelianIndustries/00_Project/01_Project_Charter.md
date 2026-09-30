@@ -13,11 +13,12 @@ The available source set provides:
 - a detailed Stage 1 direction for Nauvis, Nauvis Orbit, and Luna;
 - high-level named stages through Stage 6;
 - metallurgy and ore-processing concepts;
+- a completed architecture pass for electronics taxonomy, assemblies, and production-machine progression;
 - solar-system/world concepts, many explicitly labeled as AI-generated drafts; and
 - a broad idea and candidate backlog.
 
 ## Charter Limits
 
-The legacy sources do not provide a formal owner-approved charter, implementation specification, release commitment, or complete system design. This document reserves the project-level charter location without filling those gaps.
+The legacy sources and current domain plans do not provide a formal owner-approved charter, implementation specification, release commitment, or complete project-wide system design. The locked domain architecture does not fill those broader gaps.
 
-**Provenance:** [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Solar-System.md`](../../../Mods/ThelianIndustries/plans/Solar-System.md), and [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md).
+**Provenance:** [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Solar-System.md`](../../../Mods/ThelianIndustries/plans/Solar-System.md), [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), and the current [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md).

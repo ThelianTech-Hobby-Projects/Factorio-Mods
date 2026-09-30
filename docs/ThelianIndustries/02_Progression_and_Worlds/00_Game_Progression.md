@@ -71,7 +71,9 @@ The source says Nauvis is changed and overhauled to have a Bronze Age, Iron Age,
 
 The current metallurgy plan locks the initial Bronze architecture without locking the wider age sequencing: state-matched Copper-bearing plus Tin-bearing feedstocks form a Bronze Feed Mix that is smelted in the Stone Brick Smelter. The Blast Furnace is technology-gated and is not required for initial Bronze. Detailed Iron/Steel progression, technologies, recipes, ratios, costs, yields, and pacing remain deferred.
 
-For that early electronics direction, the source names a new electronics chain using copper, tin, lead, and wood/stone to create electronics components. It lists resistors, capacitors, transistors, diodes, integrated circuits, and circuit boards, plus an Electronics Assembler. The electronics-use/progression concern is owned by the electronics documentation; this is a Stage 1 cross-reference only.
+For that early electronics direction, the legacy source names a new electronics chain using copper, tin, lead, and wood/stone to create electronics components. It lists resistors, capacitors, transistors, diodes, integrated circuits, and circuit boards, plus an Electronics Assembler. This wording is retained as historical Stage 1 provenance.
+
+The current [Electronics](../03_Production_Systems/04_Electronics.md) architecture supersedes the conflicting generic terms: the early transistor-role item is Vacuum Triode; Microchip is the player-facing integrated-semiconductor family; and the first dedicated machine is Electronic Workshop. Crude pre-Tier-1 production bootstraps that workshop; later general-purpose tiers are the Space Age Electromagnetic Plant and Precision Electronics Fabricator. Craft-triggered retirement of designated crude recipes is a locked direction described in [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md). Exact trigger counts, technology costs, and world/stage placement beyond the existing Early Electronics Age context remain deferred; this document does not assign Tier 2 or Tier 3 to a planet or stage.
 
 ### Crafting and construction direction
 
@@ -132,3 +134,4 @@ The source assigns `Archo-Nexus` to Stage 6. The owner-approved active display n
 - [Planetary Stage Matrix](02_Planetary_Stage_Matrix.md)
 - [Victory and Postgame](03_Victory_and_Postgame.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md) — speculative systems remain non-canonical.
+- [Electronics](../03_Production_Systems/04_Electronics.md) — locked electronics architecture; exact later stage placement remains deferred.

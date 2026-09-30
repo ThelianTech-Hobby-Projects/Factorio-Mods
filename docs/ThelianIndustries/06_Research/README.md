@@ -8,6 +8,8 @@ The supplied planning audit provides a feasibility baseline for selected idea-ba
 
 Separate from the backlog, the locked metallurgy architecture requires targeted prototype and balance research before implementation details or final values are chosen. See [the metallurgy decision record](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md).
 
+The locked electronics architecture likewise creates targeted feasibility, process-reference, and balance work without reopening its taxonomy or assembly decisions. See [the electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md).
+
 ## Documents
 
 | Document | Current status | Purpose |
@@ -22,3 +24,4 @@ Separate from the backlog, the locked metallurgy architecture requires targeted 
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Open Questions and Research Log](../00_Project/05_Open_Questions_and_Research_Log.md)
 - [Documentation Audit](../00_Project/06_Documentation_Audit.md)
+- [Electronics](../03_Production_Systems/04_Electronics.md)

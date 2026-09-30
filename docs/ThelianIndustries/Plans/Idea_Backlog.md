@@ -26,7 +26,7 @@ The owner-resolved migration direction maps the historical `The Ark` name to **A
 12. **Candidate mechanics:** Add new loaders (better-looking inserters) for inline belt loading of machines and replace inserter entities, possibly with two types; new loaders would have circuit-network capabilities and filters.
 13. **Candidate mechanics:** Inserters would still have use-cases on different structures and on surfaces with no gravity, meaning space platforms and planetary orbits.
 14. **Idea:** Super Heaters use a less-effective boiler to heat water to a lower-temperature steam, then charge steam to high temperature.
-15. **Idea:** New Research Labs, a Research Computer/SuperComputer, Research Data Hard Drives, and a Primitive Research Desk (a desk with a vintage typewriter on it).
+15. **Mixed current status:** New Research Labs, a Research Computer/SuperComputer, and a Primitive Research Desk (a desk with a vintage typewriter on it) remain candidate cross-system concepts. The separate Research Data Hard Drives/storage-device family is superseded within Electronics by the locked decision not to add an SSD/HDD family. Science Papers and the Wooden Research Desk remain a future research-system interface, not a completed Electronics design.
 16. **Candidate mechanics:** New 1x1 Belt Splitters dynamically connect using belt directions and have circuit-network capabilities and filters.
 17. **Idea:** Revamp planetary distances and travel speeds to simulate more realistic values.
 18. **Candidate world types:** Oceanic, Terrestrial, Gas Giants, and Icy.
@@ -60,7 +60,7 @@ The owner-resolved migration direction maps the historical `The Ark` name to **A
 46. **Idea:** Overhaul Fulgora to be waste- and recycling-based for production and science-pack chains, and lock electromagnetic science behind Voltaris.
 47. **Idea:** Pyrosauria production and science-pack chain is based on advanced bio-chemical sciences and manipulation of biology using pheromones, including a new bio-weapons technology chain.
 48. **Historical direction, superseded at primary-allocation scope:** Tectara production and science-pack chain is based on Titanium and Cobalt metals for preparing advanced interstellar space platforms/ships. [TI_Metallurgy_Plan.md](InProgress%20Plans/TI_Metallurgy_Plan.md), Decision 3.33, locks Tectara as Wolframite/Tungsten plus Ilmenite/Titanium and Vulcanus as Pyrolusite/Manganese, Cobaltite/Cobalt, plus Chromite/Chromium. This retained entry does not reopen that allocation.
-49. **Idea:** Voltaris production and science-pack chain is the electromagnetic science chain and uses neodymium metals.
+49. **Idea with Electronics boundary:** Voltaris production and science-pack chain is the electromagnetic science chain and uses neodymium metals. The planetary science-chain concept remains a candidate. Rare-earth/neodymium use in large magnetic equipment is deferred to future Electrical Machinery/Power planning, not owned by Electronics; a dedicated plan link is reserved when that system is generated.
 50. **Idea:** Zephyrus production and science-pack chain is for efficient chemistry chains and fusion-based technologies, and is a requirement along with Aquilo for unlocking Fusion Technology.
 51. **Candidate mechanics:** Fusion- and bio-warfare-based weapons technology uses promethium shards, electromagnetics, and gathered recycled debris from nanite-infused defense drones in Archo-Nexus Orbit.
 52. **Idea:** Semi-permanent entity placement: if a building placement is a mistake, mining it yields building components that must be reprocessed before moving an assembler.
@@ -81,6 +81,7 @@ Entries in this backlog may be relevant to canonical planning domains, but this 
 - Stage and final-world context: [Progression and Worlds](../02_Progression_and_Worlds/README.md)
 - Historical `The Ark` / active Archo Nexus lifecycle context: [Victory and Postgame](../02_Progression_and_Worlds/03_Victory_and_Postgame.md)
 - World concept prose and AI-generated labels: [Solar System and Planets](../02_Progression_and_Worlds/01_Solar_System_and_Planets.md)
+- Electronics candidates and supersession boundaries: [Electronics](../03_Production_Systems/04_Electronics.md) and the [Electronics decision record](InProgress%20Plans/TI_Electronics_Plan.md)
 
 ## Source formatting reference: emoji list
 

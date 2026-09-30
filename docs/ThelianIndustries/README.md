@@ -10,6 +10,7 @@ This documentation tree is the authority-controlled migration of the legacy Thel
 - [Document authority](DOCUMENT_AUTHORITY.md) — how to determine authority for implementation and planning claims.
 - [Document map](DOCUMENT_MAP.md) — canonical owner for each documentation concern.
 - [Metallurgy decision record](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) — current locked metallurgy architecture through Decisions 1–8; no implementation claim.
+- [Electronics decision record](Plans/InProgress%20Plans/TI_Electronics_Plan.md) — completed electronics architecture with cross-system, endgame, implementation, and balance details explicitly deferred; no implementation claim.
 - [Migration audit](Reviews/migration_audit_2026-09-04.md) — source coverage, owner resolutions, and remaining open work.
 - [Project Context Snapshot](PROJECT_CONTEXT.md) — generated, non-authoritative working summary of static implementation evidence and canonical planning.
 - [Codebase context audit](Reviews/codebase_context_audit_2026-09-04.md) — detailed implementation/reconciliation evidence behind the snapshot.
@@ -17,7 +18,7 @@ This documentation tree is the authority-controlled migration of the legacy Thel
 ## Documentation Classes
 
 - **Canonical planning documents** record the current planning direction and must show their status.
-- **Plans** are status-controlled: the Idea Backlog retains speculative ideas and candidates, while the metallurgy decision record contains the current locked metallurgy checkpoint.
+- **Plans** are status-controlled: the Idea Backlog retains speculative ideas and candidates, while the owner-designated metallurgy and electronics decision records contain their current locked architecture checkpoints.
 - **Decisions/ADR** records durable owner-approved decisions; no substantive ADRs have been created in this initial migration.
 - **Reviews** record audit evidence and migration findings.
 - **Archive** retains historical material when it is deliberately archived.

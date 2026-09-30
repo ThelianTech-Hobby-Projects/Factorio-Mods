@@ -5238,12 +5238,14 @@ Construction-component progression concepts include:
 
 - Mechanical Parts: Copper → Brass → Aluminum → Steel → Cobalt Steel
 - Hydraulic Parts: Copper → Brass → Stainless Steel
-- Electronic Components: wires, boards, microchips, CPUs, power supplies
+- Electronic Components: wires, boards, microchips, processors, power supplies
 - Structural Parts: concrete, brick, wall panels, framing
 
 Shared cross-domain ownership follows:
 
 > One authoritative owner per concern, not one exclusive owner per item.
+
+The reciprocal Electronics-facing boundary is maintained in the [Thelian Industries Electronics Plan](TI_Electronics_Plan.md): Metallurgy owns metallic forms consumed by Electronics, Tin–Lead Solder alloy production, Nichrome as a Nickel–Chromium material, and the one canonical Silicon Ingot plus its upstream purification/recovery. Electronics owns Silicon Wafer consumption and the component, board, microchip, processor, controller, and higher-assembly architecture. Exact solder proportions, Nichrome form/proportions, Quartzite-to-Silicon machinery and chemistry, glass/fiberglass and Ceramic ownership boundaries, recipes, and numerical yields remain deferred; this synchronization does not reopen Decisions 1–8.
 
 ---
 

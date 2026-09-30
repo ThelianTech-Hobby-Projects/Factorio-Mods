@@ -10,6 +10,8 @@ This page reserves the research location. No real-world process claim or design 
 
 The locked metallurgy architecture identifies a focused future information need: geology/process research may justify mineral-specific trace associations, deposit-profile content, and process-specific flux or reagent choices. It must not silently alter the locked architecture.
 
+The locked Electronics architecture permits targeted research into fiberglass, Ceramic substrates, resins, Electrolyte, etchants, silicon preparation, and package/contact details where those interfaces remain deferred. Evidence may refine those owner-system details, but it must not silently reintroduce removed SKU families, unnecessary semiconductor-process inventory, or changes to the locked abstractions.
+
 ## Information needed
 
 - Owner-approved research scope and source-quality expectations.
@@ -22,3 +24,4 @@ The locked metallurgy architecture identifies a focused future information need:
 - [Gameplay Balance Research](02_Gameplay_Balance_Research.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
+- [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)

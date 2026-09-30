@@ -8,6 +8,10 @@ The current legacy Thelian Industries plans do not define the mod's source-code 
 
 No architecture is inferred in this migration. Any packaging thought in `Mods/ThelianIndustries/plans/IDEAS.md` remains an idea owned by the [Idea Backlog](../Plans/Idea_Backlog.md), not an accepted architecture decision.
 
+## Locked Electronics implementation boundary
+
+The [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) locks a behavior boundary without selecting a full code architecture: retiring designated crude bootstrap recipes requires force-level runtime recipe-state control and reconciliation after relevant research, progression, configuration, or migration changes. Already configured production must be evaluated during implementation so retirement cannot be trivially bypassed. Exact Lua structure, event hooks, package ownership, migration code, and compatibility policy remain deferred.
+
 ## Current Implementation Evidence
 
 **Implementation status: Partial source-tree architecture; no approved architecture decision.**
@@ -27,3 +31,4 @@ This evidence describes current files only. It does not establish an approved pa
 - [Repository and Mod Structure](01_Repository_and_Mod_Structure.md)
 - [Coding and Data Standards](03_Coding_and_Data_Standards.md)
 - [Document Authority](../DOCUMENT_AUTHORITY.md)
+- [Electronics](../03_Production_Systems/04_Electronics.md)

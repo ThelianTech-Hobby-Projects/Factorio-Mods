@@ -8,6 +8,8 @@ The legacy planning source records early power, steam, and infrastructure concep
 
 The [Idea Backlog](../Plans/Idea_Backlog.md) remains authoritative for the proposals. This reserved page does not define a power system or infer missing behavior.
 
+The locked [Electronics](../03_Production_Systems/04_Electronics.md) architecture removes Basic/Advanced Transformer items from Electronics only: small internal magnetics are abstracted into boards and assemblies. Possible large transformers and related magnetic equipment remain deferred to Electrical Machinery/Power planning. *(Reserved for a dedicated Electrical Machinery plan link when that plan is generated.)* This boundary does not approve or redesign the registered power scaffold below.
+
 ## Current Implementation Status
 
 **Implementation status: Prototype Defined and Registered; normal player reachability and runtime verification absent.**

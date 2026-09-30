@@ -8,6 +8,8 @@ Module, quality, and effect-system proposals are present only in `Mods/ThelianIn
 
 The [Idea Backlog](../Plans/Idea_Backlog.md) is the authoritative owner of the speculative content. This page reserves the future canonical location and intentionally does not convert any proposal into a requirement.
 
+The locked [Electronics](../03_Production_Systems/04_Electronics.md) architecture leaves machine module compatibility, productivity behavior, and exact effects deferred. It does not approve a module taxonomy, module slots, or quality interaction.
+
 ## Open work
 
 - Obtain owner decisions on scope and intended behavior.
@@ -18,4 +20,3 @@ The [Idea Backlog](../Plans/Idea_Backlog.md) is the authoritative owner of the s
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md)
 - [Gameplay Balance Research](../06_Research/02_Gameplay_Balance_Research.md)
-

@@ -11,7 +11,8 @@ This map assigns an authoritative owner per concern. Shared concepts may have mu
 | Overall game-design direction | [01_Game_Design/](01_Game_Design/README.md) | Planning-only system direction. |
 | Game stages, worlds, victory, and postgame | [02_Progression_and_Worlds/](02_Progression_and_Worlds/README.md) | Owns progression sequencing and world descriptions. |
 | Metallurgical processing and yield rules | [03_Production_Systems/](03_Production_Systems/README.md) | The owner documents hold the canonical summaries; [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is the current locked source through Decisions 1–8. |
-| Speculative mechanics and candidates | [Plans/Idea_Backlog.md](Plans/Idea_Backlog.md) | The Idea Backlog remains authoritative for candidates; the Plans folder also contains the locked metallurgy decision record. |
+| Electronics architecture, taxonomy, and production-machine progression | [03_Production_Systems/04_Electronics.md](03_Production_Systems/04_Electronics.md) | Canonical summary; [TI_Electronics_Plan.md](Plans/InProgress%20Plans/TI_Electronics_Plan.md) is the current locked source. |
+| Speculative mechanics and candidates | [Plans/Idea_Backlog.md](Plans/Idea_Backlog.md) | The Idea Backlog remains authoritative for candidates; the Plans folder also contains the owner-designated locked metallurgy and electronics records. |
 | Durable owner-approved decisions | [Decisions/](Decisions/README.md) | No substantive ADRs are created by this migration. |
 | Migration review evidence | [Reviews/](Reviews/README.md) | Owns audit findings and provenance notes. |
 | Historical material | [Archive/](Archive/README.md) | Does not override active planning sources. |
@@ -19,7 +20,7 @@ This map assigns an authoritative owner per concern. Shared concepts may have mu
 
 ## Shared Concerns
 
-Metallurgy owns material production and yield behavior; electronics owns electronics use and progression. Documents must avoid duplicating the same rule and should use reciprocal related-document links where a concept spans both domains.
+Metallurgy owns material production and yield behavior; electronics owns electronics use, assembly architecture, and progression. Chemistry owns upstream chemical production when that system is planned. Documents must avoid duplicating the same rule and should use reciprocal related-document links where a concept spans domains; unavailable owner documents should be marked as reserved future link targets.
 
 ## Legacy Source Map
 
@@ -49,7 +50,7 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `01_Game_Design/00_Game_Design_Overview.md` | Game Design Overview | Canonical planning | Planning Draft | High-level source summary | progression and metallurgy plans | progression, production | Yes |
 | `01_Game_Design/01_Design_Pillars_and_Overhaul_Scope.md` | Design Pillars and Overhaul Scope | Canonical placeholder | Placeholder / Planning Required | Reserves pillars and scope | No dedicated legacy source | project scope, ideas | Yes |
 | `01_Game_Design/02_Construction_and_Intermediate_Components.md` | Construction and Intermediate Components | Canonical planning | Planning Draft | Classifies component groups | metallurgy, electronics, progression plans | metallurgy, electronics | Yes |
-| `01_Game_Design/03_Research_and_Technology_Design.md` | Research and Technology Design | Canonical placeholder | Placeholder | Reserves dedicated technology design | empty `Tech-Tree.md` | progression, research log | Yes |
+| `01_Game_Design/03_Research_and_Technology_Design.md` | Research and Technology Design | Canonical placeholder / interface owner | Incomplete general domain / locked domain interfaces | Reserves dedicated technology design and records domain constraints | empty `Tech-Tree.md`; current metallurgy/electronics plans | progression, electronics, research log | Yes |
 | `02_Progression_and_Worlds/README.md` | Progression and Worlds | Canonical navigation | Planning Draft | Domain index | migrated structure | progression pages | Yes |
 | `02_Progression_and_Worlds/00_Game_Progression.md` | Game Progression | Canonical planning | Planning Draft | Owns stage sequencing | `Game-Progression-Tree.md` | stage matrix, victory | Yes |
 | `02_Progression_and_Worlds/01_Solar_System_and_Planets.md` | Solar System and Planets | Canonical planning | AI Draft / Planning Draft | Owns world descriptions | `Solar-System.md` | progression, stage matrix | Yes |
@@ -60,10 +61,11 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `03_Production_Systems/01_Metallurgy_Processing_Chains.md` | Metallurgy Processing Chains | Canonical planning | Planning Draft | Owns nonnumeric metallurgy concerns | `Metallurgy-Tree.md` and process plan | yield rules, electronics | Yes |
 | `03_Production_Systems/02_Metallurgy_Process_and_Yield_Rules.md` | Metallurgy Process and Yield Rules | Canonical planning | Planning Draft | Owns numeric yield relationships | `Metallurgy_Process-Tree.md` | metallurgy chains | Yes |
 | `Plans/InProgress Plans/TI_Metallurgy_Plan.md` | Thelian Industries Metallurgy Plan | Current metallurgy decision record | Locked through Decisions 1–8 at architecture scope | Detailed metallurgy source of truth; does not claim implementation | Owner-designated planning record | production, mining, progression | Yes |
-| `03_Production_Systems/03_Chemistry_and_Oil_Processing.md` | Chemistry and Oil Processing | Canonical placeholder | Placeholder | Reserves chemistry domain | empty `Chemistry_Oil-Processing.md` | research log | Yes |
-| `03_Production_Systems/04_Electronics.md` | Electronics | Canonical planning | Planning Draft | Owns electronics-use concern | `electronics.md`, Stage 1 notes | metallurgy, components | Yes |
+| `Plans/InProgress Plans/TI_Electronics_Plan.md` | Thelian Industries Electronics Plan | Current electronics decision record | Architecture planning complete; dependent details deferred | Detailed electronics source of truth; does not claim implementation | Owner-designated planning record | electronics, metallurgy, chemistry, progression, development | Yes |
+| `03_Production_Systems/03_Chemistry_and_Oil_Processing.md` | Chemistry and Oil Processing | Canonical placeholder / interface owner | Incomplete general domain / locked cross-system interfaces | Reserves chemistry domain and records consuming-system constraints | empty `Chemistry_Oil-Processing.md`; current metallurgy/electronics plans | metallurgy, electronics, research log | Yes |
+| `03_Production_Systems/04_Electronics.md` | Electronics | Canonical planning | Locked architecture / dependent details deferred | Owns electronics use, taxonomy, assembly, and production-machine progression | `TI_Electronics_Plan.md`; retained legacy electronics and Stage 1 notes | metallurgy, chemistry, components, progression, development | Yes |
 | `03_Production_Systems/05_Recycling_and_Waste.md` | Recycling and Waste | Canonical placeholder | Placeholder | Reserves recycling domain | empty `Recycling-Chain.md` | research log | Yes |
-| `03_Production_Systems/06_Recipe_Tables.md` | Recipe Tables | Canonical placeholder | Placeholder | Reserves recipe-table domain | empty `Recipie-Tables.md` | research log | Yes |
+| `03_Production_Systems/06_Recipe_Tables.md` | Recipe Tables | Canonical placeholder / constraint register | Numeric tables deferred / locked architecture constraints | Reserves numeric recipe-table domain and records locked constraints | empty `Recipie-Tables.md`; current metallurgy/electronics plans | metallurgy, electronics, research log | Yes |
 | `04_Gameplay_Mechanics/README.md` | Gameplay Mechanics | Canonical navigation | Planning Draft | Domain index | migration prompt and backlog | mechanics pages, backlog | Yes |
 | `04_Gameplay_Mechanics/00_Gameplay_Mechanics_Index.md` | Gameplay Mechanics Index | Canonical navigation | Planning Draft | Mechanics register | idea backlog | mechanics pages | Yes |
 | `04_Gameplay_Mechanics/01_Logistics_and_Belts.md` | Logistics and Belts | Canonical reservation | Idea / Research Needed | Reserves logistics design | idea backlog | technical research | Yes |
@@ -86,7 +88,7 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `07_Releases/README.md` | Releases | Canonical placeholder | Placeholder / Planning Required | Reserves release records | no release source | roadmap | Yes |
 | `Decisions/README.md` | Decisions | Canonical governance | Planning Draft | Decision-record index | migration prompt | ADR index | Yes |
 | `Decisions/ADR/README.md` | ADR Register | Canonical governance | Planning Draft | ADR index | migration prompt | decisions | Yes |
-| `Plans/README.md` | Plans | Canonical navigation | Idea / Candidate | Backlog index | `IDEAS.md` | idea backlog | Yes |
+| `Plans/README.md` | Plans | Canonical navigation | Mixed governed planning | Backlog and owner-designated decision-record index | `IDEAS.md`, current metallurgy and electronics plans | idea backlog, production | Yes |
 | `Plans/Idea_Backlog.md` | Idea Backlog | Canonical backlog | Idea / Candidate / Research Needed | Owns speculative concepts | `IDEAS.md` | research, mechanics | Yes |
 | `Reviews/README.md` | Reviews | Canonical navigation | Planning Draft | Review index | migration prompt | migration audit | Yes |
 | `Reviews/migration_audit_2026-09-04.md` | Migration Audit | Canonical review evidence | Planning Draft | Detailed migration evidence | legacy sources and owner decisions | project audit | Yes |

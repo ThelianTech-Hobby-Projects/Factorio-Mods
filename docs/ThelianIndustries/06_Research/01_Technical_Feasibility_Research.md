@@ -6,7 +6,7 @@
 
 This page records a bounded, audit-derived research baseline. It does not approve a gameplay system, assert that Thelian Industries implements any mechanic, or replace targeted validation.
 
-Source: [Thelian Industries Planning Audit, Section 10](../../Codex_files/thelian_industries_planning_audit_2026-09-04.md). The audit explicitly identifies its feasibility check as not being a design decision. The related concepts remain non-canonical in the [Idea Backlog](../Plans/Idea_Backlog.md).
+Source reference: `docs/Codex_files/thelian_industries_planning_audit_2026-09-04.md`, Section 10. The audit explicitly identifies its feasibility check as not being a design decision. The related concepts remain non-canonical in the [Idea Backlog](../Plans/Idea_Backlog.md). *(Reserved for a live Markdown link when that absent reference artifact is restored or generated in this checkout.)*
 
 ## Audit-derived baseline for later validation
 
@@ -35,6 +35,10 @@ The audit specifically identifies the following proposals as requiring a targete
 
 The metallurgy architecture is not a candidate mechanics list. Technical validation must instead test suitable implementations for character bootstrap mining versus machine mining, `minable.mining_time` and normal miner compatibility, footprint-bound surface extraction, underground access-node exposure, and finite simulated Deep Mine reserves. It must also validate the selected overlapping-resource representation or its fallback. Prototype validation chooses an implementation approach; it does not change the locked architecture or settle deferred numerical balance.
 
+## Locked Electronics prototype boundary
+
+The Electronics architecture is also not a candidate list. Technical validation must test three-tier recipe capability, narrow next-tier prototype bridges, crude pre-Tier-1 bootstrap, and force-level retirement/reconciliation of designated recipes. It must evaluate reloads, configuration/progression changes, migrations, and already configured machines. Feasibility work chooses mechanics and code structure; it does not change the locked taxonomy, machine-capability model, or same-output progression rule.
+
 ## Research rules
 
 - Record evidence, assumptions, scope, and result separately for each investigation.
@@ -48,3 +52,4 @@ The metallurgy architecture is not a candidate mechanics list. Technical validat
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Testing and QA Plan](../05_Development/02_Testing_and_QA_Plan.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
+- [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)

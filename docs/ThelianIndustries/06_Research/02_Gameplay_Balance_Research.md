@@ -10,6 +10,8 @@ Where a source contains a planning range or yield relationship, its canonical ow
 
 The metallurgy plan locks recovery semantics of 1.00× Raw, 1.50× Crushed, and 2.25× Concentrate, but they are not complete game-balance targets. Foundational implementation may use coherent 1:1-style placeholders where appropriate; final ratios, unlock order, technology costs, timings, machine statistics, power, and pacing remain later playtest work.
 
+The electronics plan similarly defers exact ratios, yields, times, power, speeds, module rules, crude/prototype penalties, recipe-by-recipe machine eligibility, retirement thresholds and warnings, technology costs, and pacing. Playtesting should preserve the intended readable but temporary industrialization crisis when crude routes retire, without assigning values here or reopening the locked component/machine architecture.
+
 ## Research questions
 
 - What owner-approved balance goals and player-experience criteria should be used?
@@ -23,3 +25,4 @@ The metallurgy plan locks recovery semantics of 1.00× Raw, 1.50× Crushed, and 
 - [Testing and QA Plan](../05_Development/02_Testing_and_QA_Plan.md)
 - [Open Questions and Research Log](../00_Project/05_Open_Questions_and_Research_Log.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
+- [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)

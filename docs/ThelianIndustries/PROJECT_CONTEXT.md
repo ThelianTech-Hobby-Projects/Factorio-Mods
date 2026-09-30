@@ -5,6 +5,8 @@
 > It captures a static source audit performed on 2026-09-04. For current implementation claims, consult the code; for intended design, consult the canonical planning documents and owner decisions.
 >
 > **Post-snapshot planning addendum (2026-09-07):** [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is newer than this snapshot and controls current intended-design statements for locked metallurgy Decisions 1–8. It does not change any static implementation evidence recorded here.
+>
+> **Post-snapshot planning addendum (2026-09-30):** [TI_Electronics_Plan.md](Plans/InProgress%20Plans/TI_Electronics_Plan.md) is newer than this snapshot and controls current intended-design statements for the completed electronics architecture pass. It does not change any static implementation evidence recorded here.
 
 ## 0. Snapshot Metadata
 
@@ -74,7 +76,7 @@ ti-modpack
 
 Canonical planning describes a Factorio Space Age overhaul with staged progression, metallurgy, electronics, worlds, and speculative subsystem work. Most of that direction is **Docs Ahead of Implementation** in this snapshot.
 
-Owner-resolved planning decisions remain intact: Archo Nexus is the canonical postgame name; Stage 6 is post-victory; active spellings are Nauvis, Aquilo, and Cassiterite; the current metallurgy decision record owns planned recovery architecture; and shared metallurgy/electronics ownership is deliberate. None of these decisions prove current code implementation.
+Owner-resolved planning decisions remain intact: Archo Nexus is the canonical postgame name; Stage 6 is post-victory; active spellings are Nauvis, Aquilo, and Cassiterite; the current metallurgy decision record owns planned recovery architecture; the current electronics decision record owns its completed architecture pass; and shared metallurgy/electronics ownership is deliberate. None of these decisions prove current code implementation.
 
 ## 5. Progression Snapshot
 
@@ -116,6 +118,8 @@ Planning owners: [Metallurgy Processing Chains](03_Production_Systems/01_Metallu
 No wire, solder, PCB, resistor, capacitor, transistor, diode, microchip, circuit, CPU, power-supply, electronics assembler, recipe, or technology is registered. The commented-out `ti-electronic-components.lua` contains seven item tables with the same ID, `n`, so it is not a viable registered implementation as written. Locale vocabulary does not change this status.
 
 Planning owner: [Electronics](03_Production_Systems/04_Electronics.md).
+
+Current planning source: [TI_Electronics_Plan.md](Plans/InProgress%20Plans/TI_Electronics_Plan.md). It locks the electronics taxonomy and assembly hierarchy, three conventional production-machine tiers, narrow next-tier prototype bridges, and the pre-Tier-1 bootstrap/recipe-retirement direction. Chemistry, metallurgy, electrical machinery, Quantum/endgame, exact recipes and machine statistics, art, and balance retain the plan's explicit deferred boundaries. None of this changes the unregistered implementation state above.
 
 ## 9. Chemistry / Oil / Fluids Snapshot
 
@@ -213,13 +217,14 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 | Flowing water | active custom fluid -> hydro dam output / hydro turbine input; dam item is not craftable through TI code |
 | Base water/crude oil | core fluid loader mutates fuel values; hydro/gas-boiler behavior depends on base fluids |
 | Metallurgy scaffold | commented core loader -> unregistered item files -> canonical metallurgy plan; no resource/recipe/machine linkage |
-| Electronics scaffold | commented core loader -> malformed item tables and locale vocabulary -> canonical electronics plan; no recipe/technology linkage |
+| Electronics scaffold | commented core loader -> malformed item tables and locale vocabulary -> [Electronics](03_Production_Systems/04_Electronics.md) / [current decision record](Plans/InProgress%20Plans/TI_Electronics_Plan.md); no recipe/technology linkage |
 | Item-group taxonomy | library groups/subgroups/fuel categories -> possible organization only; no system implementation follows from them |
 | Worlds and progression | canonical planning documents -> no package/prototype wiring present |
 
 ## 21. Current Open Decisions and Gaps
 
 - Primary allocation is now locked: Nauvis includes Quartzite/Silicon-silica feed (quartz-dominant `SiO2`), Voltaris includes Petalite/Lithium (`LiAlSi4O10`), Tectara has Wolframite/Tungsten and Ilmenite/Titanium, and Vulcanus has Pyrolusite/Manganese, Cobaltite/Cobalt, and Chromite/Chromium. Specialized-profile refinement remains deferred. This is current planning direction, not source-code implementation evidence.
+- No active decision remains inside the current Electronics-only architecture scope. Deferred work includes Quantum/endgame manufacturing; replacement of `Fiberglass Placeholder` and `PCB Etching Solution Placeholder`; Chemistry/Metallurgy and electrical-machinery interfaces; exact recipes, eligibility, statistics, thresholds, art, and balance. See [Electronics](03_Production_Systems/04_Electronics.md) for live links and reserved future link targets.
 - All major planned systems require implementation specifications before code can substantiate them.
 - Package assembly requires reconciliation of the declared modpack dependencies with actual package names/manifests.
 - No runtime or Factorio data-stage execution test was performed; static source risks require verification.
@@ -231,8 +236,8 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 | Metallurgy | Locked architecture through Decisions 1–8; not implemented |
 | Stage 1 Copper/Tin/Bronze | Locked as an open architecture direction; detailed progression and balance deferred |
 | Worlds | Concept drafts; several descriptions explicitly AI-generated |
-| Electronics | Thin planning draft |
-| Chemistry, recycling, recipe tables, dedicated technology design | Placeholders / planning required |
+| Electronics | Locked architecture; dependent-system, endgame, implementation, art, and balance details deferred; not implemented |
+| Chemistry, recycling, recipe tables, dedicated technology design | Incomplete general domains; Chemistry, recipes, and technology now carry narrow locked Electronics interfaces |
 | Power, logistics, modules, quality, space, combat | Idea / research-needed or planning-only |
 
 ## 23. Implementation Readiness Matrix

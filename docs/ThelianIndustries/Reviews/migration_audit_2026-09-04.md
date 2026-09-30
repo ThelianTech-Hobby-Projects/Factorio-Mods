@@ -43,7 +43,7 @@ The project owner's 2026-09-04 instructions supersede conflicting legacy wording
 ## Remaining Planning Gaps
 
 - Chemistry and oil processing, recycling and waste, recipe tables, and the dedicated technology tree have empty legacy sources.
-- Electronics has only a two-line dedicated source, although Stage 1 contains related planning notes.
+- At the time of this migration, Electronics had only a two-line dedicated legacy source, although Stage 1 contained related planning notes. **Superseded as a current gap on 2026-09-30:** the owner-designated [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) now contains the completed architecture pass; dependent-system, Quantum/endgame, implementation, art, and numerical-balance work remains deferred.
 - Stages 2 through 6 are largely unelaborated in the progression source, except for the owner-resolved lifecycle terminology.
 - The exact allocation of Titanium, Cobalt/Cobaltite, and other additional metals remains open.
 - The backlog remains idea-stage and does not constitute a locked system specification.
@@ -58,6 +58,6 @@ The project owner's 2026-09-04 instructions supersede conflicting legacy wording
 
 ## Related Evidence
 
-- [Migration control prompt](../../Codex_files/thelian_industries_docs_migration_codex_prompt.md)
-- [Planning audit baseline](../../Codex_files/thelian_industries_planning_audit_2026-09-04.md)
+- Migration control prompt: `docs/Codex_files/thelian_industries_docs_migration_codex_prompt.md` *(reserved for a live link when the absent reference artifact is restored or generated in this checkout)*
+- Planning audit baseline: `docs/Codex_files/thelian_industries_planning_audit_2026-09-04.md` *(reserved for a live link when the absent reference artifact is restored or generated in this checkout)*
 - [Document Authority](../DOCUMENT_AUTHORITY.md)

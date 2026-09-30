@@ -3,9 +3,9 @@
 **Project:** Thelian Industries  
 **System:** Electronics  
 **Document type:** Current planning-state backup / decision record  
-**Status:** Active planning  
-**Snapshot date:** 2026-09-24  
-**Next unresolved decision:** Silicon purification chain (P-26)
+**Status:** Electronics architecture planning complete; remaining items intentionally deferred to dependent systems / implementation phases  
+**Snapshot date:** 2026-09-30  
+**Next unresolved decision:** None within current Electronics scope; resume only when deferred cross-system/endgame/implementation prerequisites are ready
 
 ---
 
@@ -20,7 +20,7 @@ This file captures the current Electronics design state developed during the pla
 - deferred Chemistry / Metallurgy / progression details;
 - rejected or removed directions;
 - retained future concepts;
-- the exact next unresolved decision.
+- the exact resume/deferment state.
 
 This is a **concept and architecture plan**, not a balance sheet or implementation-ready recipe list.
 
@@ -71,21 +71,21 @@ This register is the fast-reference index for the plan. The detailed sections la
 | L-25 | Paper Capacitor dielectric concept | **LOCKED** | Paper is the dielectric separator and Rosin represents the early natural-resin impregnation/coating/sealing insulating treatment. |
 | L-26 | Advanced Capacitor architecture | **LOCKED** | Aluminum Foil + Paper + Electrolyte + suitable termination/sealing materials → Advanced Capacitor. Aluminum-oxide dielectric formation and internal foil treatment/winding/impregnation are process abstractions; engineered Polymer is not a baseline required ingredient. |
 | L-27 | Crystal Diode architecture | **LOCKED** | Lead Ore + Copper Wire contacts + Tin Sheet → crude Crystal Diode; later Lead Ore + Copper Wire contacts + Ceramic package → the same Crystal Diode output. Lead Ore abstracts a galena/PbS-like semiconductor crystal. |
-| L-28 | Silicon Diode architecture | **LOCKED** | Refined Silicon + semiconductor dopants/processing + precision contacts + advanced package → Silicon Diode. |
+| L-28 | Silicon Diode architecture | **LOCKED** | Fabrication-ready Silicon Wafer + contact/package materials → Silicon Diode. Doping, oxidation, lithography, deposition, patterned etching, annealing, passivation, and related device-fabrication chemistry remain implicit in Electronics machine capability. |
 | L-29 | Vacuum Triode replaces Basic Transistor | **LOCKED** | The early transistor-role item is a Vacuum Triode rather than an early semiconductor transistor. |
 | L-30 | Vacuum Triode architecture | **LOCKED** | Glass envelope + Carbon filament + Copper Wire + Copper Sheet/plate + insulating support → Vacuum Triode. |
-| L-31 | Silicon Transistor architecture | **LOCKED** | Refined/high-purity Silicon + semiconductor dopants + precision metallic contacts + advanced Ceramic/Polymer package → Silicon Transistor. |
+| L-31 | Silicon Transistor architecture | **LOCKED** | Fabrication-ready Silicon Wafer + contact/package materials → Silicon Transistor. Device-fabrication chemistry remains implicit inside Electronics manufacturing capability. |
 | L-32 | Inductors removed from Electronics | **LOCKED** | Remove Basic/Advanced Inductor items; small inductors, chokes, coils, and similar magnetics are abstracted into boards and assemblies. |
 | L-33 | Transformers removed from Electronics | **LOCKED** | Remove Basic/Advanced Transformer items from Electronics; small transformers are abstracted into higher-level assemblies. |
 | L-34 | Large magnetic systems boundary | **LOCKED** | Explicit transformers, motor/generator magnetic cores, stators, rotors, and related magnetic intermediates are deferred to Electrical Machinery / Power Systems if they earn explicit gameplay value. |
 | L-35 | Microchip functional classes | **LOCKED** | Use Logic, Memory, and Interface chip families, each with Basic and Advanced variants. |
 | L-36 | Microchip terminology | **LOCKED** | `Micro-Circuit` is retired; `Integrated Circuit` is technical/background terminology; `Microchip` is the player-facing family concept. |
 | L-37 | Basic Microchip platform | **LOCKED** | All Basic Logic/Memory/Interface Chips use a shared early planar-Silicon fabrication platform. |
-| L-38 | Basic Microchip material direction | **LOCKED** | Refined Silicon + Aluminum metallization + semiconductor chemistry + oxide/insulation processing + packaging → Basic Microchip. |
-| L-39 | Basic Microchip material exclusions | **LOCKED** | Do not add Germanium merely to recreate the earliest historical ICs, and do not require Gold for Basic Microchips. |
+| L-38 | Basic Microchip material direction | **LOCKED** | Silicon Wafer + Copper + Aluminum + Epoxy Resin → Basic Logic/Memory/Interface Chip. Aluminum is the characteristic early IC metallization material; Copper abstracts broader conductive/contact interconnection; Epoxy Resin is the molded/plastic package abstraction. |
+| L-39 | Basic Microchip material exclusions | **LOCKED** | Do not add Germanium merely to recreate the earliest historical ICs. Basic Microchips do not require Gold; semiconductor-process chemicals beyond the shared wafer-preparation Etching Solution remain implicit unless another TI system independently establishes them. |
 | L-40 | Advanced Microchip platform | **LOCKED** | Advanced Logic/Memory/Interface Chips remain Silicon-based and progress through fabrication sophistication rather than changing semiconductor element. |
-| L-41 | Advanced Microchip material direction | **LOCKED** | High-purity Silicon + advanced semiconductor chemistry/dielectrics + Copper-based advanced metallization + higher-end packaging/contact materials → Advanced Microchip. |
-| L-42 | Advanced Microchip noble metals | **LOCKED** | Gold or other noble metals may be used for specialized contacts/bonding but are not mandatory merely because a chip is Advanced. |
+| L-41 | Advanced Microchip material direction | **LOCKED** | Silicon Wafer + Copper + Gold + Ceramic → Advanced Logic/Memory/Interface Chip. Copper remains the advanced primary interconnect/metallization abstraction; Gold represents precision/high-reliability contacts/bonding surfaces; Ceramic is the high-reliability package abstraction. |
+| L-42 | Advanced Microchip noble metals | **LOCKED** | Gold is a required Advanced Microchip material representing precision/high-reliability contact, bonding, and corrosion-resistant interface functions. Silver is not part of the Basic→Advanced microchip distinction and remains primarily a PCB-metallization progression material. |
 | L-43 | Conventional processor taxonomy | **LOCKED** | Exactly three conventional processors: Logic Processor, Memory Processor, Interface Processor. |
 | L-44 | Processor tiering rule | **LOCKED** | No Basic/Advanced processor SKUs; processor progression occurs through recipe generations, better chips, and manufacturing improvements. |
 | L-45 | Processor functional roles | **LOCKED** | Logic Processor is control/automation-heavy; Memory Processor is data/memory-heavy; Interface Processor is sensing/comms/I-O-heavy. |
@@ -135,6 +135,11 @@ This register is the fast-reference index for the plan. The detailed sections la
 | L-89 | Nichrome resistor material | **LOCKED** | Advanced Resistor uses Nichrome, a Nickel–Chromium alloy. Nickel already exists in TI Metallurgy; Metallurgy owns Nichrome production, form, and exact alloy proportions. |
 | L-90 | Advanced Capacitor material set | **LOCKED** | Advanced Capacitor uses Aluminum Foil + Paper + Electrolyte + suitable termination/sealing materials. Aluminum-oxide dielectric formation is implicit; Polymer is not a mandatory baseline ingredient. |
 | L-91 | Crystal Diode packaging progression | **LOCKED** | Crude Crystal Diode uses Tin Sheet as the simple housing/package; the improved recipe replaces Tin Sheet with Ceramic while retaining the same Crystal Diode output. |
+| L-92 | Silicon Ingot / Wafer architecture | **LOCKED** | Use one canonical Silicon Ingot and one canonical Silicon Wafer. Upstream purification improvements produce more of the same Silicon Ingot from the same silicon-bearing feedstock; each ingot retains a fixed wafer yield. No Basic/Advanced or purity-tier wafer SKUs. |
+| L-93 | Semiconductor wafer-preparation chemistry | **LOCKED** | Silicon Ingot + Etching Solution → Silicon Wafer. Etching Solution is a Chemistry-produced abstraction from Sulfuric Acid + Hydrochloric Acid + Hydrofluoric Acid + Nitric Acid + Hydrogen Peroxide and represents sequential cleaning, oxide removal, silicon etching, surface conditioning, and final wafer preparation rather than one literal mixed bath. |
+| L-94 | Semiconductor chemistry abstraction boundary | **LOCKED** | Do not add separate Photoresist, Semiconductor Dopant, Thin-Film Precursors, developers, resist strippers, specialty solvents, ammonium hydroxide, acetic acid, CMP slurry, semiconductor-specific process gases, separate cleaning solutions, or Basic/Advanced Etching Solution unless another TI system independently justifies them. Later device-fabrication chemistry remains implicit inside Electronics manufacturing. |
+| L-95 | Chip packaging progression | **LOCKED** | Basic Microchips use Epoxy Resin as the molded/plastic package abstraction; Advanced Microchips use generic Ceramic as the high-reliability package abstraction. No separate Lead Frame, Bond Wire, Mold Compound, Die Attach, package-substrate, or Chip Package items. |
+| L-96 | PCB fabrication chemistry placeholder | **LOCKED PLACEHOLDER** | Use one explicit PCB-process fluid with the literal temporary name **PCB Etching Solution Placeholder**. It is distinct from semiconductor Etching Solution and abstracts PCB copper etching/process chemistry. Its final chemical identity/name and Chemistry production chain are deferred; masks, developers, resist strippers, drilling consumables, plating baths, and similar PCB-process inputs remain implicit unless later cross-system planning justifies them. |
 
 ## 0.1.2 Pending and Deferred Decisions
 
@@ -165,10 +170,10 @@ This register is the fast-reference index for the plan. The detailed sections la
 | P-23 | Advanced Resistor resistive alloy | **LOCKED MATERIAL** | Use Nichrome (Nickel–Chromium alloy), produced by Metallurgy. Exact alloy proportions, forms, and metallurgy recipe remain outside Electronics. |
 | P-24 | Advanced Capacitor chemistry | **LOCKED ELECTRONICS INTERFACE** | Aluminum Foil + Paper + Electrolyte + suitable termination/sealing materials. Polymer is not a baseline requirement; exact Electrolyte and sealing/termination chemistry remain deferred. |
 | P-25 | Crystal Diode package progression | **LOCKED PROGRESSION** | Crude recipe uses Tin Sheet packaging; improved recipe uses Ceramic packaging for the same Crystal Diode output. Exact quantities/timing remain deferred. |
-| P-26 | Silicon purification chain | **DEFERRED** | Define how Quartzite/silica feed becomes Electronics-grade and high-purity Silicon. |
-| P-27 | Semiconductor chemistry | **DEFERRED** | Define dopants, etchants, photoresists, solvents, cleaning agents, dielectric/oxide-related chemistry, and related process intermediates. |
-| P-28 | Chip packaging | **DEFERRED** | Define Basic vs Advanced chip package materials, bonding/contact methods, and whether Ceramic/Polymer packages are explicit or process-abstracted. |
-| P-29 | Exact PCB fabrication process details | **DEFERRED** | Resolve whether etchants, masks, plating baths, drilling consumables, and similar process inputs deserve explicit items/fluids. |
+| P-26 | Silicon purification / wafer chain | **LOCKED ELECTRONICS INTERFACE** | One canonical Silicon Ingot feeds one canonical Silicon Wafer. Better upstream purification yields more of the same Silicon Ingot from the same feedstock; ingot→wafer yield remains fixed. Exact Quartzite→Silicon production and purification recipes remain Metallurgy/Chemistry-owned. |
+| P-27 | Semiconductor chemistry | **LOCKED ARCHITECTURE** | Silicon Ingot + Etching Solution → Silicon Wafer; Etching Solution abstracts sequential wafer-preparation chemistry using Sulfuric Acid, Hydrochloric Acid, Hydrofluoric Acid, Nitric Acid, and Hydrogen Peroxide as Chemistry inputs. Later device-fabrication chemistry remains implicit; no separate dopant/photoresist/process-gas family is added by Electronics. |
+| P-28 | Chip packaging | **LOCKED ARCHITECTURE** | Basic Microchips use Epoxy Resin packaging; Advanced Microchips use Ceramic packaging. Existing Copper/Aluminum and Copper/Gold inputs abstract lead-frame/bonding/contact requirements. No separate package subassembly items. |
+| P-29 | Exact PCB fabrication process details | **LOCKED PLACEHOLDER / DEFERRED CHEMISTRY IDENTITY** | Add one explicit PCB-process fluid named **PCB Etching Solution Placeholder** for now. It is distinct from semiconductor Etching Solution. Final chemistry/name is deferred to Chemistry planning; masks, plating baths, drilling consumables, developers/strippers, and similar process inputs remain abstracted unless another system later justifies them. |
 | P-30 | Electrical Machinery magnetic components | **DEFERRED TO OTHER SYSTEM** | Decide later whether explicit Transformer, Magnetic Core, Motor Stator, Motor Rotor, or related items earn a place outside Electronics. |
 | P-31 | Neodymium / rare-earth magnetic uses | **DEFERRED TO OTHER SYSTEM** | Revisit for advanced motors, generators, permanent-magnet systems, or other Electrical Machinery rather than Electronics components. |
 | P-32 | AI / Quantum endgame architecture | **FUTURE DESIGN** | Develop Undeveloped AI Core → training/development → Developed/Sentient AI Core concepts, possible Quantum Processor involvement, and possible AI-Integrated Quantum Processor. |
@@ -180,7 +185,7 @@ This register is the fast-reference index for the plan. The detailed sections la
 
 ### Resume priority
 
-P-01 through P-03 and P-05 through P-25 are resolved at the Electronics architecture/interface level, with P-04 intentionally deferred to later endgame planning. P-20 retains an explicitly temporary material placeholder pending cross-system fiberglass planning. The next unresolved register item is **P-26, Silicon purification chain**.
+P-01 through P-03 and P-05 through P-29 are resolved at the Electronics architecture/interface level. P-04 remains intentionally deferred to later endgame planning; P-20 and P-29 retain explicit temporary placeholder names pending cross-system materials/Chemistry work. P-30 through P-31 are deferred to Electrical Machinery / Power Systems, P-32 to future AI/Quantum endgame design, P-33 to art/UI planning, and P-34 through P-37 to implementation/balance. **There is no remaining unresolved decision inside the current Electronics architecture scope.**
 
 # 1. Electronics Design Philosophy
 
@@ -340,6 +345,7 @@ Once the **Electronic Workshop** is established, proper PCB manufacture is repre
 Paper Fiberboard
 + Phenolic Resin
 + Copper Sheet
++ PCB Etching Solution Placeholder
 → Phenolic Layered PCB
 ```
 
@@ -370,6 +376,7 @@ Conceptual baseline:
 Fiberglass Placeholder
 + Epoxy Resin
 + Copper conductive layer
++ PCB Etching Solution Placeholder
 → Fiberglass Layered PCB
 ```
 
@@ -417,6 +424,7 @@ Alumina Ceramic
 + Copper conductive layer
 + Aluminum conductive layer
 + Silver conductive/plating layer
++ PCB Etching Solution Placeholder
 → Ceramic Layered PCB
 
 Later improved recipe:
@@ -425,6 +433,7 @@ Aluminum Nitride Ceramic
 + Aluminum conductive layer
 + Silver conductive/plating layer
 + Gold high-reliability contact/finish layer
++ PCB Etching Solution Placeholder
 → Ceramic Layered PCB
 ```
 
@@ -435,6 +444,37 @@ Silver represents advanced conductive metallization/plating. Gold represents lat
 Exact ceramic powders, binders, nitriding, firing/sintering, conductor stack, plating method, layer count, via technology, recipe quantities, and machine ownership remain deferred to Metallurgy/Chemistry/material-system planning.
 
 The design represents an advanced multilayer electronic substrate, not a literal real-world stack-up specification.
+
+---
+
+## 3.5 PCB Fabrication Chemistry / Process Abstraction
+
+**STATUS: LOCKED PLACEHOLDER (P-29)**
+
+Electronics uses one explicit PCB-process fluid with the literal temporary name:
+
+- **PCB Etching Solution Placeholder**
+
+The word `Placeholder` is intentionally part of the temporary player-facing planning name. It must be replaced once Chemistry planning determines the actual PCB etchant/process chemistry and final localization.
+
+This fluid is **distinct from** the semiconductor wafer-preparation **Etching Solution**. The PCB fluid represents copper-patterning / PCB-process chemistry rather than silicon-wafer cleaning and etching.
+
+Proper Tier-1 and later PCB fabrication recipes may consume **PCB Etching Solution Placeholder**. The crude pre-Tier-1 Plyboard/Rosin Phenolic PCB route does not require it because that recipe intentionally abstracts primitive cutting/bonding/patterning rather than proper chemical PCB processing.
+
+The Electronics machines abstract the rest of the PCB fabrication sequence, including as appropriate:
+
+- surface preparation;
+- masking / circuit patterning;
+- copper etching;
+- resist removal;
+- drilling;
+- cleaning;
+- plating / finishing;
+- Silver / Gold surface treatments unlocked by later recipes.
+
+Do **not** add separate PCB-only inventory items for photoresist, developer, resist stripper, soldermask, drilling consumables, plating baths, or individual cleaning baths unless later Chemistry/material-system planning establishes a broader gameplay reason for them.
+
+Exact chemical identity, production recipe, ratios, machine ownership, and final name for **PCB Etching Solution Placeholder** remain deferred to Chemistry planning.
 
 ---
 
@@ -666,26 +706,19 @@ Ceramic represents the later, more stable electrically insulating package with i
 
 **STATUS: LOCKED**
 
-The advanced diode represents engineered Silicon semiconductor technology.
+The advanced diode represents engineered Silicon semiconductor technology fabricated from the canonical prepared **Silicon Wafer**.
 
 Conceptual construction:
 
 ```text
-Refined Silicon
-+ semiconductor Dopants / processing chemistry
-+ precision metallic contacts
-+ advanced package
+Silicon Wafer
++ contact / package materials
 → Silicon Diode
 ```
 
-Possible future recipe improvements may involve:
+The Silicon Wafer is already a cleaned, etched, surface-conditioned, fabrication-ready semiconductor substrate. Doping, oxidation, lithography, deposition, patterned etching, annealing, passivation, and related device-fabrication chemistry are implicit inside the Electronics manufacturing recipe/machine rather than represented as separate inventory items.
 
-- higher-purity Silicon;
-- Gold or Silver contact technologies;
-- advanced Ceramic or Polymer packages;
-- Silicon Carbide-type high-performance processes.
-
-No additional diode SKU is required merely for those recipe improvements.
+The exact contact/package material set remains deferred where not otherwise established. No additional diode SKU is required for later fabrication improvements.
 
 ---
 
@@ -728,15 +761,13 @@ The design intentionally creates a meaningful technology transition from vacuum 
 
 **STATUS: LOCKED**
 
-The modern transistor represents engineered Silicon semiconductor junction/device fabrication.
+The modern transistor represents engineered Silicon semiconductor junction/device fabrication from the canonical prepared **Silicon Wafer**.
 
 Conceptual construction:
 
 ```text
-High-purity / refined Silicon
-+ semiconductor Dopants
-+ precision metallic contacts
-+ advanced Ceramic / Polymer package
+Silicon Wafer
++ contact / package materials
 → Silicon Transistor
 ```
 
@@ -754,7 +785,95 @@ Basic Transistor
 → Advanced Transistor
 ```
 
-Gold is not required for the early Vacuum Triode and remains an advanced Electronics material.
+Doping, oxidation, lithography, deposition, patterned etching, annealing, passivation, and related semiconductor-processing chemistry remain implicit inside Electronics manufacturing.
+
+## 8.3 Shared Silicon Ingot / Wafer Platform
+
+**STATUS: LOCKED (P-26 / P-27)**
+
+Thelian Industries uses exactly one canonical:
+
+- **Silicon Ingot**;
+- **Silicon Wafer**.
+
+There are no Raw/Prepared/Etched/Basic/Advanced/High-Purity wafer variants and no separate purity-tier Silicon Ingot SKUs for Electronics progression.
+
+### Upstream purification progression
+
+Improved Metallurgy/Chemistry purification is represented by better recipes that recover more of the **same Silicon Ingot** from the same underlying silicon-bearing feedstock:
+
+```text
+Early purification:
+X silicon-bearing feedstock
+→ lower yield of Silicon Ingots
+
+Improved purification:
+same X silicon-bearing feedstock
++ improved Metallurgy / Chemistry processing
+→ higher yield of the SAME Silicon Ingot
+```
+
+Exact yields are deferred. This represents improved recovery, impurity removal, batch acceptance, and semiconductor-grade usable material rather than creating a second ingot item.
+
+### Wafer-production step
+
+```text
+Silicon Ingot
++ Etching Solution
+→ Silicon Wafer
+```
+
+Each Silicon Ingot has the same eventual wafer yield. The wafer-production operation abstracts ingot slicing, wafer separation, saw-damage removal, surface etching, chemical cleaning, native-oxide removal, surface conditioning, polishing/lapping as appropriate, and final semiconductor-grade wafer preparation.
+
+The resulting **Silicon Wafer** is already fabrication-ready and is consumed by:
+
+- Silicon Diode;
+- Silicon Transistor;
+- Basic Logic / Memory / Interface Chips;
+- Advanced Logic / Memory / Interface Chips.
+
+### Etching Solution
+
+**Etching Solution** is one explicit Chemistry-produced semiconductor wafer-preparation fluid:
+
+```text
+Sulfuric Acid
++ Hydrochloric Acid
++ Hydrofluoric Acid
++ Nitric Acid
++ Hydrogen Peroxide
+→ Etching Solution
+```
+
+This is a gameplay abstraction of multiple real sequential cleaning, oxide-removal, silicon-etching, and surface-treatment chemistries. It is **not** interpreted as one literal real-world bath containing all five chemicals simultaneously.
+
+Conceptual roles:
+
+- Sulfuric Acid + Hydrogen Peroxide → organic/resist contamination cleaning abstraction;
+- Hydrochloric Acid + Hydrogen Peroxide → metallic/ionic contamination cleaning abstraction;
+- Hydrofluoric Acid → silicon-dioxide/native-oxide removal;
+- Hydrofluoric Acid + Nitric Acid → silicon wet-etching basis.
+
+Exact acid-production chains, ratios, and Etching Solution recipe details remain Chemistry decisions.
+
+### Semiconductor fabrication abstraction boundary
+
+Do not add separate semiconductor inventory items for:
+
+- Photoresist;
+- Semiconductor Dopant;
+- Thin-Film Precursors;
+- developers;
+- resist strippers;
+- specialty solvents;
+- ammonium hydroxide;
+- acetic acid;
+- CMP slurry;
+- semiconductor-specific process gases;
+- separate cleaning solutions;
+- Basic/Advanced Etching Solution.
+
+Lithography, doping/implantation/diffusion, oxidation and dielectric formation, deposition, patterned etching, resist stripping, annealing, passivation, CMP, and process-gas usage remain implicit inside Electronics manufacturing recipes/machine capability unless another TI system independently establishes one of those materials for broader use.
 
 ---
 
@@ -889,16 +1008,15 @@ Total:
 
 **STATUS: LOCKED**
 
-All Basic Microchips use a shared **early planar-Silicon integrated-circuit platform**.
+All Basic Microchips use a shared **early planar-Silicon integrated-circuit platform** and the same canonical **Silicon Wafer**.
 
 Conceptual manufacturing basis:
 
 ```text
-Refined Silicon
+Silicon Wafer
++ Copper
 + Aluminum
-+ semiconductor-processing chemistry
-+ insulating / oxide processing
-+ packaging materials
++ Epoxy Resin
 → Basic Microchip
 ```
 
@@ -910,15 +1028,16 @@ The output function is determined by circuit design:
 
 ### Locked principles
 
-- Silicon is the semiconductor substrate.
-- Aluminum is the baseline early IC metallization/interconnect material.
+- Silicon Wafer is the common fabrication-ready semiconductor substrate.
+- **Aluminum** is the characteristic early IC metallization/interconnect material.
+- **Copper** represents broader conductive/contact/interconnection requirements around the chip/package.
+- **Epoxy Resin** represents the molded/plastic package abstraction.
 - All three Basic chip classes share the same fabrication technology.
 - Logic, Memory, and Interface distinctions are architectural/function distinctions, not unrelated material systems.
 - Germanium is not introduced merely to reproduce the first historical integrated circuits.
-- Gold is not mandatory for Basic Microchips.
-- Semiconductor chemistry is deferred to Chemistry.
-- Packaging details are deferred.
-- Wafer fabrication, oxidation, lithography, doping, etching, metallization, and packaging are abstracted into the semiconductor-production process.
+- Gold is not required for Basic Microchips.
+- Doping, lithography, oxidation, dielectric formation, deposition, patterned etching, annealing, passivation, dicing, die attach, bonding, package forming, and testing are abstracted into Electronics manufacturing.
+- No separate Lead Frame, Bond Wire, Mold Compound, Die Attach, package substrate, or Chip Package inventory items are required.
 
 ---
 
@@ -928,36 +1047,35 @@ The output function is determined by circuit design:
 
 **STATUS: LOCKED**
 
-Advanced Microchips remain Silicon-based.
-
-They represent higher-density, more sophisticated semiconductor fabrication rather than a completely different semiconductor element.
+Advanced Microchips remain Silicon-based and use the same canonical **Silicon Wafer** as Basic Microchips. Their progression comes from fabrication sophistication, metallization/contact materials, machine capability, and packaging rather than a different wafer SKU.
 
 Conceptual manufacturing basis:
 
 ```text
-High-Purity Silicon
-+ advanced semiconductor chemistry
-+ advanced dielectric / oxide processing
-+ Copper-based advanced metallization
-+ higher-end packaging / contact materials
+Silicon Wafer
++ Copper
++ Gold
++ Ceramic
 → Advanced Microchip
 ```
 
 ### Progression principles
 
-Advanced fabrication may introduce:
+- **Copper** remains the primary advanced interconnect/metallization abstraction.
+- **Gold** is required as the precision/high-reliability contact, bonding, corrosion-resistant interface, and sensitive conductive-area abstraction. It does not imply that the chip's entire interconnect network is Gold.
+- **Ceramic** is the generic high-reliability package/body/substrate abstraction for the completed Advanced Microchip. It is not a completed Ceramic Layered PCB.
+- Silver is not part of the Basic→Advanced microchip material distinction and remains primarily a PCB metallization/plating progression material.
+- All three Advanced chip classes share the same fabrication platform.
+- No Advanced Silicon Wafer item is created.
+- Advanced lithography, doping, dielectrics, deposition, etching, annealing, passivation, CMP, dicing, die attach, bonding, sealing, and testing remain implicit inside Electronics manufacturing.
+- No separate Lead Frame, Bond Wire, Mold Compound, Die Attach, package substrate, or Chip Package items are introduced.
 
-- higher-purity Silicon;
-- finer lithography;
-- more sophisticated doping;
-- improved dielectrics;
-- Copper replacing or supplementing Aluminum interconnects;
-- Gold or other noble metals for specialized contacts/bonding;
-- advanced Polymer or Ceramic packages.
+The material progression between chip generations is therefore readable without multiplying semiconductor substrate items:
 
-Gold is not mandatory merely because the chip is advanced.
-
-All three Advanced chip classes continue to share the same fabrication platform.
+```text
+Basic:    Silicon Wafer + Copper + Aluminum + Epoxy Resin
+Advanced: Silicon Wafer + Copper + Gold + Ceramic
+```
 
 ---
 
@@ -1638,7 +1756,7 @@ The following remain intentionally unresolved:
 
 # 22. Retired / Removed Candidate Items
 
-## 21.1 Retired terminology
+## 22.1 Retired terminology
 
 **STATUS: LOCKED**
 
@@ -1647,7 +1765,7 @@ The following remain intentionally unresolved:
 - `Microchip` is the player-facing integrated-semiconductor family concept.
 - `CPU` is represented under the broader Processor architecture rather than as a separate generic tier.
 
-## 21.2 Removed candidate modules
+## 22.2 Removed candidate modules
 
 **STATUS: LOCKED**
 
@@ -1665,7 +1783,7 @@ Their functions are represented through:
 
 Do not reintroduce them unless explicitly revisited.
 
-## 21.3 Storage devices
+## 22.3 Storage devices
 
 **STATUS: CURRENT DIRECTION**
 
@@ -1673,7 +1791,7 @@ No separate SSD/HDD/storage-device inventory family is currently required.
 
 Memory Chips, Memory Processor, Memory Module, and higher-level computing assemblies provide sufficient abstraction unless future gameplay proves otherwise.
 
-## 21.4 Magnetic Electronics components
+## 22.4 Magnetic Electronics components
 
 Removed from Electronics:
 
@@ -1688,9 +1806,20 @@ Their small-device functions are abstracted. Large electrical-machine versions a
 
 # 23. Cross-System Ownership
 
+Documentation owners and reserved link targets:
+
+- Metallurgy: [Metallurgy Processing Chains](../../03_Production_Systems/01_Metallurgy_Processing_Chains.md) and [TI_Metallurgy_Plan](TI_Metallurgy_Plan.md).
+- Chemistry: [Chemistry and Oil Processing](../../03_Production_Systems/03_Chemistry_and_Oil_Processing.md). *(Reserved for a dedicated Chemistry plan link when that plan is generated.)*
+- Forestry / Biological Resources: *(Reserved for a Forestry system document link when that system is planned and its owner document is generated.)*
+- Electronics canonical summary: [Electronics](../../03_Production_Systems/04_Electronics.md).
+- Electrical Machinery / Power Systems: [Power, Steam, and Early Infrastructure](../../04_Gameplay_Mechanics/04_Power_Steam_and_Early_Infrastructure.md). *(Reserved for a dedicated Electrical Machinery plan link when that plan is generated.)*
+- Technology/unlocks and recipe/balance ownership: [Research and Technology Design](../../01_Game_Design/03_Research_and_Technology_Design.md), [Recipe Tables](../../03_Production_Systems/06_Recipe_Tables.md), and [Gameplay Balance Research](../../06_Research/02_Gameplay_Balance_Research.md).
+- Quantum/endgame integration: [Victory and Postgame](../../02_Progression_and_Worlds/03_Victory_and_Postgame.md). *(Reserved for a dedicated Quantum/endgame manufacturing plan link when that plan is generated.)*
+- Electronics art/UI: *(Reserved for an art/UI documentation link when that documentation is generated.)*
+
 ## Metallurgy
 
-Owns metallic and silicon material production/forms, including potential:
+Owns metallic and Silicon material production/forms, including potential or locked interfaces such as:
 
 - Copper Sheet / Wire;
 - Aluminum material forms;
@@ -1699,32 +1828,37 @@ Owns metallic and silicon material production/forms, including potential:
 - Steel / Iron materials;
 - Gold;
 - Silver;
-- refined Silicon feed/forms;
-- chromium-bearing materials;
+- Nickel;
+- Chromium;
+- Nichrome alloy production;
+- the canonical **Silicon Ingot** and its upstream purification/recovery progression;
 - other metallurgy intermediates;
 - **Tin–Lead Solder alloy production** as a required Electronics dependency;
 - likely part of the future glass/fiberglass material chain, exact boundary TBD.
 
+Improved Silicon purification should produce more of the **same Silicon Ingot** from the same silicon-bearing feedstock rather than creating separate high-purity ingot SKUs. Exact Quartzite/silica reduction, purification chemistry, furnaces, yields, and machine ownership remain outside Electronics.
+
 ## Chemistry
 
-Expected to own materials/processes such as:
+Owns chemical materials/processes required by Electronics, including:
 
 - Rosin processing from raw natural/tree resin;
 - Phenolic Resin;
 - Epoxy Resin;
-- polymers;
-- electrolytes;
-- semiconductor dopants;
-- etchants;
-- photoresist-like materials;
-- solvents;
-- cleaning chemistry;
-- insulating compounds;
+- polymers where independently required;
+- Electrolyte;
+- Sulfuric Acid;
+- Hydrochloric Acid;
+- Hydrofluoric Acid;
+- Nitric Acid;
+- Hydrogen Peroxide;
+- **Etching Solution** for Silicon Wafer preparation;
+- the eventual final chemical identity/name and production chain replacing **PCB Etching Solution Placeholder**;
 - processed carbon forms where appropriate;
 - silica processing where appropriate;
 - likely part of the future glass/fiberglass treatment/production chain, exact boundary TBD.
 
-Chemistry specifics remain intentionally deferred.
+For semiconductor device fabrication, Electronics intentionally does **not** require separate Photoresist, Semiconductor Dopant, Thin-Film Precursors, developers, resist strippers, specialty solvents, CMP slurry, semiconductor-specific process gases, or multiple cleaning solutions unless another TI system independently establishes one of those materials for broader use.
 
 ## Forestry / Biological Resources
 
@@ -1743,6 +1877,7 @@ Owns:
 
 - PCBs;
 - discrete electronic components;
+- consumption of fabrication-ready **Silicon Wafers** in semiconductor devices and Microchips;
 - chip fabrication;
 - processors;
 - controllers;
@@ -1751,6 +1886,8 @@ Owns:
 - memory modules;
 - compute accelerators;
 - higher-order electronic assemblies.
+
+The exact machine/system ownership of the Silicon Ingot + Etching Solution → Silicon Wafer preparation step may be finalized during Metallurgy/Chemistry/Electronics machine integration, but the material interface and recipe abstraction are locked.
 
 ## Electrical Machinery / Power Systems
 
@@ -1768,7 +1905,7 @@ Deferred possible ownership:
 
 # 24. Retained Future Design Directions
 
-## 23.1 AI / Quantum Computing
+## 24.1 AI / Quantum Computing
 
 **STATUS: RETAINED FUTURE DESIGN DIRECTION, NOT FINAL IMPLEMENTATION**
 
@@ -1791,7 +1928,7 @@ This direction is intentionally retained for later concept planning but is **not
 
 ---
 
-## 23.2 Semiconductor visual differentiation
+## 24.2 Semiconductor visual differentiation
 
 Possible future art direction:
 
@@ -1805,7 +1942,7 @@ Art/UI implementation remains deferred.
 
 # 25. Deferred Decisions
 
-The following are deliberately **not yet locked** unless explicitly stated elsewhere:
+The current Electronics architecture pass is complete. The following remain intentionally deferred because they belong to dependent systems, implementation, endgame design, art/UI, or numerical balance rather than unresolved core Electronics architecture:
 
 - exact recipe ratios, yields, and material counts for all locked architectures;
 - crafting times;
@@ -1818,22 +1955,30 @@ The following are deliberately **not yet locked** unless explicitly stated elsew
 - exact prototype bridge recipe penalties and output yields;
 - exact crude bootstrap machine(s), recipe set, and retirement threshold;
 - exact warning/UI behavior around crude-recipe retirement;
-- exact Tin–Lead solder ratios, metallurgy processing steps, and solid/molten delivery implementation details;
+- exact Tin–Lead solder ratios, Metallurgy processing steps, and solid/molten delivery implementation details;
 - exact upstream Chemistry recipes for Rosin, Phenolic Resin, and Epoxy Resin;
 - exact Wood Pulp, Sawdust, Paper, Plyboard, and Paper Fiberboard production chains;
 - exact crude-versus-Tier-1 Phenolic PCB numerical penalties/yields;
 - final replacement name/material form and exact production chain for **Fiberglass Placeholder**;
 - exact Alumina Ceramic and Aluminum Nitride Ceramic production chains, material forms, and machine ownership;
-- exact semiconductor dopants;
-- exact semiconductor etchants/photoresists/solvents;
-- exact Silicon purification chain;
-- exact chip packaging materials;
+- exact Quartzite/silica → Silicon Ingot production and purification recipes, machines, and yields;
+- exact numerical Silicon Ingot → Silicon Wafer yield and final machine ownership for wafer preparation;
+- exact Sulfuric Acid, Hydrochloric Acid, Hydrofluoric Acid, Nitric Acid, Hydrogen Peroxide, and Etching Solution Chemistry production chains/ratios;
+- final chemical identity, player-facing name, and Chemistry production chain replacing **PCB Etching Solution Placeholder**;
+- exact Silicon Diode and Silicon Transistor contact/package materials where not otherwise established;
+- exact generic Ceramic material/form used for Advanced Microchip packaging;
 - exact Silver/Gold PCB quantities, plating ratios, yields, and technology timing;
 - exact Nichrome alloy proportions, material form, and Metallurgy production recipe;
 - exact Advanced Capacitor Electrolyte composition, termination/sealing materials, and package details;
 - exact Crystal Diode crude/improved recipe quantities, timing, and package material forms;
+- P-30 Electrical Machinery magnetic components;
+- P-31 Neodymium / rare-earth magnetic uses;
+- P-32 AI / Quantum endgame architecture;
+- P-33 semiconductor iconography;
 - exact Quantum Processor manufacturing and endgame tech chain;
 - progression balance and technology costs.
+
+The decision **not** to create separate semiconductor Photoresist, Dopant, Thin-Film Precursor, developer, stripper, specialty-solvent, CMP-slurry, process-gas, or multiple cleaning-solution inventory families is locked for the current Electronics scope; these are not merely pending P-27 decisions.
 
 ---
 
@@ -1865,6 +2010,11 @@ MODERN / ADVANCED DISCRETE ELECTRONICS
 ├─ Advanced Capacitor
 ├─ Silicon Diode
 └─ Silicon Transistor
+
+SEMICONDUCTOR / PCB PROCESS INTERFACES
+├─ Silicon Wafer
+├─ Etching Solution
+└─ PCB Etching Solution Placeholder  [temporary name]
 
 MICROCHIPS
 ├─ Basic Logic Chip
@@ -1913,25 +2063,36 @@ Explicit inductors and transformers are intentionally absent from the Electronic
 
 ## Current planning state
 
-P-01 through P-03 and P-05 through P-25 are now resolved at the Electronics architecture/interface level.
+**The current Electronics architecture planning pass is complete.**
 
-P-04, **Quantum Processor manufacturing**, is intentionally deferred to later endgame planning.
+P-01 through P-03 and P-05 through P-29 are resolved at the Electronics architecture/interface level. P-04, **Quantum Processor manufacturing**, remains intentionally deferred to later endgame planning.
 
-The five-decision checkpoint covering P-21 through P-25 locked:
+The final late-stage locks established:
 
-- Alumina Ceramic → Aluminum Nitride Ceramic substrate progression for the same Ceramic Layered PCB;
-- Silver-first conductive metallization/plating and later Gold high-reliability contact/finish progression for PCB recipes;
-- **Nichrome** (Nickel–Chromium) as the Metallurgy-produced Advanced Resistor resistive alloy;
-- Aluminum Foil + Paper + Electrolyte + sealing/termination abstraction for the Advanced Capacitor, with Polymer removed as a mandatory baseline ingredient;
-- Tin Sheet → Ceramic package progression for the same Crystal Diode output.
+- one canonical **Silicon Ingot** and one canonical **Silicon Wafer**;
+- improved upstream Silicon purification as better yield of the same Silicon Ingot rather than new purity-tier items;
+- `Silicon Ingot + Etching Solution → Silicon Wafer` as the final wafer-preparation abstraction;
+- **Etching Solution** as a Chemistry fluid abstracting sequential wafer cleaning/etching/surface preparation using Sulfuric Acid, Hydrochloric Acid, Hydrofluoric Acid, Nitric Acid, and Hydrogen Peroxide as upstream Chemistry inputs;
+- no separate Electronics inventory family for Photoresist, Semiconductor Dopant, Thin-Film Precursors, developers, strippers, specialty solvents, CMP slurry, semiconductor-specific process gases, multiple cleaning solutions, or Basic/Advanced Etching Solution;
+- Basic Microchips: `Silicon Wafer + Copper + Aluminum + Epoxy Resin`;
+- Advanced Microchips: `Silicon Wafer + Copper + Gold + Ceramic`;
+- Epoxy Resin → Ceramic as the chip-package material progression without separate package subassembly items;
+- one separate PCB-process fluid using the temporary name **PCB Etching Solution Placeholder**, with its final chemical identity/name deferred to Chemistry.
 
-The previous P-16 through P-20 checkpoint remains authoritative, including Tin–Lead Solder, the Rosin/Phenolic Resin/Epoxy Resin interfaces, Paper/Wood Pulp notes, crude-to-proper Phenolic PCB progression, and the temporary **Fiberglass Placeholder**.
+The earlier P-16 through P-25 decisions remain authoritative, including Tin–Lead Solder, Rosin/Phenolic Resin/Epoxy Resin, Paper/Wood Pulp, crude-to-proper Phenolic PCB progression, **Fiberglass Placeholder**, Alumina→Aluminum Nitride Ceramic substrate progression, Silver→Gold PCB progression, Nichrome, the Advanced Capacitor architecture, and Tin Sheet→Ceramic Crystal Diode packaging progression.
 
-The next unresolved register item is:
+### No active next Electronics decision
 
-- **P-26 — Silicon purification chain**
+There is currently **no unresolved decision that should be advanced inside Electronics alone**. Resume this document only when one of the following prerequisite areas is ready:
 
-P-26 must define the Electronics-facing Silicon purity/material stages needed by Silicon Diodes, Silicon Transistors, Basic Microchips, and Advanced Microchips while leaving the actual Quartzite-to-Silicon production process and machine architecture owned by the appropriate Metallurgy/Chemistry planning.
+- Chemistry/material planning to replace **Fiberglass Placeholder** and **PCB Etching Solution Placeholder** and finalize upstream resin/acid/electrolyte chains;
+- Metallurgy planning to finalize Silicon Ingot purification, Nichrome, Tin–Lead Solder, and related material forms;
+- Electrical Machinery / Power Systems for P-30 and P-31;
+- endgame planning for Quantum Processor and AI/Quantum architecture;
+- machine implementation/balance for exact recipe eligibility, speeds, power, modules, yields, and technology costs;
+- art/UI planning for semiconductor iconography.
+
+When those prerequisites are available, update only the affected deferred interfaces without reopening unrelated locked Electronics architecture.
 
 ---
 
