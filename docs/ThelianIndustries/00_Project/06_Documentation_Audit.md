@@ -2,6 +2,10 @@
 
 **Status: Review Evidence**
 
+## 2026-10-02 planning-inventory reference refresh
+
+Registered [TI_Planning_Overview.md](../Plans/InProgress%20Plans/TI_Planning_Overview.md) as a high-level working coordination reference and added targeted links from indexes and future-planning owners. It remains non-locked and does not replace detailed owner documents. Existing Stage 5 victory terminology and source-derived world descriptions were preserved; the overview's Icarion's Grave-before-Solar-System-Edge sequence is marked as working planning direction. Added one reserved train/ground-transport planning page, with no duplicate planet placeholders; no static implementation evidence changed.
+
 ## 2026-10-02 research-foundation authority refresh
 
 Official research and progression references were reconciled against the owner-designated [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md). Current documents distinguish its locked architecture from the deferred global technology tree, preserve backlog concepts as candidates, and cross-link existing system owners or reserve link targets for plans not yet generated. No implementation status changed.

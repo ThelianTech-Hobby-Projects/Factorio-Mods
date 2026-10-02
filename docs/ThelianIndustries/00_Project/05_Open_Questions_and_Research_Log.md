@@ -23,6 +23,8 @@ The following legacy sources are empty and require future owner-provided design 
 
 The empty `Tech-Tree.md` legacy source does not mean the research architecture is unspecified: the [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) now locks its governing principles. It is not the finished global technology tree. Chemistry, recipe-table, and technology documents also carry narrow locked Electronics interfaces; recycling and recipe tables carry narrow locked metallurgy interfaces. These constraints do not constitute complete general-domain plans.
 
+For the wider future system/location planning queue—including which dedicated concept plans and shared frameworks are still anticipated—see the [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md). It is a high-level working inventory that may change; it does not settle open design questions or supersede the owners above. Future topic-specific concept sessions should consult the latest [Idea Backlog](../Plans/Idea_Backlog.md) for potentially relevant candidates without treating them as approved.
+
 ## Electronics deferred cross-system work
 
 The [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) has no active unresolved decision inside the current Electronics-only architecture scope. Remaining work is intentionally deferred to its owners:

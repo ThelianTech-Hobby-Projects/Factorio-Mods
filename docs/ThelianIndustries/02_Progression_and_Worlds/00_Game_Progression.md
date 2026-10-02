@@ -122,6 +122,8 @@ The source assigns `Aquilio` and Zephyrus to Stage 4. Per the owner resolution, 
 
 The source assigns Icarion's Grave and Solar System Edge to Stage 5. The owner-resolved migration direction establishes the Solar System Edge as the main victory milestone. The exact victory objective, gate, and implementation remain unspecified.
 
+The current [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) places Icarion's Grave before Solar System Edge in the working Stage 5 planning sequence. This is a high-level direction for future concept/progression planning, not a new locked mechanic; see [Victory and Postgame](03_Victory_and_Postgame.md) for the resolved lifecycle.
+
 ## Stage 6 — Archo Nexus
 
 **Status: Planning Draft; post-victory/postgame lifecycle resolved**

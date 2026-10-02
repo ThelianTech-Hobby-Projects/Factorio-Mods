@@ -11,6 +11,7 @@ Thelian Industries is described by the legacy source set as a Factorio Space Age
 | Existing stage sequence | [Project Plan](03_Project_Plan.md) | Stage 1 is substantive; later stages are skeletal. |
 | Electronics architecture | [Electronics](../03_Production_Systems/04_Electronics.md) | Locked architecture summary; dependent-system and implementation details deferred. |
 | Research and progression architecture | [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md) | Locked foundation; unified technology tree, placements, prerequisites, costs, and implementation remain future work. |
+| Broad current direction and future planning inventory | [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) | Working coordination reference; not a locked design or replacement for detailed owner documents. |
 | Release direction | [Roadmap and Release Strategy](04_Roadmap_and_Release_Strategy.md) | Placeholder; no source-backed release strategy. |
 | Outstanding questions | [Open Questions and Research Log](05_Open_Questions_and_Research_Log.md) | Tracks deferred cross-system and missing-design work without reopening locked allocations or electronics architecture. |
 | Documentation evidence | [Documentation Audit](06_Documentation_Audit.md) | Points to the migration review. |

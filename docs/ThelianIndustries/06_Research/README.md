@@ -10,6 +10,8 @@ Separate from the backlog, the locked metallurgy architecture requires targeted 
 
 The locked electronics architecture likewise creates targeted feasibility, process-reference, and balance work without reopening its taxonomy or assembly decisions. See [the electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md).
 
+The [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) tracks future research-infrastructure/media planning and the eventual unified research/technology/game-progression plan. The overview does not replace the locked research foundation or define the future tree.
+
 ## Documents
 
 | Document | Current status | Purpose |

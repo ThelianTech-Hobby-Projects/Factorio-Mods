@@ -9,6 +9,8 @@
 > **Post-snapshot planning addendum (2026-09-30):** [TI_Electronics_Plan.md](Plans/InProgress%20Plans/TI_Electronics_Plan.md) is newer than this snapshot and controls current intended-design statements for the completed electronics architecture pass. It does not change any static implementation evidence recorded here.
 >
 > **Post-snapshot planning addendum (2026-10-02):** [TI_Research_System_Foundation_Plan.md](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) now governs current research-system architecture and progression rules. The full technology tree remains deferred; this addendum does not change the static implementation findings below.
+>
+> **Planning-reference note (2026-10-02):** [TI_Planning_Overview.md](Plans/InProgress%20Plans/TI_Planning_Overview.md) is a high-level working inventory for broad direction and outstanding future planning, not implementation evidence or a design authority superseding the detailed owners. It does not change the static implementation findings below.
 
 ## 0. Snapshot Metadata
 

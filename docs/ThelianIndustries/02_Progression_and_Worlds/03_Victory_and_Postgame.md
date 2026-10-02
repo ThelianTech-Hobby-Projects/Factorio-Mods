@@ -19,6 +19,8 @@ This resolution does not define an objective, recipe, science cost, unlock prere
 
 The legacy progression source places **Icarion's Grave** and the **Solar System Edge** in Stage 5, and its solar-system source labels the Solar System Edge as the “Win Condition Zone.” The owner resolution normalizes this into the main-victory milestone described above.
 
+The current [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) gives the working Stage 5 planning order as **Icarion's Grave → Solar System Edge → main-game victory → Stage 6 / Archo Nexus**. This is a coordination direction for future location/progression sessions, not a new locked mechanic or implementation claim; Solar System Edge remains the Stage 5 main-victory destination.
+
 Icarion's Grave has an `AI Generated` world concept description in [Solar System and Planets](01_Solar_System_and_Planets.md). It is concept-draft material pending owner review, not approved lore or an implementation claim.
 
 ## Stage 6 and Archo Nexus

@@ -12,7 +12,7 @@ This matrix reorganizes explicit stage assignments only. A blank detail field me
 | 2 | Vulcanus; Gleba; Fulgora | Stage assignments only in the progression source; solar-system source also contains their orbits as headings without substantive descriptions. |
 | 3 | Voltaris; Pyrosauria; Tectara | World concept descriptions are present and explicitly labeled `Currently AI Generated`; their orbits are source headings without substantive descriptions. |
 | 4 | Aquilo; Zephyrus | **Aquilo** is the owner-resolved active spelling and is the vanilla Space Age planet incorporated into Stage 4; mod-specific changes are not specified. Zephyrus contains a `Partially/Mostly AI Generated` concept description. |
-| 5 | Icarion's Grave; Solar System Edge | Icarion's Grave contains an `AI Generated` concept description. Solar System Edge is the owner-resolved main victory milestone; exact victory content is unspecified. |
+| 5 | Icarion's Grave; Solar System Edge | The current [planning overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) places Icarion's Grave before Solar System Edge as working sequence direction for future location plans. Icarion's Grave's description remains `AI Generated`; Solar System Edge remains the owner-resolved main victory milestone. Detailed integration and victory content remain unspecified. |
 | 6 | Archo Nexus; Archo Nexus Orbit | Both locations contain `AI Generated` concept descriptions. Stage 6 is intentionally post-victory/postgame progression. |
 
 ## Name normalization and provenance

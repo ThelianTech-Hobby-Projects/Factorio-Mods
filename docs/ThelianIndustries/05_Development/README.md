@@ -10,6 +10,8 @@ The electronics decision record adds narrow implementation constraints: preserve
 
 The [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) establishes constraints for later development and QA: apply research outcomes to force knowledge or capability coherently; assess mandatory-progression bootstrap viability case by case; keep information-acquisition state distinct from underlying world state where used; and integrate force-level transitions intentionally. It does not define Lua architecture or make research behavior implemented.
 
+The [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) identifies mod packaging/sub-mod architecture and save-migration/versioning guidance as future planning topics, while compatibility, performance optimization, onboarding, and release polish are intentionally later-phase work. This planning inventory does not change the static code-audit findings in [Project Context](../PROJECT_CONTEXT.md).
+
 No source-code architecture or implementation status is inferred during this documentation-only migration. The pages below identify missing planning work, not accepted engineering decisions.
 
 ## Documents

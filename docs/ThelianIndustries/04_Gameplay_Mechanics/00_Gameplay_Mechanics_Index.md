@@ -10,6 +10,8 @@ This index identifies the canonical documentation locations for gameplay-mechani
 
 The legacy source that mentions most of these topics is `Mods/ThelianIndustries/plans/IDEAS.md`, so the [Idea Backlog](../Plans/Idea_Backlog.md) remains authoritative for those proposals. The mining/resource exception is governed by the owner-designated [metallurgy plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md); this index does not duplicate it.
 
+The [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) is the coordination reference for future global system planning such as logistics, robotics, fluids, power, modules, space transport, combat, ecology, and hazards. These remain planning topics, not approved mechanics by virtue of appearing in the overview.
+
 | Concern | Reserved page | Current owner of substantive proposal content |
 | --- | --- | --- |
 | Logistics and belts | [01_Logistics_and_Belts.md](01_Logistics_and_Belts.md) | [Idea Backlog](../Plans/Idea_Backlog.md) |
@@ -18,6 +20,7 @@ The legacy source that mentions most of these topics is `Mods/ThelianIndustries/
 | Power, steam, and early infrastructure | [04_Power_Steam_and_Early_Infrastructure.md](04_Power_Steam_and_Early_Infrastructure.md) | [Idea Backlog](../Plans/Idea_Backlog.md) |
 | Rockets, space logistics, and transport | [05_Rockets_Space_Logistics_and_Transport.md](05_Rockets_Space_Logistics_and_Transport.md) | [Idea Backlog](../Plans/Idea_Backlog.md) |
 | Mining and resource gating | [06_Mining_and_Resource_Gating.md](06_Mining_and_Resource_Gating.md) | Metallurgy plan for locked extraction architecture; Idea Backlog for remaining candidate mechanics |
+| Trains and ground transportation | [07_Trains_and_Ground_Transportation.md](07_Trains_and_Ground_Transportation.md) | Reserved future planning page; vanilla rail-network behavior remains baseline |
 
 ## Related documents
 

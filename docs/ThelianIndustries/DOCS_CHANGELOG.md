@@ -1,5 +1,12 @@
 # Documentation Changelog
 
+## 2026-10-02 — Planning Overview Navigation and References
+
+- Registered `TI_Planning_Overview.md` as a high-level working planning inventory for broad direction, outstanding system/location plans, placeholders, and deferred work; it is not a locked design record or replacement for existing owners.
+- Added targeted references in project, game-design, progression/world, production, gameplay-mechanics, development, and research navigation/planning pages.
+- Clarified the overview's current Stage 5 planning order—Icarion's Grave, Solar System Edge, main-game victory, then Stage 6 / Archo Nexus—while retaining Solar System Edge as the Stage 5 victory destination and preserving existing AI-draft labels.
+- Added one genuinely missing train/ground-transport placeholder because the overview calls for a dedicated plan; existing reserved system pages and the overview already cover the remaining planning queue without duplicate planet placeholders. No backlog ideas were promoted, no prior locked plan was changed, and no implementation claims were added.
+
 ## 2026-10-02 — Research Foundation Synchronization
 
 - Reconciled official planning, progression, production, development, research, and project-navigation documents with the owner-designated [Research System Foundation Plan](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md).

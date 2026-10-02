@@ -10,6 +10,8 @@ The legacy source explicitly labels the detailed descriptions in this document a
 
 Active display names use owner-approved migration normalizations: **Nauvis** (legacy `Navius`), **Aquilo** (legacy `Aquilio`), and **Archo Nexus** (legacy `Archo-Nexus`). Original spellings remain identified here for provenance.
 
+The [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) tracks the future concept-and-systems and progression-and-balance planning queue for planets and special locations. It is a working inventory, not a replacement for this source-derived document; the AI-draft labels below remain in force until owner review.
+
 ## Stage 1 — Nauvis, Nauvis Orbit, and Luna
 
 ### Nauvis
@@ -139,3 +141,4 @@ The owner-resolved lifecycle places Archo Nexus in Stage 6, after the Stage 5 So
 - [Planetary Stage Matrix](02_Planetary_Stage_Matrix.md)
 - [Victory and Postgame](03_Victory_and_Postgame.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md)
+- [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) — future location-planning inventory; not a planet design specification.

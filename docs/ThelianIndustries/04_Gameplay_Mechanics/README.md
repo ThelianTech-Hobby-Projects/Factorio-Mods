@@ -6,6 +6,8 @@ This folder reserves the documentation locations for gameplay-mechanics concerns
 
 Gameplay proposals remain owned by the non-canonical [Idea Backlog](../Plans/Idea_Backlog.md). The pages in this folder must not be used as implementation specifications or as evidence that a proposed mechanic is approved.
 
+The [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) coordinates future planning for these and other shared systems, and records which broad areas are expected to remain mostly vanilla by default. That inventory is working guidance, not approval to overhaul or add a mechanic.
+
 ## Documents
 
 | Document | Current status | Concern |
@@ -17,6 +19,7 @@ Gameplay proposals remain owned by the non-canonical [Idea Backlog](../Plans/Ide
 | [Power, Steam, and Early Infrastructure](04_Power_Steam_and_Early_Infrastructure.md) | Idea / Candidate | Early-infrastructure proposals are retained in the idea backlog. |
 | [Rockets, Space Logistics, and Transport](05_Rockets_Space_Logistics_and_Transport.md) | Idea / Candidate | Transport proposals are retained in the idea backlog. |
 | [Mining and Resource Gating](06_Mining_and_Resource_Gating.md) | Locked architecture / prototyping pending | Locked mining and reserve boundaries are summarized; unresolved prototype work remains cross-linked. |
+| [Trains and Ground Transportation](07_Trains_and_Ground_Transportation.md) | Placeholder / Planning Required | Vanilla rail-network behavior is the baseline; future transport concepts remain unplanned. |
 
 ## Provenance
 

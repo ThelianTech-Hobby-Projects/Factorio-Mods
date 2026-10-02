@@ -12,6 +12,8 @@ The migrated plans describe an overhaul direction with new mining, ore processin
 
 Detailed progression is owned by [Game Progression](../02_Progression_and_Worlds/00_Game_Progression.md). Production details are owned by [Production Systems Overview](../03_Production_Systems/00_Production_Systems_Overview.md). Speculative concepts remain in the [Idea Backlog](../Plans/Idea_Backlog.md).
 
+The current broad planning framework is summarized in the [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md): TI is presently approached as an enhancement-overhaul built on vanilla Space Age systems, with targeted extension or reinterpretation where a design reason exists. This is working direction for future concept sessions, not an immutable project-wide design rule; detailed owner plans and locked decisions retain their authority.
+
 ## Provenance
 
 - `Mods/ThelianIndustries/plans/Game-Progression-Tree.md`
@@ -20,3 +22,4 @@ Detailed progression is owned by [Game Progression](../02_Progression_and_Worlds
 - `docs/ThelianIndustries/Plans/InProgress Plans/TI_Metallurgy_Plan.md` — current metallurgy decision record.
 - [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) — current electronics architecture and interface record.
 - [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) — current research-system foundation.
+- [TI Planning Overview](../Plans/InProgress%20Plans/TI_Planning_Overview.md) — current high-level planning inventory; working reference only.
