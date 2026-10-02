@@ -2,6 +2,10 @@
 
 **Status: Review Evidence**
 
+## 2026-10-02 research-foundation authority refresh
+
+Official research and progression references were reconciled against the owner-designated [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md). Current documents distinguish its locked architecture from the deferred global technology tree, preserve backlog concepts as candidates, and cross-link existing system owners or reserve link targets for plans not yet generated. No implementation status changed.
+
 The project-level documentation audit is maintained in [migration_audit_2026-09-04.md](../Reviews/migration_audit_2026-09-04.md). It records the legacy source inventory, destination coverage, explicit owner-resolved migration items, remaining open design direction, and migration limits.
 
 The baseline planning audit supplied for this migration is referenced as `docs/Codex_files/thelian_industries_planning_audit_2026-09-04.md`. It is review context, not an implementation verification. *(Reserved for a live Markdown link when that absent reference artifact is restored or generated in this checkout.)*

@@ -19,9 +19,9 @@ The following legacy sources are empty and require future owner-provided design 
 - chemistry and oil processing;
 - recycling and waste;
 - recipe tables; and
-- the dedicated technology tree.
+- the unified detailed technology tree and Research, Technology, and Game Progression Plan.
 
-The otherwise empty chemistry, recipe-table, and technology sources now also carry narrow locked Electronics interfaces; recycling and recipe tables carry narrow locked metallurgy interfaces. These constraints do not constitute complete general-domain plans.
+The empty `Tech-Tree.md` legacy source does not mean the research architecture is unspecified: the [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) now locks its governing principles. It is not the finished global technology tree. Chemistry, recipe-table, and technology documents also carry narrow locked Electronics interfaces; recycling and recipe tables carry narrow locked metallurgy interfaces. These constraints do not constitute complete general-domain plans.
 
 ## Electronics deferred cross-system work
 
@@ -36,6 +36,12 @@ The [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Pla
 
 Resolving these interfaces should update only the affected boundary and must not silently reopen unrelated locked Electronics architecture.
 
+## Research-system deferred integration
+
+The [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) is complete for the current planning phase. The unified detailed tree and stage/domain progression graph remain reserved for future planning: *(Reserved for a link to the unified Research, Technology, and Game Progression Plan when it is generated.)* The Stage 1 sequence is owned by [Game Progression](../02_Progression_and_Worlds/00_Game_Progression.md); Stage 5/Stage 6 lifecycle and postgame candidates are in [Victory and Postgame](../02_Progression_and_Worlds/03_Victory_and_Postgame.md) and the [Idea Backlog](../Plans/Idea_Backlog.md).
+
+Other research interfaces link to their current owners: existing industrial constraints remain in [Metallurgy](../03_Production_Systems/01_Metallurgy_Processing_Chains.md) and [Electronics](../03_Production_Systems/04_Electronics.md); world sequencing and access are in [Solar System and Planets](../02_Progression_and_Worlds/01_Solar_System_and_Planets.md) and the [Planetary Stage Matrix](../02_Progression_and_Worlds/02_Planetary_Stage_Matrix.md). Exact planet-specific experiments and media are deferred to those future owner plans *(reserved for planet/domain research links when generated)*. Research infrastructure and digital-media production are also deferred *(reserved for a dedicated research-infrastructure plan link when generated)*. Paper/Wood Pulp source production is deferred *(reserved for a Forestry system document link when that system is planned)*. Quantum manufacturing remains deferred; link to [Victory and Postgame](../02_Progression_and_Worlds/03_Victory_and_Postgame.md) and reserve a dedicated Quantum/endgame plan link when generated.
+
 ## Incomplete Stage Detail
 
 Stages 2 through 6 are largely skeletal in the legacy progression tree. Do not infer stage goals, unlocks, recipes, or gates beyond the source and the recorded owner resolutions.
@@ -46,4 +52,4 @@ For metallurgy specifically, exact technology/tier timing, recipe progression, r
 
 The idea backlog contains candidate mechanics and questions. It remains the authoritative source for their planning status: [Idea Backlog](../Plans/Idea_Backlog.md).
 
-**Provenance:** Current domain sources of truth: [TI_Metallurgy_Plan.md](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) and [TI_Electronics_Plan.md](../Plans/InProgress%20Plans/TI_Electronics_Plan.md). Historical input: [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), and the [migration audit](../Reviews/migration_audit_2026-09-04.md).
+**Provenance:** Current domain sources of truth: [TI_Metallurgy_Plan.md](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md), [TI_Electronics_Plan.md](../Plans/InProgress%20Plans/TI_Electronics_Plan.md), and the [Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md). Historical input: [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), and the [migration audit](../Reviews/migration_audit_2026-09-04.md).

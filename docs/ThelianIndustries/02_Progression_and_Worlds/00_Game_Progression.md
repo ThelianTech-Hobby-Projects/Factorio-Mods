@@ -89,12 +89,12 @@ Material production and exact construction-component definitions are not owned b
 
 ### Research progression direction
 
-The source says the research chain is more interaction-based than science-pack-based, while still using science packs for certain things.
+The Stage 1 source describes its initial research chain as more interaction-based than science-pack-based, while still using science packs for certain things. This is historical Stage 1 direction, not a rule that limits interaction-based progression to early game or formal research to later stages. The locked [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) makes both first-class throughout TI and permits other justified mechanisms.
 
 - Most early technologies progress through necessary crafting requirements.
 - After the research desk is unlocked, different science data packets and other research supplies can be used to “theorize” new and advanced technologies, including infinite technology.
 
-The exact technology tree, desk-unlock condition, data-packet system, and infinite-technology rules remain unspecified. See [Victory and Postgame](03_Victory_and_Postgame.md) for the separate postgame candidate concepts and the future research-design owner.
+The exact technology tree, desk design/unlock, data-packet system, media production, and technology longevity classifications remain unspecified. Research may advance freely within a legitimately opened domain; larger readiness gates belong at meaningful new frontiers. Planet-specific mechanisms and cross-planet research should reflect local industrial/scientific identity rather than a universal research-pack formula. The foundation does not assign exact technologies to planets or stages. See [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md) for the canonical summary and [Victory and Postgame](03_Victory_and_Postgame.md) for the Stage 5/Stage 6 boundary and candidate concepts.
 
 Metallurgy content may be implemented with simple, internally consistent placeholder technologies and 1:1-style recipes where mechanically coherent so its end-to-end system can be tested. These are not final unlock, science, balance, or progression decisions; [the metallurgy plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) remains the architecture source.
 
@@ -135,3 +135,5 @@ The source assigns `Archo-Nexus` to Stage 6. The owner-approved active display n
 - [Victory and Postgame](03_Victory_and_Postgame.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md) — speculative systems remain non-canonical.
 - [Electronics](../03_Production_Systems/04_Electronics.md) — locked electronics architecture; exact later stage placement remains deferred.
+- [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) — locked research/progression rules; detailed technology tree remains deferred.
+- [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md) — canonical summary and future tree authority boundary.

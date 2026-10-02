@@ -14,6 +14,7 @@ The available source set provides:
 - high-level named stages through Stage 6;
 - metallurgy and ore-processing concepts;
 - a completed architecture pass for electronics taxonomy, assemblies, and production-machine progression;
+- a locked research-system foundation governing research mechanisms, media maturity, planetary science, and progression rules, with the detailed technology tree deferred;
 - solar-system/world concepts, many explicitly labeled as AI-generated drafts; and
 - a broad idea and candidate backlog.
 
@@ -21,4 +22,4 @@ The available source set provides:
 
 The legacy sources and current domain plans do not provide a formal owner-approved charter, implementation specification, release commitment, or complete project-wide system design. The locked domain architecture does not fill those broader gaps.
 
-**Provenance:** [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Solar-System.md`](../../../Mods/ThelianIndustries/plans/Solar-System.md), [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), and the current [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md).
+**Provenance:** [`Game-Progression-Tree.md`](../../../Mods/ThelianIndustries/plans/Game-Progression-Tree.md), [`Metallurgy-Tree.md`](../../../Mods/ThelianIndustries/plans/Metallurgy-Tree.md), [`Solar-System.md`](../../../Mods/ThelianIndustries/plans/Solar-System.md), [`IDEAS.md`](../../../Mods/ThelianIndustries/plans/IDEAS.md), the current [Electronics decision record](../Plans/InProgress%20Plans/TI_Electronics_Plan.md), and the current [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md).

@@ -16,6 +16,8 @@ The old idea-backlog mining material remains candidate context only where it is 
 
 Resource locations, yield semantics, and processing remain owned by the production-system documents. This page summarizes only the locked gameplay-mechanics boundary and links to the detailed decision record.
 
+Technology unlocks for mining and resource access must fit the [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md): this page and the mining plan may define intrinsic system needs, but they do not assign nodes or prerequisites in the deferred global technology tree. Research must not become an arbitrary additional gate where the underlying access or knowledge does not justify it.
+
 ## Research boundary
 
 The [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md) page records the supplied audit's validation baseline for the mining proposal. It is research context only, not a project decision or an implementation claim.

@@ -8,6 +8,8 @@ The metallurgy decision record does establish a narrow development sequence: def
 
 The electronics decision record adds narrow implementation constraints: preserve the three machine capability tiers, use only limited next-tier prototype bridges, bootstrap Tier 1 through designated crude recipes, and reconcile force-level recipe availability when those crude routes retire. Exact code architecture, recipes, thresholds, statistics, and balance remain open; these constraints do not fill the broader development-documentation gaps.
 
+The [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) establishes constraints for later development and QA: apply research outcomes to force knowledge or capability coherently; assess mandatory-progression bootstrap viability case by case; keep information-acquisition state distinct from underlying world state where used; and integrate force-level transitions intentionally. It does not define Lua architecture or make research behavior implemented.
+
 No source-code architecture or implementation status is inferred during this documentation-only migration. The pages below identify missing planning work, not accepted engineering decisions.
 
 ## Documents
@@ -31,3 +33,4 @@ The legacy source set is limited to design and planning files under `Mods/Thelia
 - [Technical Feasibility Research](../06_Research/01_Technical_Feasibility_Research.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
 - [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)
+- [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md)

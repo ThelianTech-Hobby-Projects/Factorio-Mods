@@ -6,6 +6,8 @@
 
 This index tracks evidence-gathering needs separately from design approval. A research result may inform an owner decision, but it does not itself promote an idea from the [Idea Backlog](../Plans/Idea_Backlog.md) into canonical design.
 
+The [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) is locked. Research in this folder informs implementation feasibility, real-world process questions, and deferred balance; it does not reopen the approved architecture. The unified technology tree and its exact placements, prerequisites, media, costs, and timing remain future planning work.
+
 ## Current research register
 
 | Area | Status | Basis | Next decision boundary |

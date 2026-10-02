@@ -8,6 +8,8 @@ The current Thelian Industries legacy planning sources do not define a real-worl
 
 This page reserves the research location. No real-world process claim or design inference is added during this migration.
 
+The [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) defines how future evidence relates to research architecture: evidence may help a subsystem justify or implement an approved mechanism, but it does not add a new progression category without explicit amendment.
+
 The locked metallurgy architecture identifies a focused future information need: geology/process research may justify mineral-specific trace associations, deposit-profile content, and process-specific flux or reagent choices. It must not silently alter the locked architecture.
 
 The locked Electronics architecture permits targeted research into fiberglass, Ceramic substrates, resins, Electrolyte, etchants, silicon preparation, and package/contact details where those interfaces remain deferred. Evidence may refine those owner-system details, but it must not silently reintroduce removed SKU families, unnecessary semiconductor-process inventory, or changes to the locked abstractions.
@@ -25,3 +27,4 @@ The locked Electronics architecture permits targeted research into fiberglass, C
 - [Idea Backlog](../Plans/Idea_Backlog.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
 - [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)
+- [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md)

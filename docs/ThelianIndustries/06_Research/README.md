@@ -2,7 +2,7 @@
 
 **Status: Research Needed**
 
-This folder separates research questions and evidence from gameplay decisions. Research does not approve a proposal, prove that it is implemented in Thelian Industries, or replace owner decisions.
+This folder separates research questions and evidence from gameplay decisions. The locked [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) owns the current research architecture and rules; this folder gathers supporting evidence and future feasibility, process, and balance work. Research does not prove implementation or replace owner decisions.
 
 The supplied planning audit provides a feasibility baseline for selected idea-backlog concepts. That baseline is preserved here as audit-derived context only; it must be revalidated before implementation work.
 
@@ -25,3 +25,5 @@ The locked electronics architecture likewise creates targeted feasibility, proce
 - [Open Questions and Research Log](../00_Project/05_Open_Questions_and_Research_Log.md)
 - [Documentation Audit](../00_Project/06_Documentation_Audit.md)
 - [Electronics](../03_Production_Systems/04_Electronics.md)
+- [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md)
+- [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md)

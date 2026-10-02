@@ -23,6 +23,10 @@ When implemented, the locked Electronics architecture requires validation that:
 
 Exact test fixtures, thresholds, automated coverage, performance criteria, and acceptance values remain deferred.
 
+## Research/progression validation boundary
+
+When researched capabilities are implemented, validation should confirm that the behavior follows the documented technology's knowledge or state change; specialized information research does not silently alter underlying world facts; forward research remains within legitimately opened domains; Stage 6 research is not required retroactively for Stage 5 victory; and mandatory progression retains a viable bootstrap/recovery route. These are architecture-level validation boundaries from the [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md), not a complete test plan or acceptance matrix.
+
 ## Information needed
 
 - Owner-approved test and playtest strategy.
@@ -36,3 +40,4 @@ Exact test fixtures, thresholds, automated coverage, performance criteria, and a
 - [Release Workflow](04_Release_Workflow.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
 - [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)
+- [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md)

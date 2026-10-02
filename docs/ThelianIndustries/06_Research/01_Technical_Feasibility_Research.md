@@ -8,6 +8,8 @@ This page records a bounded, audit-derived research baseline. It does not approv
 
 Source reference: `docs/Codex_files/thelian_industries_planning_audit_2026-09-04.md`, Section 10. The audit explicitly identifies its feasibility check as not being a design decision. The related concepts remain non-canonical in the [Idea Backlog](../Plans/Idea_Backlog.md). *(Reserved for a live Markdown link when that absent reference artifact is restored or generated in this checkout.)*
 
+The governing research architecture is locked in the [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md). Feasibility findings may inform implementation choices or a documented amendment; they do not silently introduce a new progression mechanism or replace the foundation.
+
 ## Audit-derived baseline for later validation
 
 The audit identifies existing platform hooks or clear prototype surfaces worth evaluating for these candidate areas:

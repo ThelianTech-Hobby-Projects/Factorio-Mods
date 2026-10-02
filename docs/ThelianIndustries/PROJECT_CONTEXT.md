@@ -7,6 +7,8 @@
 > **Post-snapshot planning addendum (2026-09-07):** [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is newer than this snapshot and controls current intended-design statements for locked metallurgy Decisions 1–8. It does not change any static implementation evidence recorded here.
 >
 > **Post-snapshot planning addendum (2026-09-30):** [TI_Electronics_Plan.md](Plans/InProgress%20Plans/TI_Electronics_Plan.md) is newer than this snapshot and controls current intended-design statements for the completed electronics architecture pass. It does not change any static implementation evidence recorded here.
+>
+> **Post-snapshot planning addendum (2026-10-02):** [TI_Research_System_Foundation_Plan.md](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) now governs current research-system architecture and progression rules. The full technology tree remains deferred; this addendum does not change the static implementation findings below.
 
 ## 0. Snapshot Metadata
 
@@ -144,6 +146,8 @@ Planning owner: [Recycling and Waste](03_Production_Systems/05_Recycling_and_Was
 
 **Status: Not implemented.** There are zero TI recipe and technology prototype definitions, no recipe-category loader, no technology effects, and no control-stage research system. Therefore no custom item can be confirmed as player-unlocked or craftable through TI content.
 
+Planning authority: [Research and Technology Design](01_Game_Design/03_Research_and_Technology_Design.md), with the [Research System Foundation Plan](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) as its locked architecture source. The plan establishes a hybrid research mechanism framework, Science Papers-to-digital media maturity, planetary specialization and selective integration, postgame research principles, and longevity classes. Exact tree structure, technology placements, prerequisites, costs, media recipes, infrastructure, and implementation remain deferred. The legacy Stage 1 research desk/data-packet language remains planned context only.
+
 ## 12. Logistics Snapshot
 
 **Status: Planning / Idea Only.** No TI belts, inserters, loaders, robots, roboports, trains, wagons, rockets, storage, or transport systems were registered. Proposed special belts, 1x1 loaders, special pipe networks, fluid cargo rockets, and inter-platform transport have no implementation evidence.
@@ -225,6 +229,7 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 
 - Primary allocation is now locked: Nauvis includes Quartzite/Silicon-silica feed (quartz-dominant `SiO2`), Voltaris includes Petalite/Lithium (`LiAlSi4O10`), Tectara has Wolframite/Tungsten and Ilmenite/Titanium, and Vulcanus has Pyrolusite/Manganese, Cobaltite/Cobalt, and Chromite/Chromium. Specialized-profile refinement remains deferred. This is current planning direction, not source-code implementation evidence.
 - No active decision remains inside the current Electronics-only architecture scope. Deferred work includes Quantum/endgame manufacturing; replacement of `Fiberglass Placeholder` and `PCB Etching Solution Placeholder`; Chemistry/Metallurgy and electrical-machinery interfaces; exact recipes, eligibility, statistics, thresholds, art, and balance. See [Electronics](03_Production_Systems/04_Electronics.md) for live links and reserved future link targets.
+- Research-system architecture is locked in [TI_Research_System_Foundation_Plan.md](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md); the unified detailed technology tree, prerequisites, costs, research media/infrastructure recipes, planetary branches, and implementation remain deferred. See [Research and Technology Design](01_Game_Design/03_Research_and_Technology_Design.md) for existing owners and reserved links.
 - All major planned systems require implementation specifications before code can substantiate them.
 - Package assembly requires reconciliation of the declared modpack dependencies with actual package names/manifests.
 - No runtime or Factorio data-stage execution test was performed; static source risks require verification.
@@ -237,7 +242,8 @@ No runtime-global or runtime-per-user TI settings were found. The core English l
 | Stage 1 Copper/Tin/Bronze | Locked as an open architecture direction; detailed progression and balance deferred |
 | Worlds | Concept drafts; several descriptions explicitly AI-generated |
 | Electronics | Locked architecture; dependent-system, endgame, implementation, art, and balance details deferred; not implemented |
-| Chemistry, recycling, recipe tables, dedicated technology design | Incomplete general domains; Chemistry, recipes, and technology now carry narrow locked Electronics interfaces |
+| Chemistry, recycling, recipe tables | Incomplete general domains; Chemistry and recipes carry narrow locked metallurgy/electronics interfaces |
+| Research and technology | Locked foundation; detailed global tree, placements, costs, media, and infrastructure deferred; not implemented |
 | Power, logistics, modules, quality, space, combat | Idea / research-needed or planning-only |
 
 ## 23. Implementation Readiness Matrix

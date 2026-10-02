@@ -13,7 +13,7 @@ The project owner resolved the terminology during this migration:
 3. **Stage 6** begins after that victory milestone.
 4. **Archo Nexus** belongs to Stage 6 and is post-victory/postgame content.
 
-This resolution does not define an objective, recipe, science cost, unlock prerequisite, or implementation behavior beyond the stated lifecycle.
+This resolution does not define an objective, recipe, science cost, unlock prerequisite, or implementation behavior beyond the stated lifecycle. The locked [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) further defines the broad postgame research identity: deeper system-wide integration, experimental technology, and selectively justified long-term research after the Stage 5 main victory.
 
 ## Stage 5 planning context
 
@@ -33,10 +33,10 @@ The legacy idea backlog associated The Ark with a postgame bonus planet and a po
 
 ## Current open specification gaps
 
-The following are not defined by the migrated sources:
+The research architecture is now governed by the [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md), but the following specifics remain undefined:
 
 - the Stage 5 victory objective and exact path to Solar System Edge;
-- Stage 6 unlocks, gates, research requirements, and implementation behavior;
+- exact Stage 6 unlocks, gates, research requirements, and implementation behavior;
 - the exact behavior, recipe, cost, or research role of Nanite Science;
 - the exact rules for infinite technologies past level 10.
 
@@ -46,3 +46,5 @@ The following are not defined by the migrated sources:
 - [Solar System and Planets](01_Solar_System_and_Planets.md)
 - [Planetary Stage Matrix](02_Planetary_Stage_Matrix.md)
 - [Idea Backlog](../Plans/Idea_Backlog.md)
+- [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md)
+- [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md)

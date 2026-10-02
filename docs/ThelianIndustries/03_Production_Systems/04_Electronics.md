@@ -123,6 +123,7 @@ Fiberglass production, final PCB etchant identity, resin/acid/electrolyte chains
 - Component taxonomy and shared intermediate boundaries: [Construction and Intermediate Components](../01_Game_Design/02_Construction_and_Intermediate_Components.md).
 - Exact recipe tables and numerical balance: [Recipe Tables](06_Recipe_Tables.md) and [Gameplay Balance Research](../06_Research/02_Gameplay_Balance_Research.md).
 - Technology/unlock design: [Research and Technology Design](../01_Game_Design/03_Research_and_Technology_Design.md).
+- Governing cross-system research rules and deferred global-tree ownership: [Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md).
 - Electrical power context: [Power, Steam, and Early Infrastructure](../04_Gameplay_Mechanics/04_Power_Steam_and_Early_Infrastructure.md). *(Reserved for a dedicated electrical-machinery/large-magnetics plan link when that plan is generated.)*
 - Forestry inputs such as wood substrate, pulp/paper, raw resin, and possible rubber: *(Reserved for a Forestry system document link when that system is planned and its owner document is generated.)*
 - Conventional machine consolidation and implementation architecture: [Mod Architecture](../05_Development/00_Mod_Architecture.md). *(Reserved for a dedicated production-machine integration plan link when that plan is generated.)*

@@ -5,6 +5,8 @@
 
 This domain owns the planned game-stage sequence, stage-to-world assignment, world and orbit planning material, and the documented victory/postgame lifecycle. It does not establish recipes, implementation behavior, detailed planet mechanics, or unspecified progression gates.
 
+The cross-domain research architecture is governed by the [Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md). The complete global technology tree, exact stage/domain placements, prerequisites, and research media remain deferred; this folder records only its owned stage/world and victory lifecycle decisions.
+
 ## Documents
 
 - [Game Progression](00_Game_Progression.md) — canonical owner for stage sequencing and the Stage 1 progression draft.

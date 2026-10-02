@@ -1,5 +1,12 @@
 # Documentation Changelog
 
+## 2026-10-02 — Research Foundation Synchronization
+
+- Reconciled official planning, progression, production, development, research, and project-navigation documents with the owner-designated [Research System Foundation Plan](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md).
+- Recorded the locked hybrid research architecture, evidence/media maturity, planetary specialization, postgame and longevity principles, and clear ownership boundary for the deferred global technology tree.
+- Added cross-document links to current domain owners and reserved-link markers where future tree, infrastructure, Forestry, and other system documents do not yet exist; kept backlog candidates explicitly non-canonical.
+- This is a documentation-only planning update. It adds no prototypes, recipes, technologies, runtime behavior, or implementation-status claim.
+
 ## 2026-09-30 — Electronics Architecture Synchronization
 
 - Reconciled official Thelian Industries documentation with the owner-designated [electronics decision record](Plans/InProgress%20Plans/TI_Electronics_Plan.md).

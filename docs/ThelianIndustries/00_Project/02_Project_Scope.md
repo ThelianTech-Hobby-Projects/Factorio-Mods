@@ -15,7 +15,7 @@ The legacy planning set includes material or an explicitly reserved source for:
 - recipe tables; and
 - research and technology design.
 
-Chemistry/oil processing, recycling/waste, recipe tables, and research/technology still lack complete dedicated specifications. Their destination documents remain placeholders or narrowly source-backed interface notes until their owner plans are supplied. The completed [Electronics architecture pass](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) does not finalize dependent-system chains, exact balance, or implementation.
+Chemistry/oil processing, recycling/waste, and numeric recipe tables still lack complete dedicated specifications. The research-system foundation is now locked in the [Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md), but the unified detailed technology tree and progression graph remain future planning work. The Electronics architecture and research foundation do not finalize dependent-system chains, exact balance, or implementation.
 
 ## Planning-Only Boundary
 

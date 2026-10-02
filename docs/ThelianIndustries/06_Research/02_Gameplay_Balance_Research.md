@@ -12,6 +12,8 @@ The metallurgy plan locks recovery semantics of 1.00× Raw, 1.50× Crushed, and 
 
 The electronics plan similarly defers exact ratios, yields, times, power, speeds, module rules, crude/prototype penalties, recipe-by-recipe machine eligibility, retirement thresholds and warnings, technology costs, and pacing. Playtesting should preserve the intended readable but temporary industrialization crisis when crude routes retire, without assigning values here or reopening the locked component/machine architecture.
 
+The [Research System Foundation](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) locks broad pacing rules but assigns no technology costs or classifications: finite research is the default, long-term classes require individual justification, players may research ahead within an open domain, and major gates belong at meaningful frontiers. Research balancing should not turn every ordinary unlock into a separate readiness check or classify specific technologies before the unified tree is planned.
+
 ## Research questions
 
 - What owner-approved balance goals and player-experience criteria should be used?
@@ -26,3 +28,4 @@ The electronics plan similarly defers exact ratios, yields, times, power, speeds
 - [Open Questions and Research Log](../00_Project/05_Open_Questions_and_Research_Log.md)
 - [Thelian Industries Metallurgy Plan](../Plans/InProgress%20Plans/TI_Metallurgy_Plan.md)
 - [Thelian Industries Electronics Plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md)
+- [Thelian Industries Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md)
