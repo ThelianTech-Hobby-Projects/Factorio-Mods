@@ -1,0 +1,14 @@
+{
+    "name": "example-mod",
+    "version": "0.0.1",
+    "factorio_version": "2.0",
+    "title": "Example Mod Files",
+    "author": "AuthorName",
+    "contact": "not.a.valid.email.address@example.com",
+    "homepage": "",
+    "description": "This Example Mod is here to be copied and used to speed up the mod development process for new mods. Feel Free to Download and use.",
+    "dependencies": [
+      "base >= 2.0.0",
+      "? space-age"
+    ]
+  }
