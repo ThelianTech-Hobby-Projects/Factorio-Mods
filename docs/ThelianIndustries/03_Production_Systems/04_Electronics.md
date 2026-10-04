@@ -8,6 +8,8 @@ This document is the canonical summary of electronics-specific component use, ar
 
 [Metallurgy Processing Chains](01_Metallurgy_Processing_Chains.md) owns metallic, alloy, and silicon material production. [Chemistry and Oil Processing](03_Chemistry_and_Oil_Processing.md) reserves the upstream chemical-material interfaces. Electronics owns how fabrication-ready materials are used in electronic products and assemblies.
 
+The project-wide [Design Foundation and Overhaul Principles](../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) informs shared design reasoning but does not replace this system's owner decisions. This current Electronics scope is not the complete future Electrical Engineering domain; the [Electronics plan](../Plans/InProgress%20Plans/TI_Electronics_Plan.md) defers possible electrical-machinery branches for later planning. Its three-tier general-purpose Electronics architecture remains a subsystem-specific lock, not a universal machine template.
+
 ## Current implementation status
 
 **Implementation status: Docs Ahead of Implementation / Localization Only with unregistered scaffold.**

@@ -18,6 +18,8 @@
 - `Metallurgy_Process-Tree.md` is authoritative for older process-yield scaling, numeric process-conversion relationships, and remelting-loss values except where superseded by locked decisions.
 - `Metallurgy-Tree.md` remains authoritative for unique older concepts not superseded elsewhere.
 
+Project-wide design reasoning for granularity, machine justification, shared production backbones, and cross-system ownership is governed by the [Design Foundation and Overhaul Principles](../../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md). This plan retains authority over metallurgy-specific architecture; in particular, this reference does not resolve pending Decision 10 on metal forms and component granularity.
+
 ### Governing design principle
 
 Thelian Industries metallurgy progressively increases the useful material and industrial value obtainable from finite geological resources.

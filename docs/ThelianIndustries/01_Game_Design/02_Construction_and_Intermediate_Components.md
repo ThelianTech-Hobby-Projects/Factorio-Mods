@@ -6,6 +6,8 @@
 
 This document owns the design-facing classification of construction and intermediate components. It does not own recipes, quantities, timings, or material-processing yield rules.
 
+Project-wide criteria for deciding whether an intermediate should be explicit, bundled, or abstracted are owned by the [Design Foundation and Overhaul Principles](01_Design_Foundation_and_Overhaul_Principles.md). This page and the subsystem plans still determine their own components; the foundation does not decide Metallurgy's unresolved metal-form/component granularity.
+
 ## Current planning notes
 
 The legacy metallurgy plan identifies the following construction-component groups:
@@ -40,6 +42,7 @@ The retained lists above are vocabulary, not a final item-granularity decision: 
 - Material-production concerns: [Metallurgy Processing Chains](../03_Production_Systems/01_Metallurgy_Processing_Chains.md)
 - Electronics-use and progression concerns: [Electronics](../03_Production_Systems/04_Electronics.md)
 - Stage context: [Game Progression](../02_Progression_and_Worlds/00_Game_Progression.md)
+- Project-wide component-granularity reasoning: [Design Foundation and Overhaul Principles](01_Design_Foundation_and_Overhaul_Principles.md)
 
 ## Provenance
 

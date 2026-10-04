@@ -8,6 +8,8 @@
 
 Every substantive entry from the legacy `IDEAS.md` source is preserved below as an idea, candidate, or research prompt. None is an approved gameplay decision, implementation claim, recipe specification, or locked design merely because it appears here. Informal wording is preserved where it conveys source intent.
 
+Future concept-planning sessions should evaluate only topic-relevant candidates against the project-wide [Design Foundation and Overhaul Principles](../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md). That foundation guides evaluation but does not promote, reject, or reclassify any backlog entry.
+
 The owner-resolved migration direction maps the historical `The Ark` name to **Archo Nexus** as a working-name evolution. Its related entries remain backlog material; they do not establish a separate current planet. See [Victory and Postgame](../02_Progression_and_Worlds/03_Victory_and_Postgame.md).
 
 ## Migrated entries

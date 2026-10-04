@@ -2,6 +2,10 @@
 
 **Status: Review Evidence**
 
+## 2026-10-04 design-foundation authority refresh
+
+Installed the owner-approved [Design Foundation and Overhaul Principles](../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) as the project-wide design-methodology and cross-system-constraint owner, archived the former design-pillars placeholder with its contents retained, and linked the foundation from relevant subsystem and future-planning guides. Existing subsystem-specific locks—including the current Electronics machine architecture and unresolved Metallurgy Decision 10—remain intact. The global research/tree authority remains with the Research System Foundation and later unified Research/Game Progression plan. No implementation evidence changed.
+
 ## 2026-10-02 planning-inventory reference refresh
 
 Registered [TI_Planning_Overview.md](../Plans/InProgress%20Plans/TI_Planning_Overview.md) as a high-level working coordination reference and added targeted links from indexes and future-planning owners. It remains non-locked and does not replace detailed owner documents. Existing Stage 5 victory terminology and source-derived world descriptions were preserved; the overview's Icarion's Grave-before-Solar-System-Edge sequence is marked as working planning direction. Added one reserved train/ground-transport planning page, with no duplicate planet placeholders; no static implementation evidence changed.

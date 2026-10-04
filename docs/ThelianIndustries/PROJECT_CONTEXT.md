@@ -10,6 +10,8 @@
 >
 > **Post-snapshot planning addendum (2026-10-02):** [TI_Research_System_Foundation_Plan.md](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) now governs current research-system architecture and progression rules. The full technology tree remains deferred; this addendum does not change the static implementation findings below.
 >
+> **Post-snapshot design addendum (2026-10-04):** The owner-approved [Design Foundation and Overhaul Principles](01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) governs project-wide design reasoning and cross-system constraints. It does not replace subsystem owners or alter any static implementation evidence below.
+>
 > **Planning-reference note (2026-10-02):** [TI_Planning_Overview.md](Plans/InProgress%20Plans/TI_Planning_Overview.md) is a high-level working inventory for broad direction and outstanding future planning, not implementation evidence or a design authority superseding the detailed owners. It does not change the static implementation findings below.
 
 ## 0. Snapshot Metadata

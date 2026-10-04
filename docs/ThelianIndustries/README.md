@@ -9,6 +9,7 @@ This documentation tree is the authority-controlled migration of the legacy Thel
 - [Project index](00_Project/00_Project_Index.md) — project-level navigation and current planning limits.
 - [Document authority](DOCUMENT_AUTHORITY.md) — how to determine authority for implementation and planning claims.
 - [Document map](DOCUMENT_MAP.md) — canonical owner for each documentation concern.
+- [Design Foundation and Overhaul Principles](01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) — owner-approved, project-wide cross-system design constraints; subsystem owners retain their specific architecture.
 - [Metallurgy decision record](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) — current locked metallurgy architecture through Decisions 1–8; no implementation claim.
 - [Electronics decision record](Plans/InProgress%20Plans/TI_Electronics_Plan.md) — completed electronics architecture with cross-system, endgame, implementation, and balance details explicitly deferred; no implementation claim.
 - [Research system foundation](Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) — locked architecture and governing rules for research/progression; the unified technology tree remains future planning work.
@@ -20,6 +21,7 @@ This documentation tree is the authority-controlled migration of the legacy Thel
 ## Documentation Classes
 
 - **Canonical planning documents** record the current planning direction and must show their status.
+- The **Design Foundation** governs project-wide design reasoning; it does not own subsystem-specific architecture or the final global research/technology tree.
 - **Plans** are status-controlled: the Idea Backlog retains speculative ideas and candidates; the planning overview coordinates future work without locking design; and owner-designated metallurgy, electronics, and research foundation plans contain their current locked architecture checkpoints.
 - **Decisions/ADR** records durable owner-approved decisions; no substantive ADRs have been created in this initial migration.
 - **Reviews** record audit evidence and migration findings.

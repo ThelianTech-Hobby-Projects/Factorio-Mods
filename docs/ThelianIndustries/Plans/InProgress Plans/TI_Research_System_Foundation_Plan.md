@@ -58,6 +58,8 @@ The later unified **Research, Technology, and Game Progression Plan** will deter
 
 Existing locked subsystem decisions remain authoritative inputs and may not be silently overridden.
 
+The project-wide [Design Foundation and Overhaul Principles](../../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) governs cross-system design reasoning, abstraction, and readiness principles. This document remains the owner of research-system architecture; the later unified Research, Technology, and Game Progression plan retains ownership of the final global tree and placement.
+
 ---
 
 # 3. Research-System Core Identity

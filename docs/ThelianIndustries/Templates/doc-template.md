@@ -6,6 +6,8 @@
 
 State the concern this document owns. If a concept spans domains, identify the distinct concern owned here and link to the related canonical document.
 
+For a substantive subsystem concept plan, apply the project-wide [Design Foundation and Overhaul Principles](../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) and preserve the authority of existing subsystem and Research/Game Progression owners. Review the latest [Idea Backlog](../Plans/Idea_Backlog.md) for potentially relevant candidates; do not assume its ideas are approved.
+
 ## Current Content
 
 Record only source-backed content. Use a placeholder when the source provides no substantive specification.

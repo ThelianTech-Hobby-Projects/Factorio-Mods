@@ -6,6 +6,8 @@
 
 > This document is a planning inventory and coordination source. It does **not** claim that any listed future system is implemented, finalized, or approved merely because it appears here. Existing locked planning records remain authoritative for their own domains.
 
+Project-wide design reasoning for future concept plans is governed by the owner-approved [Design Foundation and Overhaul Principles](../../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md). This planning inventory does not replace that foundation or any subsystem owner.
+
 ---
 
 ## 1. Project Planning Principle

@@ -33,6 +33,8 @@ This is a **concept and architecture plan**, not a balance sheet or implementati
 5. Metallurgy owns metallic and silicon material forms. Electronics owns how those materials are used in electronic products and assemblies.
 6. Avoid creating inventory items merely because a real-world component exists. Items should earn their place through meaningful factory, progression, or cross-system gameplay.
 
+Project-wide design methodology is governed by the [Design Foundation and Overhaul Principles](../../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md); the locked Electronics decisions in this plan retain authority within their defined scope. The current plan primarily establishes computer/electronic-component architecture and its manufacturing direction, not the complete future scope of Electronics / Electrical Engineering. Future electrical-machinery or other branch planning may choose an explicit, bundled, general-machine, specialized-machine, shared-machine, or hybrid approach under the foundation without reopening the locked three-tier architecture for current Electronics.
+
 ---
 
 

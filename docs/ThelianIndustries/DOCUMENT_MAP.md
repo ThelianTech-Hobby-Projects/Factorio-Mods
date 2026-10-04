@@ -8,7 +8,8 @@ This map assigns an authoritative owner per concern. Shared concepts may have mu
 | --- | --- | --- |
 | Documentation authority and status rules | [DOCUMENT_AUTHORITY.md](DOCUMENT_AUTHORITY.md) | Governs authority questions; does not establish gameplay design. |
 | Project framing, scope, open questions, and documentation audit | [00_Project/](00_Project/README.md) | Project-level planning administration. |
-| Overall game-design direction | [01_Game_Design/](01_Game_Design/README.md) | Planning-only system direction. |
+| Overall game-design direction | [01_Game_Design/](01_Game_Design/README.md) | Project-wide design methodology belongs to the locked foundation; subsystem plans retain specific architecture. |
+| Project-wide design principles and cross-system constraints | [01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md](01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) | Canonical owner-approved foundation; does not own subsystem architecture or the final global technology tree. |
 | Game stages, worlds, victory, and postgame | [02_Progression_and_Worlds/](02_Progression_and_Worlds/README.md) | Owns progression sequencing and world descriptions. |
 | Metallurgical processing and yield rules | [03_Production_Systems/](03_Production_Systems/README.md) | The owner documents hold the canonical summaries; [TI_Metallurgy_Plan.md](Plans/InProgress%20Plans/TI_Metallurgy_Plan.md) is the current locked source through Decisions 1–8. |
 | Electronics architecture, taxonomy, and production-machine progression | [03_Production_Systems/04_Electronics.md](03_Production_Systems/04_Electronics.md) | Canonical summary; [TI_Electronics_Plan.md](Plans/InProgress%20Plans/TI_Electronics_Plan.md) is the current locked source. |
@@ -22,7 +23,7 @@ This map assigns an authoritative owner per concern. Shared concepts may have mu
 
 ## Shared Concerns
 
-Metallurgy owns material production and yield behavior; electronics owns electronics use, assembly architecture, and progression. The research foundation owns research architecture and rules; the later unified Research, Technology, and Game Progression Plan will own the detailed global technology tree. Chemistry owns upstream chemical production when that system is planned. Documents must avoid duplicating the same rule and should use reciprocal related-document links where a concept spans domains; unavailable owner documents should be marked as reserved future link targets.
+The Design Foundation and Overhaul Principles owns project-wide design reasoning and cross-system constraints. Metallurgy owns material production and yield behavior; electronics owns electronics use, assembly architecture, and progression. The research foundation owns research architecture and rules; the later unified Research, Technology, and Game Progression Plan will own the detailed global technology tree. Chemistry owns upstream chemical production when that system is planned. Documents must avoid duplicating the same rule and should use reciprocal related-document links where a concept spans domains; unavailable owner documents should be marked as reserved future link targets.
 
 ## Legacy Source Map
 
@@ -50,7 +51,8 @@ The register supplies per-document navigation and governance metadata. `Migratio
 | `00_Project/06_Documentation_Audit.md` | Documentation Audit | Canonical audit summary | Planning Draft | Summarizes migration coverage | migration review | detailed review | Yes |
 | `01_Game_Design/README.md` | Game Design | Canonical navigation | Planning Draft | Domain index | migrated structure | game-design pages | Yes |
 | `01_Game_Design/00_Game_Design_Overview.md` | Game Design Overview | Canonical planning | Planning Draft | High-level source summary | progression and metallurgy plans | progression, production | Yes |
-| `01_Game_Design/01_Design_Pillars_and_Overhaul_Scope.md` | Design Pillars and Overhaul Scope | Canonical placeholder | Placeholder / Planning Required | Reserves pillars and scope | No dedicated legacy source | project scope, ideas | Yes |
+| `01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md` | Design Foundation and Overhaul Principles | Canonical cross-system design foundation | Locked foundation / owner-approved | Governs project-wide design reasoning and constraints; subsystem-specific architecture remains with its owners | Owner-approved foundation source `TI_Design_Foundation_and_Overhaul_Principles.md` | project-wide and subsystem planning | Yes |
+| `Archive/01_Game_Design/01_Design_Pillars_and_Overhaul_Scope.md` | Design Pillars and Overhaul Scope | Archived historical placeholder | Archived / Historical | Preserves former design-pillars placeholder; not an active owner | Former `01_Game_Design` placeholder | active design foundation | No |
 | `01_Game_Design/02_Construction_and_Intermediate_Components.md` | Construction and Intermediate Components | Canonical planning | Planning Draft | Classifies component groups | metallurgy, electronics, progression plans | metallurgy, electronics | Yes |
 | `01_Game_Design/03_Research_and_Technology_Design.md` | Research and Technology Design | Canonical planning | Locked foundation / detailed tree deferred | Summarizes research architecture and owns the future unified tree boundary | `TI_Research_System_Foundation_Plan.md`; empty `Tech-Tree.md`; subsystem constraints | progression, planets, subsystem plans, research log | Yes |
 | `02_Progression_and_Worlds/README.md` | Progression and Worlds | Canonical navigation | Planning Draft | Domain index | migrated structure | progression pages | Yes |

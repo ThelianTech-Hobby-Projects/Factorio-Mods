@@ -4,6 +4,8 @@
 
 The [Research System Foundation Plan](../Plans/InProgress%20Plans/TI_Research_System_Foundation_Plan.md) is the owner-designated source of truth for the locked architecture and rulesets of research and progression. This page summarizes those rules for navigation and cross-system use. It does not define the final technology tree, exact prerequisites, research media recipes/costs, planet/stage placements, unlock order, or implementation architecture.
 
+Project-wide design reasoning for how research interfaces with system architecture, milestones, and cross-system dependencies is governed by the [Design Foundation and Overhaul Principles](01_Design_Foundation_and_Overhaul_Principles.md). It does not replace the Research System Foundation or transfer final global tree ownership away from the future unified Research, Technology, and Game Progression plan.
+
 ## Locked foundation
 
 Research represents development, proof, and application of scientific, engineering, and industrial knowledge by the player's force. It changes knowledge, capability, or technological state; it is not merely spending abstract currency for recipe unlocks.

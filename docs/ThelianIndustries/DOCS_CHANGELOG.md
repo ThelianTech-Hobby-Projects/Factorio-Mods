@@ -1,5 +1,13 @@
 # Documentation Changelog
 
+## 2026-10-04 — Design Foundation Installation
+
+- Added the owner-approved [Design Foundation and Overhaul Principles](01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) as the canonical project-wide cross-system design-constraint source.
+- Archived the former [Design Pillars and Overhaul Scope placeholder](Archive/01_Game_Design/01_Design_Pillars_and_Overhaul_Scope.md), preserving its contents without merging its uncertain material into the new foundation.
+- Updated authority maps, navigation, future-planning guidance, and cross-links while retaining metallurgy, electronics, and research subsystem ownership and the deferred global technology-tree boundary.
+- Clarified that current Electronics planning does not define the entire future Electrical Engineering scope and that Metallurgy Decision 10 remains unresolved.
+- Documentation/design update only; no gameplay implementation or numerical balance was changed.
+
 ## 2026-10-02 — Planning Overview Navigation and References
 
 - Registered `TI_Planning_Overview.md` as a high-level working planning inventory for broad direction, outstanding system/location plans, placeholders, and deferred work; it is not a locked design record or replacement for existing owners.

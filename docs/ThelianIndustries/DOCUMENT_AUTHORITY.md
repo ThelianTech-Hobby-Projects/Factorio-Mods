@@ -27,6 +27,8 @@ For claims about intended design, consult sources in this order:
 
 During this initial migration, most material is planning-stage. Use the status labels defined in [the documentation root](README.md#status-vocabulary) and do not infer `Locked` merely from confident legacy wording.
 
+The owner-approved [Design Foundation and Overhaul Principles](01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md) is the canonical project-wide source for cross-system design reasoning and constraints. It does not displace subsystem-specific owner decisions or the Research System Foundation / unified Research, Technology, and Game Progression authority for the global technology tree.
+
 ## Owner Resolution During Migration
 
 The explicit owner resolutions dated 2026-09-04 supersede conflicting legacy wording for the migration. Their application and remaining open design direction are recorded in the [migration audit](Reviews/migration_audit_2026-09-04.md).

@@ -6,6 +6,8 @@
 
 This document migrates the stated game stages and the detailed Stage 1 planning material. It does not infer the missing goals, unlock prerequisites, recipes, balance values, or mechanics for the later stages.
 
+Project-wide design reasoning for system interfaces and progression-readiness principles is governed by the [Design Foundation and Overhaul Principles](../01_Game_Design/01_Design_Foundation_and_Overhaul_Principles.md). This stage-sequencing document does not replace that foundation or the Research System Foundation's ownership of research-system architecture and the future unified plan's ownership of the detailed global technology tree.
+
 The legacy source describes this progression as running from crash landing on Nauvis to the final victory of *REDACTED*. The owner-resolved migration lifecycle below identifies the Solar System Edge as the documented main victory milestone without expanding the redacted source wording into a new objective.
 
 ## Resolved lifecycle terminology
