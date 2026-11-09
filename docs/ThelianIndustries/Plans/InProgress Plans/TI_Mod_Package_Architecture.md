@@ -1,6 +1,6 @@
 # Thelian Industries — Mod Package Architecture
 
-**Status:** Locked architectural direction pending package-level standards and repository implementation  
+**Status:** Locked architectural direction  
 **Project:** Thelian Industries Factorio Modpack  
 **Package prefix:** `ti-`  
 **Purpose:** Define the intended package boundaries, ownership model, dependency direction, asset separation, world-content packaging, and future extensibility rules for Thelian Industries.
@@ -92,8 +92,9 @@ compact while preserving the complete project identity in user-facing presentati
 ```text
 THELIAN INDUSTRIES
 │
-├── FOUNDATION
+├── FOUNDATION / SHARED SUPPORT
 │   ├── ti-lib
+│   ├── ti-localization
 │   ├── ti-core
 │   └── ti-compat
 │
@@ -135,7 +136,7 @@ Not every package requires immediate substantive implementation. Some packages m
 
 ---
 
-## 4. Foundation Packages
+## 4. Foundation and Shared Support Packages
 
 ### 4.1 `ti-lib`
 
@@ -159,7 +160,42 @@ Its responsibility is reusable implementation infrastructure.
 
 ---
 
-### 4.2 `ti-core`
+### 4.2 `ti-localization`
+
+**Purpose:** Provide the centralized canonical localization interface for Thelian Industries.
+
+`ti-localization` owns project-wide player-facing localization keys for TI-created content, including applicable:
+
+- item names and descriptions;
+- entity names and descriptions;
+- fluid names and descriptions;
+- technology names and descriptions;
+- recipe localization;
+- world/location names;
+- mod-setting localization;
+- GUI strings;
+- runtime messages;
+- other shared player-facing text.
+
+Gameplay packages continue to own the prototypes and systems themselves. `ti-localization` owns their canonical localized presentation.
+
+#### Dependency Direction
+
+Packages exposing TI-localized player-facing content should depend on `ti-localization`.
+
+`ti-localization` remains a low-level shared-support package and should not depend on every gameplay package whose locale keys it contains. Unused locale keys are acceptable when the associated gameplay package is not active.
+
+#### Boundary
+
+`ti-localization` does not own gameplay prototypes, recipes, technologies, progression, runtime systems, or physical graphical/audio assets.
+
+Localization is deliberately **not** placed in `ti-modpack`, because `ti-modpack` must remain a dependency-only user entry point rather than a functional requirement for readable TI content.
+
+Detailed localization file organization, namespace rules, and update conventions are defined in the companion **Mod Package Standards and Repository Conventions** document.
+
+---
+
+### 4.3 `ti-core`
 
 **Purpose:** Provide the fundamental shared gameplay and technical infrastructure required by the broader Thelian Industries ecosystem.
 
@@ -179,7 +215,7 @@ Content that clearly belongs to a specialized system should remain with that sys
 
 ---
 
-### 4.3 `ti-compat`
+### 4.4 `ti-compat`
 
 **Purpose:** Provide a centralized home for compatibility with external mods and modpacks.
 
@@ -757,6 +793,18 @@ It may summarize:
 
 Detailed package-specific implementation changes remain in the changelogs of their respective packages.
 
+### 12.5 Aggregate Version Responsibility
+
+`ti-modpack` has its own aggregate release version.
+
+Whenever an officially supported dependency package receives a released version change that is incorporated into the complete Thelian Industries installation, `ti-modpack` also receives a corresponding version bump and changelog entry.
+
+The component package version identifies that component's implementation release.
+
+The `ti-modpack` version identifies the current official composition/release of the complete overhaul.
+
+Detailed semantic versioning rules are defined in the companion package standards document.
+
 ---
 
 ## 13. Global Three-Level Ownership Model
@@ -878,23 +926,23 @@ Code should be deliberately reviewed before being ported from the archive into a
 
 Old package ownership assumptions should not automatically be carried into the new architecture.
 
+New active code must never depend on, import from, or reference archived packages or archived asset paths.
+
+The archive is temporary migration/reference material. After all useful legacy implementation has been migrated, deliberately rejected, or rendered obsolete, the archive will be deleted manually by the project owner.
+
+Automated tooling and Codex instructions must not delete the legacy archive unless the owner explicitly directs that deletion.
+
 ---
 
 ## 16. New Repository Scaffold Strategy
 
-The new active package tree may initially contain:
+When a named package is formally instantiated in the active repository, it should use a **minimal valid package scaffold** rather than remain an empty directory or retain copied example-mod metadata.
 
-- empty package directories;
-- minimal Factorio example-mod scaffolds;
-- placeholder `info.json` files;
-- placeholder changelog files;
-- documentation placeholders.
+At minimum, the package should immediately receive a correct package-specific `info.json` whose internal name, title, version, Factorio version, project metadata, and currently applicable dependencies represent the actual package.
 
-That is acceptable during the restructuring phase.
+Active source packages should also receive the compact repository documentation required by the package standards, such as their package README and applicable license file.
 
-The architectural package names and ownership boundaries should be established first.
-
-Correct manifests, dependency declarations, package metadata, source migration, runtime implementation, and prototype ownership can then be filled in incrementally.
+Implementation-specific lifecycle files and directories are created only when actually needed. Do not add fake loaders, fake prototypes, placeholder runtime code, or copied example dependencies merely to make a package look implemented.
 
 A provisional active layout is:
 
@@ -905,6 +953,7 @@ Mods/
 │
 └── ThelianIndustries/
     ├── ti-lib/
+    ├── ti-localization/
     ├── ti-core/
     ├── ti-compat/
     │
@@ -939,8 +988,8 @@ Future system packages are added only when justified under Section 10.
 
 The currently locked **named** architecture contains:
 
-### Foundation
-3 packages
+### Foundation / Shared Support
+4 packages
 
 ### Assets
 3 packages
@@ -960,7 +1009,7 @@ The currently locked **named** architecture contains:
 ### User Entry Point
 1 package
 
-**Total currently named package slots: 19**
+**Total currently named package slots: 20**
 
 Additional future packages are permitted under the Reserved Future Package Policy but are intentionally not pre-named.
 
@@ -972,6 +1021,7 @@ The following architectural direction is accepted:
 
 - Use `ti-*` for new Thelian Industries package identifiers.
 - Maintain a modular Factorio modpack architecture.
+- Maintain `ti-localization` as the centralized canonical localization support package.
 - Keep Foundation, Assets, Materials, Systems, Worlds, Progression, and the User Entry Point as distinct architectural layers.
 - Use `ti-materials` for shared generic physical materials and components.
 - Keep specialized items with their specialized systems.
@@ -989,172 +1039,77 @@ The following architectural direction is accepted:
 - Preserve the previous implementation in an archive for selective migration.
 - Rebuild the active directory from the clean package architecture.
 - Use the generic three-level ownership model throughout the project.
-- Treat empty/minimal package scaffolds as acceptable during initial restructuring.
+- Instantiate new package directories with correct package-specific `info.json` metadata and minimal valid repository scaffolding; do not preserve fake example-mod code or metadata.
 - Refine manifests, dependencies, code, prototype ownership, and implementation incrementally.
 
 ---
 
-## 19. Organizational Standards Still To Be Defined
+## 19. Companion Package Standards
 
-This document locks **package architecture**, but it does not yet define every per-package repository and release standard.
+The package architecture in this document is implemented and maintained according to the separate locked companion document:
 
-Before generating the final repository-update/Codex migration instructions, the project should separately establish a **Mod Package Standards and Repository Conventions** document.
+```text
+TI_Mod_Package_Standards.md
+```
 
-That follow-up should define, at minimum:
+That document governs the per-package conventions beneath this architecture, including:
 
-### 19.1 Standard Package File Layout
+- standard package root/file vocabulary;
+- package creation and `info.json` rules;
+- dependency conventions;
+- prototype/file naming;
+- loader and runtime organization;
+- independent component versioning;
+- aggregate `ti-modpack` versioning;
+- package and aggregate changelogs;
+- migration conventions;
+- centralized localization through `ti-localization`;
+- package README conventions;
+- asset-reference and attribution conventions;
+- temporary archive rules.
 
-- required root files;
-- optional root files;
-- standard `prototypes/` organization;
-- standard `scripts/` organization;
-- standard `locale/` organization;
-- standard `graphics/` or asset-reference rules;
-- standard `migrations/` organization;
-- whether package-local documentation is permitted or centralized.
-
-### 19.2 `info.json` Standards
-
-- naming rules;
-- title rules;
-- author/contact conventions;
-- Factorio version policy;
-- dependency declaration rules;
-- optional dependency syntax/policy;
-- version constraints;
-- description conventions;
-- homepage/source references;
-- dependency ordering conventions.
-
-### 19.3 Dependency Architecture Rules
-
-- permitted dependency directions;
-- foundation-package dependency rules;
-- asset-package dependency rules;
-- system-to-system dependency rules;
-- world-package dependency rules;
-- progression-package dependency rules;
-- compatibility-package dependency rules;
-- circular-dependency prevention;
-- optional integrations;
-- dependency minimization.
-
-### 19.4 Changelog Standards
-
-- file format;
-- version heading format;
-- date conventions;
-- change categories;
-- stable vs development release entries;
-- breaking-change notation;
-- package-level vs `ti-modpack` aggregate release notes;
-- whether unreleased sections are allowed.
-
-### 19.5 Versioning and Release Policy
-
-- package versioning convention;
-- whether all packages share one release version or version independently;
-- pre-alpha/alpha/beta/stable conventions;
-- dependency version floors;
-- synchronized release rules;
-- `ti-modpack` aggregate version policy.
-
-### 19.6 Migrations and Save Compatibility
-
-- migration-file naming;
-- prototype rename rules;
-- removed prototype handling;
-- technology reconciliation;
-- recipe-state reconciliation;
-- configuration-change handling;
-- save-compatibility expectations;
-- when breaking save compatibility is acceptable during development.
-
-### 19.7 Coding and Registration Conventions
-
-- data-stage loader patterns;
-- `data.lua`;
-- `data-updates.lua`;
-- `data-final-fixes.lua`;
-- `control.lua`;
-- package-local module naming;
-- prototype file naming;
-- namespace rules;
-- internal IDs;
-- shared constants;
-- API exposure;
-- runtime event registration.
-
-### 19.8 Localization Standards
-
-- locale directory structure;
-- naming conventions;
-- package descriptions;
-- item/entity/technology localization;
-- mod-setting localization;
-- shared localization ownership.
-
-### 19.9 Asset Reference Standards
-
-- which packages may contain physical assets;
-- how gameplay packages reference asset packages;
-- asset path conventions;
-- shared vs system-specific assets;
-- attribution/license tracking;
-- placeholder-asset policy;
-- replacement/final-art policy.
-
-### 19.10 Documentation and Governance
-
-- package README requirements;
-- architecture documentation authority;
-- package ownership notes;
-- decision-record expectations;
-- release documentation;
-- archive rules;
-- deprecated package handling.
-
-### 19.11 Repository Hygiene
-
-- empty-directory policy;
-- `.gitkeep` policy if used;
-- generated-file rules;
-- ignored source/reference assets;
-- local-only development resources;
-- archive placement;
-- naming consistency;
-- case sensitivity;
-- typo prevention and validation.
-
-### 19.12 Validation and Release Checks
-
-Potential standardized checks should eventually verify:
-
-- `info.json` validity;
-- internal package name matches directory/archive name;
-- dependency targets exist;
-- dependency graph contains no cycles;
-- required root files exist;
-- changelog format is valid;
-- locale keys are present where required;
-- asset references resolve;
-- prohibited cross-package ownership is not introduced;
-- archived code is not accidentally loaded;
-- package metadata is release-ready.
+The architecture and standards documents should be treated together when restructuring or implementing TI packages.
 
 ---
 
-## 20. Architecture Lock Boundary
+## 20. Deferred Build, Validation, Testing, and Deployment Standards
+
+Detailed build, validation, runtime testing, packaging, deployment, release automation, and Mod Portal publishing workflow are intentionally **not** locked by this architecture document.
+
+Those concerns require a separate planning cycle based on the actual local and remote repository environment.
+
+Future planning should address areas such as:
+
+- static source validation;
+- dependency graph validation;
+- localization completeness checks;
+- changelog validation;
+- source-to-ZIP packaging;
+- build/staging directories;
+- transfer to the Factorio development mods directory;
+- Factorio launch/debug workflow;
+- runtime/load testing;
+- log collection;
+- regression checks;
+- development build tooling;
+- release packaging;
+- publishing workflow.
+
+No specific PowerShell, C#, CI, or other build technology is selected here.
+
+---
+
+## 21. Architecture Lock Boundary
 
 This document locks the **mod/package ownership architecture**.
 
-It intentionally leaves the detailed per-package implementation standard unresolved until the follow-up **Mod Package Standards and Repository Conventions** planning pass is complete.
+The companion `TI_Mod_Package_Standards.md` locks the current **per-package source organization and maintenance conventions**.
 
-The repository should not receive its final automated restructuring/update instructions until both:
+The following remain intentionally separate future planning domains:
 
-1. this package architecture; and
-2. the package-level organizational standards
+1. build/package generation;
+2. validation/testing;
+3. local deployment/debugging;
+4. release automation and publishing workflow.
 
-have been finalized.
-
-This prevents the project from establishing new package directories only to immediately migrate them again because file-layout, dependency, changelog, versioning, or release conventions were decided afterward.
+This separation allows the active source tree to be organized correctly now without prematurely coupling it to an undeveloped build and validation pipeline.
